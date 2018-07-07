@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../img/GRSI Logo.png';
 import {
   Collapse,
   Navbar,
@@ -33,7 +34,7 @@ export default class Navigation extends React.Component {
       <div>
         <Navbar id="nav" light expand="lg" className="fixed-top">
           <NavbarBrand tag={Link} to="/">
-            GRSI
+            <img id="logoNav" src={logo} alt="" />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
