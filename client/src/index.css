@@ -4,3 +4,6 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
 }
+html {
+  margin-top: -9px;
+}

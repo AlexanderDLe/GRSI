@@ -10,19 +10,38 @@ button {
 }
 
 /* NAVIGATION */
+nav {
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.25s ease-in-out;
+}
+.nav-scroll {
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.25s ease-in-out;
+  color: green !important;
+}
 .nav-item,
 .navbar-brand {
   padding: 10px;
 }
 .navbar-brand {
-  font-size: 5rem;
+  font-size: 2rem !important;
+  font-family: Open Sans !important;
+  font-weight: bolder !important;
 }
-
-.navbar-nav span[role='button'] {
+.nav-link {
+  font-size: 1.2rem;
+}
+.dropdown-menu,
+.dropdown-menu-right,
+show {
+  border: none;
+  background-color: #f8f9fa;
+}
+/* .navbar-nav span[role='button'] {
   padding: 15px;
   display: inline-block;
   line-height: 20px;
-}
+} */
 /* LANDING */
 .landingWrap {
   height: 200vh;
@@ -30,6 +49,12 @@ button {
 .landingBG {
   width: 100%;
   height: 100vh;
-  background: url('./img/RoadConstruction.jpeg') no-repeat center;
+  background: url('./img/Construction.jpg') no-repeat center;
   background-size: cover;
+}
+
+@media (max-width: 991px) {
+  nav {
+    background-color: #f8f9fa;
+  }
 }

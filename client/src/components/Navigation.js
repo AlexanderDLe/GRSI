@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" className="fixed-top">
+        <Navbar id="nav" light expand="lg" className="fixed-top">
           <NavbarBrand tag={Link} to="/">
             GRSI
           </NavbarBrand>
@@ -47,7 +47,7 @@ export default class Navigation extends React.Component {
                 <DropdownToggle nav caret>
                   About
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu className="bg-light" right>
                   <DropdownItem tag={Link} to="/travels">
                     Travels
                   </DropdownItem>
@@ -76,7 +76,7 @@ export default class Navigation extends React.Component {
                 <DropdownToggle nav caret>
                   Services
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu className="bg-light" right>
                   <DropdownItem tag={Link} to="/crack-seal">
                     Crack Seal
                   </DropdownItem>
