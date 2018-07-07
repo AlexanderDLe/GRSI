@@ -14,8 +14,22 @@ button {
 .navbar-brand {
   padding: 10px;
 }
+.navbar-brand {
+  font-size: 5rem;
+}
 
+.navbar-nav span[role='button'] {
+  padding: 15px;
+  display: inline-block;
+  line-height: 20px;
+}
 /* LANDING */
 .landingWrap {
   height: 200vh;
+}
+.landingBG {
+  width: 100%;
+  height: 100vh;
+  background: url('./img/RoadConstruction.jpeg') no-repeat center;
+  background-size: cover;
 }
