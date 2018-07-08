@@ -7,7 +7,6 @@ window.addEventListener('scroll', function() {
   let logo = document.querySelector('#logoNav');
 
   landingBG.style.backgroundPositionY = scrollY * 0.25 + 'px';
-  console.log(scrollY);
   if (scrollY > 1) {
     nav.classList.add('nav-scroll');
     logo.classList.add('logoNav-scroll');
