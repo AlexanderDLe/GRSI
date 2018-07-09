@@ -21,7 +21,10 @@ export default () => {
                 Mon-Fri 7AM-5PM(PST)
               </Col>
               <Col className="text-center p-4 landing-item">
-                <i className="landing-icon fas fa-envelope" /> <br />
+                <Link to="/contact">
+                  <i className="landing-icon fas fa-envelope" />
+                </Link>
+                <br />
                 Contact <br />
                 via our Contact Form.
               </Col>
@@ -79,57 +82,32 @@ export default () => {
       </div>
       <div className="landing-philosophy py-5">
         <Container>
-          <hr />
-          <div
-            id="myCarousel"
-            className="Landing carousel slide center py-5"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#myCarousel"
-                data-slide-to="0"
-                className="active"
-              />
-              <li data-target="#myCarousel" data-slide-to="1" />
-              <li data-target="#myCarousel" data-slide-to="2" />
-            </ol>
-            <div className="carousel-inner">
-              <div className="carousel-item carousel-image-1 active">
-                <div className="container">
-                  <div className="carousel-caption d-none d-sm-block text-right mb-5" />
-                </div>
-              </div>
-
-              <div className="carousel-item carousel-image-2">
-                <div className="container">
-                  <div className="carousel-caption d-none d-sm-block text-right mb-5" />
-                </div>
-              </div>
-
-              <div className="carousel-item carousel-image-3">
-                <div className="container">
-                  <div className="carousel-caption d-none d-sm-block text-right mb-5" />
-                </div>
-              </div>
-            </div>
-
-            <a
-              href="#myCarousel"
-              data-slide="prev"
-              className="carousel-control-prev carousel-control"
-            >
-              <span className="carousel-control-prev-icon carousel-control" />
-            </a>
-            <a
-              href="#myCarousel"
-              data-slide="next"
-              className="carousel-control-next carousel-control"
-            >
-              <span className="carousel-control-next-icon carousel-control" />
-            </a>
-          </div>
+          <hr className="pb-5" />
         </Container>
+        <div className="landing-philosophy-box">
+          <Container className="py-5 landing-philosophy-text">
+            <h1 className="pb-5 GRSI-Title text-center font-weight-bold">
+              PHILOSOPHY
+            </h1>
+
+            <p className="lead text-center p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
+              totam, porro exercitationem quo quibusdam sapiente accusamus
+              officiis architecto, qui nesciunt ullam! Deserunt incidunt quae
+              nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
+              explicabo eaque recusandae itaque est maiores quam qui iste!
+            </p>
+            <p className="lead text-center p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
+              totam, porro exercitationem quo quibusdam sapiente accusamus
+              officiis architecto, qui nesciunt ullam! Deserunt incidunt quae
+              nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
+              explicabo eaque recusandae itaque est maiores quam qui iste!
+            </p>
+          </Container>
+        </div>
       </div>
     </div>
   );
