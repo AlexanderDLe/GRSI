@@ -7,13 +7,19 @@
 a,
 button {
   text-decoration: none !important;
+  color: black;
 }
-
+a:hover {
+  text-decoration: none !important;
+  color: black;
+}
 .GRSI-Title {
   font-size: 4rem;
 }
-
 .lead {
+  font-family: Raleway;
+}
+.raleway {
   font-family: Raleway;
 }
 
@@ -21,14 +27,12 @@ button {
 nav {
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.5s ease-in-out;
-  /* height: 115px; */
   color: white !important;
 }
 .nav-scroll {
   background-color: rgba(255, 255, 255, 1);
   transition: all 0.5s ease-in-out;
   color: black !important;
-  /* height: 80px; */
   box-shadow: 0px -5px 12px black;
 }
 #logoNav {
@@ -37,8 +41,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .logoNav-scroll {
-  height: auto;
-  width: 110px !important;
+  width: 105px !important;
   transition: all 0.5s ease-in-out;
 }
 .nav-item,
@@ -57,13 +60,11 @@ nav {
 .dropdown-menu-right,
 show {
   border: none;
-  background-color: #f8f9fa;
+  background-color: white;
 }
 
 /* LANDING */
-.landingWrap {
-  height: 200vh;
-}
+
 .landingBG {
   width: 100%;
   height: 100vh;
@@ -88,14 +89,33 @@ show {
   font-size: 2rem;
   padding-bottom: 5px;
 }
+.landing-services {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #eff3ff, #ffffff);
+}
 
 .service-icon {
-  font-size: 6rem;
+  font-size: 5rem;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
-
+.service-card {
+  background: linear-gradient(180deg, #fbfcff, #ffffff);
+  box-shadow: 0px 3px 20px -8px black;
+  width: 92%;
+  height: 92%;
+  transition: all 0.5s ease-in-out;
+}
+.service-card:hover {
+  width: 97%;
+  height: 97%;
+  transition: all 0.5s ease-in-out;
+  font-size: 5.2rem !important;
+}
+.service-card:hover .service.icon {
+  font-size: 5.2rem !important;
+}
 /* MEDIA QUERIES: NAV */
 
 @media (max-width: 991px) {
@@ -129,13 +149,23 @@ show {
     max-width: 1140px;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px;
+  }
+}
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1640px) {
+  .container {
+    max-width: 1500px;
   }
 }

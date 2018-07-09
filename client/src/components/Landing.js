@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
@@ -28,31 +29,49 @@ export default () => {
           </Container>
         </div>
       </div>
-      <Container className="py-5">
-        <h1 className="GRSI-Title text-center font-weight-bold">
-          GLOBAL ROAD SEALING INC.
-        </h1>
-        <p className="lead text-center p-3">
-          Global Road Sealing Inc. specializes in road maintainence and
-          construction. Founded in 1989, GRSI has been trusted by numerous
-          organizations across the state to provide high quality solutions in
-          managing road conditions.
-        </p>
-        <Row>
-          <Col md="4">
-            <i className="service-icon py-5 m-auto fas fa-signature" />
-            <h3 className="text-center">Crack Seal</h3>
-          </Col>
-          <Col md="4">
-            <i className="service-icon py-5 m-auto fas fa-plus " />
-            <h3 className="text-center">Joint Seal</h3>
-          </Col>
-          <Col md="4">
-            <i className="service-icon py-5 m-auto far fa-circle " />
-            <h3 className="text-center">Traffic Loops</h3>
-          </Col>
-        </Row>
-      </Container>
+      <div className="landing-services">
+        <Container className="py-5">
+          <div data-aos="fade-up" aos-duration="500">
+            <h1 className="py-5 GRSI-Title text-center font-weight-bold">
+              GLOBAL ROAD SEALING INC.
+            </h1>
+          </div>
+          <p className="lead text-center p-5">
+            Global Road Sealing Inc. specializes in road maintainence and
+            construction. Founded in 1989, GRSI has been trusted by numerous
+            organizations across the state to provide high quality solutions in
+            managing road conditions.
+          </p>
+          <hr />
+          <h1 className="py-5 GRSI-Title text-center">SERVICES</h1>
+          <Row className="pt-5">
+            <Col md="4" className="p-1">
+              <Link to="/crack-seal">
+                <div className="service-card m-auto">
+                  <i className="service-icon py-5 m-auto fas fa-signature" />
+                  <h3 className="text-center pb-5 ">Crack Seal</h3>
+                </div>
+              </Link>
+            </Col>
+            <Col md="4" className="p-1">
+              <Link to="/joint-seal">
+                <div className="service-card m-auto">
+                  <i className="service-icon py-5 m-auto fas fa-plus " />
+                  <h3 className="text-center pb-5 ">Joint Seal</h3>
+                </div>
+              </Link>
+            </Col>
+            <Col md="4" className="p-1">
+              <Link to="/traffic-loops">
+                <div className="service-card m-auto">
+                  <i className="service-icon py-5 m-auto far fa-circle " />
+                  <h3 className="text-center pb-5 ">Traffic Loops</h3>
+                </div>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
