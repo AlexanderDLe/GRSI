@@ -155,6 +155,43 @@ show {
 .service-card:hover .service.icon {
   font-size: 5.2rem !important;
 }
+.landing-philosophy {
+  min-height: 150vh;
+  background-color: #eee;
+  position: relative;
+}
+.landing-philosophy::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* z-index: -1; */
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+}
+.carousel-item {
+  height: 100vh;
+}
+.carousel-control {
+  font-size: 300px;
+  width: 100px;
+}
+.carousel-image-1 {
+  background: url('img/CityRoad.jpeg') no-repeat center;
+  background-size: cover;
+}
+.carousel-image-2 {
+  background: url('img/CityRoad.jpeg') no-repeat center;
+  background-size: cover;
+}
+.carousel-image-3 {
+  background: url('img/CityRoad.jpeg') no-repeat center;
+  background-size: cover;
+}
 
 /* MEDIA QUERIES: NAV */
 
