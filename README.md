@@ -4,7 +4,8 @@
     - Fade-in/out navigation
     - Contact info as text-overlay on landing page
     - Services with icons in landing page (similar to VSS)
-    - Philosophy Gallery
+    - Philosophy Page w/ Text
+    - Footer
 
 ## 2. About Page
     - Travels
