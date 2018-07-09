@@ -31,19 +31,24 @@ export default () => {
       </div>
       <div className="landing-services">
         <Container className="py-5">
-          <div data-aos="fade-up" aos-duration="500">
-            <h1 className="py-5 GRSI-Title text-center font-weight-bold">
-              GLOBAL ROAD SEALING INC.
-            </h1>
-          </div>
-          <p className="lead text-center p-5">
+          <h1 className="py-5 GRSI-Title text-center font-weight-bold">
+            GLOBAL ROAD SEALING INC.
+          </h1>
+          <p className="lead text-center p-2">
             Global Road Sealing Inc. specializes in road maintainence and
             construction. Founded in 1989, GRSI has been trusted by numerous
-            organizations across the state to provide high quality solutions in
-            managing road conditions.
+            organizations across the state of California to provide high quality
+            solutions in managing road conditions. We deploy highly-trained
+            teams and use state-of-the-art equipment to ensure excellent
+            results.
           </p>
+          <div className="text-center pt-3 pb-5">
+            <Link to="/contact" className="mb-5 request-button">
+              REQUEST QUOTE
+            </Link>
+          </div>
           <hr />
-          <h1 className="py-5 GRSI-Title text-center">SERVICES</h1>
+          <h1 className="py-5 GRSI-Title text-center">Services</h1>
           <Row className="pt-5">
             <Col md="4" className="p-1">
               <Link to="/crack-seal">
