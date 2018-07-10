@@ -14,6 +14,7 @@ import CrackSeal from './components/services/CrackSeal';
 import JointSeal from './components/services/JointSeal';
 import TrafficLoops from './components/services/TrafficLoops';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
               <Route exact path="/traffic-loops" component={TrafficLoops} />
               <Route exact path="/contact" component={Contact} />
             </div>
+            <Footer />
           </div>
         </Router>
       </div>

@@ -176,6 +176,7 @@ show {
   position: relative;
   min-height: 85vh;
   background: url('img/CityRoad.jpeg') no-repeat center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,6 +195,14 @@ show {
   color: white;
   position: relative;
   z-index: 3;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 300px;
+  background-color: #333333;
+  color: white;
 }
 
 /* MEDIA QUERIES: NAV */

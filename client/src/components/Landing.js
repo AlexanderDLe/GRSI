@@ -80,10 +80,10 @@ export default () => {
           </Row>
         </Container>
       </div>
-      <div className="landing-philosophy py-5">
-        <Container>
+      <div id="trythis" className="landing-philosophy py-5">
+        {/* <Container>
           <hr className="pb-5" />
-        </Container>
+        </Container> */}
         <div className="landing-philosophy-box">
           <Container className="py-5 landing-philosophy-text">
             <h1 className="pb-5 GRSI-Title text-center font-weight-bold">
