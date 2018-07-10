@@ -23,6 +23,9 @@ export default () => {
             <div className="lead p-1">Traffic Lights</div>
           </Col>
           <Col className=" p-5">
+            <div className="lead p-1">Contact Us</div>
+            <br />
+            <div className="lead p-1">Address:</div>
             <div className="lead p-1">18204 Dorothy Rd.</div>
             <div className="lead p-1">Garden Grove, CA 92843</div>
           </Col>
