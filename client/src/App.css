@@ -22,6 +22,7 @@ a:hover {
 .request-button {
   border-radius: 0;
   border-bottom: 5px solid rgb(139, 139, 255);
+  border-left: 5px solid rgb(139, 139, 255);
   background: rgba(0, 0, 0, 0);
   color: black;
   font-family: Open Sans;
@@ -138,6 +139,7 @@ nav {
 .landing-box {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 5px solid rgb(139, 139, 255);
+  border-left: 5px solid rgb(139, 139, 255);
   width: 88%;
   max-width: 992px;
   font-family: Open Sans;
@@ -191,6 +193,7 @@ nav {
 }
 .service-card {
   border-bottom: 5px solid rgb(139, 139, 255);
+  border-left: 5px solid rgb(139, 139, 255);
   background: #fff;
   box-shadow: 0px 3px 20px -8px black;
   width: 95%;
@@ -225,7 +228,7 @@ nav {
 }
 .landing-philosophy-box {
   position: relative;
-  min-height: 80vh;
+  min-height: 85vh;
   background: url('img/CityRoad.jpeg') no-repeat center;
   background-size: cover;
   display: flex;
