@@ -22,23 +22,28 @@ a:hover {
 .request-button {
   border-radius: 0;
   border: 0px black solid;
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   color: black;
   font-family: Open Sans;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 25px;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 3px 20px -7px black;
 }
 .request-button:hover {
-  padding: 12px 25px;
+  padding: 12px 30px;
   box-shadow: 0px 3px 25px 0px rgb(97, 184, 255);
-  background-color: rgba(0, 0, 0, 0);
+  background: #f8faff;
   color: black;
+  /* transform: scale(1.05); */
   transition: all 0.5s ease-in-out;
 }
-
+/* hr {
+  height: 1px;
+  border: none;
+  background-color: #555555;
+} */
 /* NAVIGATION */
 nav {
   background-color: rgba(255, 255, 255, 0);
@@ -139,22 +144,20 @@ show {
   text-align: center;
 }
 .service-card {
-  background: linear-gradient(180deg, #fbfcff, #ffffff);
+  background: #fff;
   box-shadow: 0px 3px 20px -8px black;
-  width: 92%;
-  height: 92%;
+  width: 95%;
+  height: 95%;
   transition: all 0.5s ease-in-out;
 }
 .service-card:hover {
-  width: 97%;
-  height: 97%;
-  transition: all 0.5s ease-in-out;
+  background: #f8faff;
   font-size: 5.2rem !important;
   box-shadow: 0px 3px 25px 0px rgb(97, 184, 255);
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
-.service-card:hover .service.icon {
-  font-size: 5.2rem !important;
-}
+
 .landing-philosophy {
   min-height: 150vh;
   background-color: #eee;
@@ -210,7 +213,7 @@ footer {
 @media (max-width: 991px) {
   nav,
   .navbar-nav {
-    background-color: #f8f9fa;
+    background-color: #fff;
   }
 }
 

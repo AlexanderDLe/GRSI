@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
   let nav = document.querySelector('#nav');
   let logo = document.querySelector('#logoNav');
 
-  let scrollY2 = scrollY - landingPB.offsetTop;
+  let scrollY2 = scrollY - landingPB.offsetTop - 128;
 
   landingBG.style.backgroundPositionY = scrollY * 0.25 + 'px';
 
