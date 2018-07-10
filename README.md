@@ -6,7 +6,9 @@
     - Fade-in/out navigation
     - Contact info as text-overlay on landing page
     - Services with icons in landing page (similar to VSS)
-    - Philosophy Page w/ Text - Footer
+    - Philosophy Page w/ Text
+    - Testimonials Section (w/ Link to full Testimonials Page)
+    - Footer
 
 ## 2. About Page
 
