@@ -21,7 +21,7 @@ a:hover {
 }
 .request-button {
   border-radius: 0;
-  border: 0px black solid;
+  border-bottom: 5px solid rgb(139, 139, 255);
   background: rgba(0, 0, 0, 0);
   color: black;
   font-family: Open Sans;
@@ -55,7 +55,7 @@ nav {
 }
 #logoNav {
   height: auto;
-  width: 160px;
+  width: 200px;
   transition: all 0.5s ease-in-out;
 }
 .logoNav-scroll {
@@ -75,17 +75,47 @@ nav {
 .nav-link,
 .dropdown-item {
   font-family: Open Sans !important;
-
+  color: rgba(0, 0, 0, 0.8) !important;
   font-size: 1.2rem;
-  /* font-weight: bold; */
+  position: relative;
 }
-.dropdown-menu,
-.dropdown-menu-right,
-show {
-  border: none;
+.dropdown-item {
   background-color: white;
 }
+.dropdown-item::before {
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 5px;
+  height: 0%;
+  background-color: rgb(139, 139, 255);
+}
+.dropdown-item:hover::before {
+  height: 110%;
+  transition: all 0.5s ease-in-out;
+}
 
+.dropdown-menu,
+.dropdown-menu-right {
+  border: none;
+  border-bottom: 5px solid rgb(139, 139, 255);
+  background-color: white;
+}
+@media (min-width: 991px) {
+  .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+}
 /* LANDING */
 .landingBG {
   width: 100%;
@@ -103,6 +133,7 @@ show {
 }
 .landing-box {
   background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 5px solid rgb(139, 139, 255);
   width: 88%;
   max-width: 992px;
   font-family: Open Sans;
@@ -155,6 +186,7 @@ show {
   margin-top: -10px;
 }
 .service-card {
+  border-bottom: 5px solid rgb(139, 139, 255);
   background: #fff;
   box-shadow: 0px 3px 20px -8px black;
   width: 95%;
@@ -215,11 +247,11 @@ show {
 /* LANDING: TESTIMONIALS */
 .landing-testimonials {
   position: relative;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid rgb(139, 139, 255);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: '\201C' '\201D' '\2018' '\2019';
@@ -234,7 +266,7 @@ blockquote:before {
 }
 blockquote:after {
   color: #ccc;
-  content: end-quote;
+  content: close-quote;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
@@ -246,7 +278,10 @@ blockquote p {
 /* FOOTER */
 footer {
   min-height: 350px;
-  background-color: #333333;
+  background: linear-gradient(rgb(0, 0, 0), transparent 60%),
+    linear-gradient(0deg, black, transparent 60%),
+    url('img/CityRoad2.jpeg') no-repeat center;
+  background-size: cover;
   color: white;
 }
 

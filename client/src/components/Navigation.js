@@ -87,6 +87,9 @@ export default class Navigation extends React.Component {
                   <DropdownItem tag={Link} to="/traffic-loops">
                     Traffic Loops
                   </DropdownItem>
+                  <DropdownItem tag={Link} to="/traffic-lights">
+                    Traffic Lights
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>

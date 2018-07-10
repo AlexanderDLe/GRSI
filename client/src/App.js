@@ -13,6 +13,7 @@ import Testimonials from './components/Testimonials';
 import CrackSeal from './components/services/CrackSeal';
 import JointSeal from './components/services/JointSeal';
 import TrafficLoops from './components/services/TrafficLoops';
+import TrafficLights from './components/services/TrafficLights';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -34,6 +35,7 @@ class App extends Component {
               <Route exact path="/crack-seal" component={CrackSeal} />
               <Route exact path="/joint-seal" component={JointSeal} />
               <Route exact path="/traffic-loops" component={TrafficLoops} />
+              <Route exact path="/traffic-lights" component={TrafficLights} />
               <Route exact path="/contact" component={Contact} />
             </div>
             <Footer />
