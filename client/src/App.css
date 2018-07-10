@@ -27,23 +27,19 @@ a:hover {
   font-family: Open Sans;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 10px 30px;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 3px 20px -7px black;
 }
 .request-button:hover {
-  padding: 12px 30px;
+  padding: 12px 50px;
   box-shadow: 0px 3px 25px 0px rgb(97, 184, 255);
   background: #f8faff;
   color: black;
   /* transform: scale(1.05); */
   transition: all 0.5s ease-in-out;
 }
-/* hr {
-  height: 1px;
-  border: none;
-  background-color: #555555;
-} */
+
 /* NAVIGATION */
 nav {
   background-color: rgba(255, 255, 255, 0);
@@ -111,6 +107,11 @@ show {
   max-width: 992px;
   font-family: Open Sans;
   box-shadow: 0px 0px 25px -8px black;
+  transition: all 0.5s ease-in-out;
+}
+.landing-box:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
 .landing-icon {
   font-size: 2rem;
@@ -137,6 +138,7 @@ show {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* LANDING: SERVICES */
 .service-icon {
   font-size: 5rem;
   display: inline-block;
@@ -167,6 +169,7 @@ show {
   transition: all 0.5s ease-in-out;
 }
 
+/* LANDING: PHILOSOPHY */
 .landing-philosophy {
   min-height: 130vh;
   background-color: #eee;
