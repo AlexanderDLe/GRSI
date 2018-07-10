@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import trafficLight from '../img/TrafficLight.png';
 
 export default () => {
   return (
@@ -53,7 +54,7 @@ export default () => {
           <hr />
           <h1 className="py-5 GRSI-Title text-center">Services</h1>
           <Row className="pt-5">
-            <Col md="4" className="p-1">
+            <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">
                 <div className="service-card m-auto">
                   <i className="service-icon py-5 m-auto fas fa-signature" />
@@ -61,7 +62,7 @@ export default () => {
                 </div>
               </Link>
             </Col>
-            <Col md="4" className="p-1">
+            <Col lg="3" md="6" className="p-1">
               <Link to="/joint-seal">
                 <div className="service-card m-auto">
                   <i className="service-icon py-5 m-auto fas fa-plus " />
@@ -69,11 +70,25 @@ export default () => {
                 </div>
               </Link>
             </Col>
-            <Col md="4" className="p-1">
+            <Col lg="3" md="6" className="p-1">
               <Link to="/traffic-loops">
                 <div className="service-card m-auto">
                   <i className="service-icon py-5 m-auto far fa-circle " />
                   <h3 className="text-center pb-5 ">Traffic Loops</h3>
+                </div>
+              </Link>
+            </Col>
+            <Col lg="3" md="6" className="p-1">
+              <Link to="/traffic-loops">
+                <div className="service-card m-auto">
+                  <img
+                    className="service-icon-traffic py-5 m-auto"
+                    src={trafficLight}
+                    alt=""
+                  />
+                  <h3 className="text-center pb-5 traffic-text">
+                    Traffic Lights
+                  </h3>
                 </div>
               </Link>
             </Col>

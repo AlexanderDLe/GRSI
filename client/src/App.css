@@ -143,6 +143,15 @@ show {
   width: 100%;
   text-align: center;
 }
+.service-icon-traffic {
+  display: block;
+  text-align: center;
+  height: auto;
+  width: 90px;
+}
+.traffic-text {
+  margin-top: -10px;
+}
 .service-card {
   background: #fff;
   box-shadow: 0px 3px 20px -8px black;
@@ -159,7 +168,7 @@ show {
 }
 
 .landing-philosophy {
-  min-height: 150vh;
+  min-height: 130vh;
   background-color: #eee;
   position: relative;
 }
@@ -203,7 +212,7 @@ show {
 /* FOOTER */
 
 footer {
-  min-height: 300px;
+  min-height: 350px;
   background-color: #333333;
   color: white;
 }
