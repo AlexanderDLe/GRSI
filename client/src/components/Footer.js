@@ -23,8 +23,8 @@ export default () => {
             <div className="lead p-1">Traffic Lights</div>
           </Col>
           <Col className=" p-5">
-            <div className="lead p-1">Home</div>
-            <div className="lead p-1">Mission</div>
+            <div className="lead p-1">18204 Dorothy Rd.</div>
+            <div className="lead p-1">Garden Grove, CA 92843</div>
             <div className="lead p-1">Goals</div>
             <div className="lead p-1">Vision</div>
           </Col>

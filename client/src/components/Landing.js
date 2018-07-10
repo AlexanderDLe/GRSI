@@ -38,7 +38,7 @@ export default () => {
           <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             GLOBAL ROAD SEALING INC.
           </h1>
-          <p className="lead text-center p-2">
+          <p className="lead  p-2">
             Global Road Sealing Inc. specializes in road maintainence and
             construction. Founded in 1989, GRSI has been trusted by numerous
             organizations across the state of California to provide high quality
@@ -52,7 +52,9 @@ export default () => {
             </Link>
           </div>
           <hr />
-          <h1 className="py-5 GRSI-Title text-center">Services</h1>
+          <h1 className="py-5 GRSI-Title text-center font-weight-bold">
+            SERVICES
+          </h1>
           <Row className="pt-5">
             <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">
@@ -106,7 +108,7 @@ export default () => {
               PHILOSOPHY
             </h1>
 
-            <p className="lead text-center p-2">
+            <p className="lead  p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
               totam, porro exercitationem quo quibusdam sapiente accusamus
@@ -114,7 +116,7 @@ export default () => {
               nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
               explicabo eaque recusandae itaque est maiores quam qui iste!
             </p>
-            <p className="lead text-center p-2">
+            <p className="lead  p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
               totam, porro exercitationem quo quibusdam sapiente accusamus
@@ -124,6 +126,48 @@ export default () => {
             </p>
           </Container>
         </div>
+        <Container className="landing-testimonials py-5 mt-5 text-center">
+          <h1 className="GRSI-Title font-weight-bold">TESTIMONIALS</h1>
+          <Row>
+            <Col lg="6">
+              <blockquote className="blockquote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corporis, aspernatur.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                placeat quod odit ipsa? Quae corrupti accusantium dolorem
+                ratione ab facere delectus atque unde, eum earum architecto
+                perspiciatis labore modi mollitia cupiditate vel, sunt nisi.
+                Dolorem.
+              </blockquote>
+              <div className="blockquote-footer">
+                John Doe From <cite title="Company 1">Company 1</cite>
+              </div>
+            </Col>
+            <Col lg="6">
+              <blockquote className="blockquote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corporis, aspernatur.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                placeat quod odit ipsa? Quae corrupti accusantium dolorem
+                ratione ab facere delectus atque unde, eum earum architecto
+                perspiciatis labore modi mollitia cupiditate vel, sunt nisi.
+                Dolorem.
+              </blockquote>
+              <div className="blockquote-footer">
+                Homer Simpson From <cite title="Company 1">Company 2</cite>
+              </div>
+            </Col>
+          </Row>
+          <br />
+          <br />
+          <Link to="/testimonials" className="m-5 request-button">
+            READ MORE
+          </Link>
+        </Container>
       </div>
     </div>
   );

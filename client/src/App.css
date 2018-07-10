@@ -90,7 +90,7 @@ show {
 .landingBG {
   width: 100%;
   height: 100vh;
-  background: url('./img/Road.jpeg') no-repeat center;
+  background: url('./img/Road2.jpeg') no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -110,7 +110,7 @@ show {
   transition: all 0.5s ease-in-out;
 }
 .landing-box:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: all 0.5s ease-in-out;
 }
 .landing-icon {
@@ -189,7 +189,7 @@ show {
 }
 .landing-philosophy-box {
   position: relative;
-  min-height: 85vh;
+  min-height: 80vh;
   background: url('img/CityRoad.jpeg') no-repeat center;
   background-size: cover;
   display: flex;
@@ -212,8 +212,38 @@ show {
   z-index: 3;
 }
 
+/* LANDING: TESTIMONIALS */
+.landing-testimonials {
+  position: relative;
+  min-height: 50vh;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #ccc;
+  content: end-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 /* FOOTER */
-
 footer {
   min-height: 350px;
   background-color: #333333;
@@ -226,6 +256,11 @@ footer {
   nav,
   .navbar-nav {
     background-color: #fff;
+  }
+  #logoNav {
+    height: auto;
+    width: 105px;
+    transition: all 0.5s ease-in-out;
   }
 }
 
