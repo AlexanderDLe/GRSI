@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ScrollToTop from './components/utility/ScrollToTop';
 
 import Navigation from './components/Navigation';
 import Landing from './components/Landing';
@@ -24,20 +25,22 @@ class App extends Component {
         <Router>
           <div>
             <Navigation />
-            <div>
-              <Route exact path="/" component={Landing} />
-              <Route exact path="/travels" component={Travels} />
-              <Route exact path="/mission" component={Mission} />
-              <Route exact path="/vision" component={Vision} />
-              <Route exact path="/goals" component={Goals} />
-              <Route exact path="/history" component={History} />
-              <Route exact path="/testimonials" component={Testimonials} />
-              <Route exact path="/crack-seal" component={CrackSeal} />
-              <Route exact path="/joint-seal" component={JointSeal} />
-              <Route exact path="/traffic-loops" component={TrafficLoops} />
-              <Route exact path="/traffic-lights" component={TrafficLights} />
-              <Route exact path="/contact" component={Contact} />
-            </div>
+            <ScrollToTop>
+              <div>
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/travels" component={Travels} />
+                <Route exact path="/mission" component={Mission} />
+                <Route exact path="/vision" component={Vision} />
+                <Route exact path="/goals" component={Goals} />
+                <Route exact path="/history" component={History} />
+                <Route exact path="/testimonials" component={Testimonials} />
+                <Route exact path="/crack-seal" component={CrackSeal} />
+                <Route exact path="/joint-seal" component={JointSeal} />
+                <Route exact path="/traffic-loops" component={TrafficLoops} />
+                <Route exact path="/traffic-lights" component={TrafficLights} />
+                <Route exact path="/contact" component={Contact} />
+              </div>
+            </ScrollToTop>
             <Footer />
           </div>
         </Router>

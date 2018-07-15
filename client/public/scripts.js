@@ -21,7 +21,7 @@ window.addEventListener(
     let nav = document.querySelector('#nav');
     let logo = document.querySelector('#logoNav');
 
-    if (scrollY > 1) {
+    if (scrollY >= 1) {
       nav.classList.add('nav-scroll');
       logo.classList.add('logoNav-scroll');
     }

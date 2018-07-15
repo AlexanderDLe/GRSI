@@ -7,30 +7,32 @@ export default () => {
   return (
     <div className="landingWrap wrap">
       <div className="landingBG">
-        <div className="landing-box">
-          <Container className="borderStyle">
-            <Row>
-              <Col className="text-center p-4 landing-item">
-                <i className="landing-icon fas fa-phone" />
-                <br />
-                Call us Toll-Free: <br /> (714)123-4567
-              </Col>
-              <Col className="text-center p-4 landing-item">
-                <i className="landing-icon fas fa-clock" />
-                <br />
-                Operating Hours: <br />
-                Mon-Fri 7AM-5PM(PST)
-              </Col>
-              <Col className="text-center p-4 landing-item">
-                <Link to="/contact">
-                  <i className="landing-icon fas fa-envelope" />
-                </Link>
-                <br />
-                Contact <br />
-                via our Contact Form.
-              </Col>
-            </Row>
-          </Container>
+        <div className="dark-overlay flexCenter">
+          <div className="landing-box borderStyle">
+            <Container>
+              <Row>
+                <Col className="text-center p-4 landing-item">
+                  <i className="landing-icon fas fa-phone" />
+                  <br />
+                  Call us Toll-Free: <br /> (714)123-4567
+                </Col>
+                <Col className="text-center p-4 landing-item">
+                  <i className="landing-icon fas fa-clock" />
+                  <br />
+                  Operating Hours: <br />
+                  Mon-Fri 7AM-5PM(PST)
+                </Col>
+                <Col className="text-center p-4 landing-item">
+                  <Link to="/contact">
+                    <i className="landing-icon fas fa-envelope" />
+                  </Link>
+                  <br />
+                  Contact <br />
+                  via our Contact Form.
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </div>
       <div className="landing-services">
