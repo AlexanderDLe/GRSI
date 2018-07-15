@@ -7,7 +7,10 @@ export default () => {
   return (
     <div className="landingWrap wrap">
       <div className="landingBG">
-        <div className="dark-overlay flexCenter">
+        <div className="dark-overlay flexCenter flexDown">
+          <h1 className="py-5 GRSI-Title text-center font-weight-bold text-white">
+            GLOBAL ROAD SEALING INC.
+          </h1>
           <div className="landing-box borderStyle">
             <Container>
               <Row>
@@ -38,7 +41,7 @@ export default () => {
       <div className="landing-services">
         <Container className="py-5">
           <h1 className="py-5 GRSI-Title text-center font-weight-bold">
-            GLOBAL ROAD SEALING INC.
+            WELCOME
           </h1>
           <p className="lead  p-2">
             Global Road Sealing Inc. specializes in road maintainence and

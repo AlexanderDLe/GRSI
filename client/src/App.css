@@ -14,7 +14,7 @@ a:hover {
   color: black;
 }
 .GRSI-Title {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .lead {
   font-family: Open Sans;
@@ -47,6 +47,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.flexDown {
+  flex-direction: column;
+}
 /* BORDER-STYLES */
 .borderStyle {
   border-width: 0 0 5px 5px;
@@ -68,43 +71,56 @@ blockquote {
 nav {
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.5s ease-in-out;
-  color: white !important;
 }
 .nav-scroll {
   background-color: rgba(255, 255, 255, 1);
   transition: all 0.5s ease-in-out;
-  color: black !important;
+  color: white !important;
   box-shadow: 0px -5px 12px black;
 }
 #logoNav {
   height: auto;
   width: 180px;
   transition: all 0.5s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: solid rgb(66, 66, 66) 3px;
-  border-radius: 15px;
-  padding: 0 7px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* border: solid rgb(66, 66, 66) 3px;
+  border-radius: 16px;
+  padding: 0 7px; */
 }
 .logoNav-scroll {
   width: 105px !important;
   border-width: 2px !important;
+  border-radius: 10px !important;
   transition: all 0.5s ease-in-out;
 }
 .nav-item,
 .navbar-brand {
   padding: 0 5px;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease-in-out;
+}
 .nav-link,
 .dropdown-item {
   font-family: Open Sans !important;
-  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 1.2rem;
   position: relative;
   padding-left: 10px !important;
+  text-transform: uppercase;
+}
+.text-to-black {
+  color: rgba(0, 0, 0, 0.8) !important;
+  transition: all 0.5s ease-in-out;
 }
 .dropdown-item {
   background-color: white;
-  padding: 8px 25px;
+  padding: 5px 25px;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 .dropdown-item::before,
 .nav-link::before {
@@ -316,57 +332,57 @@ footer {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
 }
 .CrackSeal-wrap {
-  background: linear-gradient(rgb(255, 255, 255), transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/CrackSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .JointSeal-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .TrafficLoops-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/TrafficLoops.jpg') no-repeat center;
   background-size: cover;
 }
 .TrafficLights-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/TrafficLights.jpg') no-repeat center;
   background-size: cover;
 }
 .Testimonials-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/CrackSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .History-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Contact-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Travels-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Mission-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Vision-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Goals-wrap {
-  background: linear-gradient(white, transparent 45%),
+  background: linear-gradient(black, transparent 75%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
@@ -386,6 +402,11 @@ footer {
 }
 
 /* MEDIA QUERIES: GRSI TITLE */
+@media (max-width: 1180px) {
+  .GRSI-Title {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 995px) {
   .GRSI-Title {
     font-size: 3rem;
