@@ -39,22 +39,27 @@ a:hover {
   /* transform: scale(1.05); */
   transition: all 0.5s ease-in-out;
 }
-
+.wrap {
+  margin: 0;
+  padding-top: 0;
+  height: calc(100vh - 380px);
+  margin-bottom: 380px;
+}
 /* BORDER-STYLES */
-/* .borderStyle {
+.borderStyle {
   border-width: 0 0 5px 5px;
   border-style: solid;
-  border-color: #8da6c4;
-} */
+  border-color: #cfcfcf;
+}
 .dropdown-borderStyle {
-  border-bottom: 5px solid #8da6c4 !important ;
+  border-bottom: 5px solid #c3c3c3 !important ;
 }
 .dropdown-item::before,
 .nav-link::before {
-  background-color: #8da6c4 !important;
+  background-color: #c3c3c3 !important;
 }
 blockquote {
-  border-left: 10px solid #8da6c4;
+  border-left: 10px solid #c3c3c3;
 }
 /* NAVIGATION */
 nav {
@@ -280,12 +285,16 @@ blockquote p {
 }
 /* FOOTER */
 footer {
-  min-height: 350px;
+  min-height: 380px;
   background: linear-gradient(rgb(0, 0, 0), transparent 60%),
     linear-gradient(0deg, black, transparent 60%),
     url('img/CityRoad2.jpeg') no-repeat center;
   background-size: cover;
   color: white;
+  margin-top: -380px;
+}
+.footerSpace {
+  height: 350px;
 }
 
 /* MEDIA QUERIES: NAV */

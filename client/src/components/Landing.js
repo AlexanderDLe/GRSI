@@ -169,6 +169,7 @@ export default () => {
           </Link>
         </Container>
       </div>
+      <div className="footerSpace" />
     </div>
   );
 };

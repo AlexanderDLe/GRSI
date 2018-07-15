@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return (
-    <div>
+    <div className="wrap">
       <h1>Goals</h1>
     </div>
   );

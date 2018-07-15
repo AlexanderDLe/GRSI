@@ -1,9 +1,5 @@
 import React from 'react';
 
 export default () => {
-  return (
-    <div>
-      <h1>Travels</h1>
-    </div>
-  );
+  return <div className="wrap">{/* <h1> </h1> */}</div>;
 };
