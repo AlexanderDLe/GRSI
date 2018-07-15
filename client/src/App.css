@@ -40,9 +40,7 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 .wrap {
-  margin: 0;
-  padding-top: 0;
-  height: calc(100vh - 380px);
+  min-height: calc(100vh - 380px);
   margin-bottom: 380px;
 }
 /* BORDER-STYLES */
@@ -61,6 +59,7 @@ a:hover {
 blockquote {
   border-left: 10px solid #c3c3c3;
 }
+
 /* NAVIGATION */
 nav {
   background-color: rgba(255, 255, 255, 0);
@@ -263,6 +262,7 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: '\201C' '\201D' '\2018' '\2019';
+  box-shadow: 0px 3px 20px -8px black;
 }
 blockquote:before {
   color: #ccc;
@@ -292,9 +292,6 @@ footer {
   background-size: cover;
   color: white;
   margin-top: -380px;
-}
-.footerSpace {
-  height: 350px;
 }
 
 /* MEDIA QUERIES: NAV */

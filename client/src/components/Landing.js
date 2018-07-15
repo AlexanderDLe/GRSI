@@ -5,7 +5,7 @@ import trafficLight from '../img/TrafficLight.png';
 
 export default () => {
   return (
-    <div className="landingWrap">
+    <div className="landingWrap wrap">
       <div className="landingBG">
         <div className="landing-box">
           <Container className="borderStyle">
@@ -169,7 +169,6 @@ export default () => {
           </Link>
         </Container>
       </div>
-      <div className="footerSpace" />
     </div>
   );
 };
