@@ -48,7 +48,7 @@ export default class Navigation extends React.Component {
                 <DropdownToggle nav caret>
                   About
                 </DropdownToggle>
-                <DropdownMenu className="bg-light" right>
+                <DropdownMenu className="bg-light dropdown-borderStyle" right>
                   <DropdownItem tag={Link} to="/travels">
                     Travels
                   </DropdownItem>
@@ -77,7 +77,7 @@ export default class Navigation extends React.Component {
                 <DropdownToggle nav caret>
                   Services
                 </DropdownToggle>
-                <DropdownMenu className="bg-light" right>
+                <DropdownMenu className="bg-light dropdown-borderStyle" right>
                   <DropdownItem tag={Link} to="/crack-seal">
                     Crack Seal
                   </DropdownItem>

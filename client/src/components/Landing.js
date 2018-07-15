@@ -8,7 +8,7 @@ export default () => {
     <div className="landingWrap">
       <div className="landingBG">
         <div className="landing-box">
-          <Container>
+          <Container className="borderStyle">
             <Row>
               <Col className="text-center p-4 landing-item">
                 <i className="landing-icon fas fa-phone" />
@@ -47,7 +47,7 @@ export default () => {
             results.
           </p>
           <div className="text-center pt-3 pb-5">
-            <Link to="/contact" className="mb-5 request-button">
+            <Link to="/contact" className="borderStyle mb-5 request-button">
               REQUEST QUOTE
             </Link>
           </div>
@@ -58,7 +58,7 @@ export default () => {
           <Row className="pt-5">
             <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">
-                <div className="service-card m-auto">
+                <div className="service-card borderStyle m-auto">
                   <i className="service-icon py-5 m-auto fas fa-signature" />
                   <h3 className="text-center pb-5 ">Crack Seal</h3>
                 </div>
@@ -66,7 +66,7 @@ export default () => {
             </Col>
             <Col lg="3" md="6" className="p-1">
               <Link to="/joint-seal">
-                <div className="service-card m-auto">
+                <div className="service-card borderStyle m-auto">
                   <i className="service-icon py-5 m-auto fas fa-plus " />
                   <h3 className="text-center pb-5 ">Joint Seal</h3>
                 </div>
@@ -74,7 +74,7 @@ export default () => {
             </Col>
             <Col lg="3" md="6" className="p-1">
               <Link to="/traffic-loops">
-                <div className="service-card m-auto">
+                <div className="service-card borderStyle m-auto">
                   <i className="service-icon py-5 m-auto far fa-circle " />
                   <h3 className="text-center pb-5 ">Traffic Loops</h3>
                 </div>
@@ -82,7 +82,7 @@ export default () => {
             </Col>
             <Col lg="3" md="6" className="p-1">
               <Link to="/traffic-loops">
-                <div className="service-card m-auto">
+                <div className="service-card borderStyle m-auto">
                   <img
                     className="service-icon-traffic py-5 m-auto"
                     src={trafficLight}
@@ -164,7 +164,7 @@ export default () => {
           </Row>
           <br />
           <br />
-          <Link to="/testimonials" className="m-5 request-button">
+          <Link to="/testimonials" className="m-5 request-button borderStyle">
             READ MORE
           </Link>
         </Container>
