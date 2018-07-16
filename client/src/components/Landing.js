@@ -6,7 +6,7 @@ import trafficLight from '../img/TrafficLight.png';
 export default () => {
   return (
     <div className="landingWrap wrap">
-      <div className="landingBG">
+      <div className="landingBG parallaxFX">
         <div className="dark-overlay flexCenter flexDown">
           <h1 className="py-5 GRSI-Title text-center font-weight-bold text-white">
             GLOBAL ROAD SEALING INC.
@@ -56,7 +56,7 @@ export default () => {
               REQUEST QUOTE
             </Link>
           </div>
-          <hr />
+          <hr className="m-5" />
           <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             SERVICES
           </h1>
@@ -102,12 +102,12 @@ export default () => {
           </Row>
         </Container>
       </div>
-      <div id="trythis" className="landing-philosophy py-5">
+      <div id="parallaxFX2-parent" className="landing-philosophy py-5">
         <Container>
           <hr className="pb-5" />
-          <div className="pb-5" />
+          <br className="pb-5" />
         </Container>
-        <div className="landing-philosophy-box pb-5">
+        <div className="landing-philosophy-box parallaxFX2">
           <Container className="py-5 landing-philosophy-text">
             <h1 className="pb-5 GRSI-Title text-center font-weight-bold">
               PHILOSOPHY

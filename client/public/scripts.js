@@ -35,15 +35,14 @@ window.addEventListener(
 // Parallax FX
 
 window.addEventListener('scroll', function() {
-  if (document.querySelector('.landingBG')) {
-    let landingBG = document.querySelector('.landingBG');
-    let landingPB = document.querySelector('#trythis');
-    let landingPBX = document.querySelector('.landing-philosophy-box');
-
-    let scrollY2 = scrollY - landingPB.offsetTop - 35;
-
-    landingBG.style.backgroundPositionY = scrollY * 0.25 + 'px';
-
-    landingPBX.style.backgroundPositionY = scrollY2 * 0.25 + 'px';
+  if (document.querySelector('.parallaxFX')) {
+    let parallaxFX = document.querySelector('.parallaxFX');
+    parallaxFX.style.backgroundPositionY = scrollY * 0.25 + 'px';
+  }
+  if (document.querySelector('#parallaxFX2-parent')) {
+    let parallax2Parent = document.querySelector('#parallaxFX2-parent');
+    let parallaxFX2 = document.querySelector('.parallaxFX2');
+    let scrollY2 = scrollY - parallax2Parent.offsetTop - 35;
+    parallaxFX2.style.backgroundPositionY = scrollY2 * 0.25 + 'px';
   }
 });

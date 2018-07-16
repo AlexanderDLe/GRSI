@@ -14,7 +14,8 @@ a:hover {
   color: black;
 }
 .GRSI-Title {
-  font-size: 5rem;
+  font-size: 5.6rem;
+  transform: scaleY(1.4);
 }
 .lead {
   font-family: Open Sans;
@@ -53,12 +54,12 @@ a:hover {
 .dark-overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 .dark-overlay2 {
   height: 100%;
   width: 100%;
-  background: linear-gradient(black, transparent 15%), rgba(0, 0, 0, 0.7);
+  background: linear-gradient(black, transparent 6%), rgba(0, 0, 0, 0.75);
 }
 /* BORDER-STYLES */
 .borderStyle {
@@ -90,7 +91,7 @@ nav {
 }
 #logoNav {
   height: auto;
-  width: 180px;
+  width: 160px;
   transition: all 0.5s ease-in-out;
 }
 .logoNav-scroll {
@@ -116,6 +117,10 @@ nav {
   position: relative;
   padding-left: 10px !important;
   text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
 }
 .text-to-black {
   color: rgba(0, 0, 0, 0.8) !important;
@@ -353,44 +358,40 @@ footer {
 }
 .Testimonials-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/CrackSeal.jpg') no-repeat center;
+    url('img/Testimonials.jpeg') no-repeat center;
   background-size: cover;
 }
 .History-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/Testimonials.jpeg') no-repeat center;
   background-size: cover;
 }
 .Contact-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/Contact.jpeg') no-repeat center;
   background-size: cover;
 }
 .Travels-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/About.jpeg') no-repeat center;
   background-size: cover;
 }
 .Mission-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/About.jpeg') no-repeat center;
   background-size: cover;
 }
 .Vision-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/About.jpeg') no-repeat center;
   background-size: cover;
 }
 .Goals-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/About.jpeg') no-repeat center;
   background-size: cover;
 }
 /* CRACK SEAL */
-.crack-seal-parallax {
-  width: 500px;
-  height: 500px;
-}
 
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {
@@ -405,12 +406,17 @@ footer {
   }
 }
 /* MEDIA QUERIES: LANDING BOX */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .landing-box {
     display: none;
   }
 }
 /* MEDIA QUERIES: GRSI TITLE */
+@media (max-width: 1440px) {
+  .GRSI-Title {
+    font-size: 5rem;
+  }
+}
 @media (max-width: 1180px) {
   .GRSI-Title {
     font-size: 4rem;
@@ -418,7 +424,7 @@ footer {
 }
 @media (max-width: 995px) {
   .GRSI-Title {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 }
 @media (max-width: 769px) {
@@ -456,5 +462,11 @@ footer {
 @media (min-width: 1640px) {
   .container {
     max-width: 1500px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 95%;
+    max-width: 677px;
   }
 }
