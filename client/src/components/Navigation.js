@@ -53,7 +53,7 @@ export default class Navigation extends React.Component {
   }
 
   resizeWidth() {
-    if (window.innerWidth <= 991) {
+    if (window.innerWidth <= 991 || window.scrollY > 0) {
       this.setState({ logo: logoBlack, textColor: 'text-to-black' });
     } else if (window.innerWidth > 991) {
       this.setState({ logo: logoWhite, textColor: '' });

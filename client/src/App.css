@@ -387,6 +387,10 @@ footer {
   background-size: cover;
 }
 /* CRACK SEAL */
+.crack-seal-parallax {
+  width: 500px;
+  height: 500px;
+}
 
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {
