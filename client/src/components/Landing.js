@@ -51,12 +51,12 @@ export default () => {
             teams and use state-of-the-art equipment to ensure excellent
             results.
           </p>
-          <div className="text-center pt-3 pb-5">
+          <div className="text-center pt-5 pb-5">
             <Link to="/contact" className="borderStyle mb-5 request-button">
               REQUEST QUOTE
             </Link>
           </div>
-          <hr className="m-5" />
+          <hr className="my-5" />
           <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             SERVICES
           </h1>
@@ -132,8 +132,10 @@ export default () => {
           </Container>
         </div>
         <Container className="landing-testimonials py-5 mt-5 text-center">
-          <h1 className="GRSI-Title font-weight-bold">TESTIMONIALS</h1>
-          <Row>
+          <h1 className="GRSI-Title font-weight-bold pt-3 pb-5">
+            TESTIMONIALS
+          </h1>
+          <Row className="pt-3">
             <Col lg="6">
               <blockquote className="blockquote">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
