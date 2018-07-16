@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/GRSI Logo2.png';
-import logo2 from '../img/GRSI Logo White.png';
+import logoBlack from '../img/GRSI Logo2.png';
+import logoWhite from '../img/GRSI Logo White.png';
 import {
   Collapse,
   Navbar,
@@ -38,27 +38,40 @@ export default class Navigation extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      logo: logo2
+      logo: logoWhite,
+      textColor: ''
     };
     this.handleScroll = debounce(this.handleScroll.bind(this), 20);
+    this.resizeWidth = debounce(this.resizeWidth.bind(this), 20);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.resizeWidth);
+    this.resizeWidth();
+    this.handleScroll();
+  }
+
+  resizeWidth() {
+    if (window.innerWidth <= 991) {
+      this.setState({ logo: logoBlack, textColor: 'text-to-black' });
+    } else if (window.innerWidth > 991) {
+      this.setState({ logo: logoWhite, textColor: '' });
+    }
   }
 
   handleScroll(e) {
     if (window.scrollY === 0) {
       setTimeout(
         function() {
-          this.setState({ logo: logo2 });
+          this.setState({ logo: logoWhite, textColor: '' });
         }.bind(this),
         100
       );
-    } else {
+    } else if (window.scrollY > 0) {
       setTimeout(
         function() {
-          this.setState({ logo });
+          this.setState({ logo: logoBlack, textColor: 'text-to-black' });
         }.bind(this),
         100
       );
@@ -81,60 +94,104 @@ export default class Navigation extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink tag={Link} to="/">
+                  <NavLink tag={Link} to="/" className={this.state.textColor}>
                     Home
                   </NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
+                  <DropdownToggle nav caret className={this.state.textColor}>
                     About
                   </DropdownToggle>
                   <DropdownMenu className="bg-light dropdown-borderStyle" right>
-                    <DropdownItem tag={Link} to="/travels">
+                    <DropdownItem
+                      tag={Link}
+                      to="/travels"
+                      className={this.state.textColor}
+                    >
                       Travels
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/mission">
+                    <DropdownItem
+                      tag={Link}
+                      to="/mission"
+                      className={this.state.textColor}
+                    >
                       Mission
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/vision">
+                    <DropdownItem
+                      tag={Link}
+                      to="/vision"
+                      className={this.state.textColor}
+                    >
                       Vision
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/goals">
+                    <DropdownItem
+                      tag={Link}
+                      to="/goals"
+                      className={this.state.textColor}
+                    >
                       Goals
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink tag={Link} to="/history">
+                  <NavLink
+                    tag={Link}
+                    to="/history"
+                    className={this.state.textColor}
+                  >
                     History
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/testimonials">
+                  <NavLink
+                    tag={Link}
+                    to="/testimonials"
+                    className={this.state.textColor}
+                  >
                     Testimonials
                   </NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
+                  <DropdownToggle nav caret className={this.state.textColor}>
                     Services
                   </DropdownToggle>
                   <DropdownMenu className="bg-light dropdown-borderStyle" right>
-                    <DropdownItem tag={Link} to="/crack-seal">
+                    <DropdownItem
+                      tag={Link}
+                      to="/crack-seal"
+                      className={this.state.textColor}
+                    >
                       Crack Seal
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/joint-seal">
+                    <DropdownItem
+                      tag={Link}
+                      to="/joint-seal"
+                      className={this.state.textColor}
+                    >
                       Joint Seal
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/traffic-loops">
+                    <DropdownItem
+                      tag={Link}
+                      to="/traffic-loops"
+                      className={this.state.textColor}
+                    >
                       Traffic Loops
                     </DropdownItem>
-                    <DropdownItem tag={Link} to="/traffic-lights">
+                    <DropdownItem
+                      tag={Link}
+                      to="/traffic-lights"
+                      className={this.state.textColor}
+                    >
                       Traffic Lights
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink tag={Link} to="/contact">
+                  <NavLink
+                    tag={Link}
+                    to="/contact"
+                    className={this.state.textColor}
+                  >
                     Contact
                   </NavLink>
                 </NavItem>
