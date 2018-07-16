@@ -41,8 +41,8 @@ export default class Navigation extends React.Component {
       logo: logoWhite,
       textColor: ''
     };
-    this.handleScroll = debounce(this.handleScroll.bind(this), 20);
-    this.resizeWidth = debounce(this.resizeWidth.bind(this), 20);
+    this.handleScroll = debounce(this.handleScroll.bind(this), 10);
+    this.resizeWidth = debounce(this.resizeWidth.bind(this), 10);
   }
 
   componentDidMount() {
@@ -61,7 +61,7 @@ export default class Navigation extends React.Component {
   }
 
   handleScroll(e) {
-    if (window.scrollY === 0) {
+    if (window.scrollY === 0 && window.innerWidth > 991) {
       setTimeout(
         function() {
           this.setState({ logo: logoWhite, textColor: '' });

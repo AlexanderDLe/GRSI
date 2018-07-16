@@ -20,21 +20,14 @@ window.addEventListener(
   debounce(function() {
     let nav = document.querySelector('#nav');
     let logo = document.querySelector('#logoNav');
-    let navItems = document.querySelectorAll('.nav-link');
 
     if (scrollY >= 1) {
       nav.classList.add('nav-scroll');
       logo.classList.add('logoNav-scroll');
-      // navItems.forEach(item => {
-      //   item.classList.add('text-to-black');
-      // });
     }
     if (scrollY < 1) {
       nav.classList.remove('nav-scroll');
       logo.classList.remove('logoNav-scroll');
-      // navItems.forEach(item => {
-      //   item.classList.remove('text-to-black');
-      // });
     }
   }, 10)
 );

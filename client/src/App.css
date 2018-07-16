@@ -50,6 +50,16 @@ a:hover {
 .flexDown {
   flex-direction: column;
 }
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dark-overlay2 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(black, transparent 15%), rgba(0, 0, 0, 0.7);
+}
 /* BORDER-STYLES */
 .borderStyle {
   border-width: 0 0 5px 5px;
@@ -82,15 +92,9 @@ nav {
   height: auto;
   width: 180px;
   transition: all 0.5s ease-in-out;
-  /* background-color: rgba(255, 255, 255, 0.9); */
-  /* border: solid rgb(66, 66, 66) 3px;
-  border-radius: 16px;
-  padding: 0 7px; */
 }
 .logoNav-scroll {
   width: 105px !important;
-  border-width: 2px !important;
-  border-radius: 10px !important;
   transition: all 0.5s ease-in-out;
 }
 .nav-item,
@@ -152,11 +156,7 @@ nav {
   /* background: url('./img/Road2.jpeg') no-repeat center; */
   background-size: cover;
 }
-.dark-overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
 .landing-box {
   background-color: rgba(255, 255, 255, 0.95);
   width: 88%;
@@ -312,7 +312,7 @@ footer {
 
 /* GENERAL BACKGROUND */
 .general-BG {
-  height: 83vh;
+  height: 100vh;
 }
 .page-info {
   min-height: 100vh;
@@ -332,57 +332,57 @@ footer {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
 }
 .CrackSeal-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/CrackSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .JointSeal-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .TrafficLoops-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/TrafficLoops.jpg') no-repeat center;
   background-size: cover;
 }
 .TrafficLights-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/TrafficLights.jpg') no-repeat center;
   background-size: cover;
 }
 .Testimonials-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/CrackSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .History-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Contact-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Travels-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Mission-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Vision-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
 .Goals-wrap {
-  background: linear-gradient(black, transparent 75%),
+  background: linear-gradient(black, transparent 25%),
     url('img/JointSeal.jpg') no-repeat center;
   background-size: cover;
 }
