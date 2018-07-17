@@ -171,7 +171,7 @@ export default () => {
           </Row>
           <br />
           <br />
-          <Link to="/testimonials" className="m-5 request-button borderStyle">
+          <Link to="/testimonials" className="my-5 request-button borderStyle">
             READ MORE
           </Link>
         </Container>

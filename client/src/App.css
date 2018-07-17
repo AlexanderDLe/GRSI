@@ -61,6 +61,12 @@ a:hover {
   width: 100%;
   background: linear-gradient(black, transparent 6%), rgba(0, 0, 0, 0.65);
 }
+/* IMAGES */
+
+.imgContent {
+  width: 100%;
+  object-fit: contain;
+}
 /* BORDER-STYLES */
 .borderStyle {
   border-width: 0 0 5px 5px;
@@ -319,6 +325,7 @@ footer {
 .general-BG {
   height: 100vh;
 }
+
 .page-info {
   min-height: 100vh;
   position: relative;
@@ -393,6 +400,13 @@ footer {
 }
 /* CRACK SEAL */
 
+/* CONTACT */
+form {
+  max-width: 840px;
+  text-align: center;
+  margin: auto;
+}
+
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {
   nav,
@@ -462,6 +476,11 @@ footer {
 @media (min-width: 1640px) {
   .container {
     max-width: 1500px;
+  }
+}
+@media (min-width: 1840px) {
+  .container {
+    max-width: 1650px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
