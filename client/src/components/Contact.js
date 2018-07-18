@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-import { Container, Form, FormGroup, Input, Button } from 'reactstrap';
+import {
+  Container,
+  Form,
+  FormGroup,
+  Input,
+  Button,
+  Row,
+  Col
+} from 'reactstrap';
 import classnames from 'classnames';
 
 export default class Contact extends Component {
@@ -7,6 +15,11 @@ export default class Contact extends Component {
     super();
 
     this.state = {
+      name: '',
+      email: '',
+      message: '',
+      phone: '',
+      job: '',
       errors: '',
       success: ''
     };
@@ -31,47 +44,98 @@ export default class Contact extends Component {
                   onSubmit={this.handleSubmit}
                   className="justify-content-center"
                 >
+                  <Row>
+                    <Col md="6">
+                      <FormGroup className="input-group input-group-lg mb-3">
+                        <div className="input-group-prepend">
+                          <span className="input-group-text">
+                            <i className="fas fa-user" />
+                          </span>
+                        </div>
+                        <Input
+                          type="text"
+                          name="name"
+                          className={classnames('form-control', {
+                            'is-invalid': errors.name
+                          })}
+                          placeholder="Name"
+                          value={this.state.name}
+                          onChange={this.handleChange}
+                        />
+                        {errors.name && (
+                          <div className="invalid-feedback lead">
+                            {errors.name}
+                          </div>
+                        )}
+                      </FormGroup>
+                    </Col>
+
+                    <Col md="6">
+                      <FormGroup className="input-group input-group-lg mb-3">
+                        <div className="input-group-prepend">
+                          <span className="input-group-text">
+                            <i className="far fa-envelope" />
+                          </span>
+                        </div>
+                        <Input
+                          type="text"
+                          name="email"
+                          className={classnames('form-control', {
+                            'is-invalid': errors.email
+                          })}
+                          placeholder="Email"
+                          value={this.state.email}
+                          onChange={this.handleChange}
+                        />
+                        {errors.email && (
+                          <div className="invalid-feedback lead">
+                            {errors.email}
+                          </div>
+                        )}
+                      </FormGroup>
+                    </Col>
+                  </Row>
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <i className="fas fa-user" />
+                        <i class="fas fa-phone" />
                       </span>
                     </div>
                     <Input
                       type="text"
-                      name="name"
+                      name="phone"
                       className={classnames('form-control', {
-                        'is-invalid': errors.name
+                        'is-invalid': errors.phone
                       })}
-                      placeholder="Name"
-                      value={this.state.name}
+                      placeholder="Phone Number"
+                      value={this.state.phone}
                       onChange={this.handleChange}
                     />
-                    {errors.name && (
-                      <div className="invalid-feedback lead">{errors.name}</div>
+                    {errors.phone && (
+                      <div className="invalid-feedback lead">
+                        {errors.phone}
+                      </div>
                     )}
                   </FormGroup>
 
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <i className="far fa-envelope" />
+                        <i class="fas fa-briefcase" />
                       </span>
                     </div>
                     <Input
                       type="text"
-                      name="email"
+                      name="job"
                       className={classnames('form-control', {
-                        'is-invalid': errors.email
+                        'is-invalid': errors.job
                       })}
-                      placeholder="Email"
-                      value={this.state.email}
+                      placeholder="Job Type"
+                      value={this.state.job}
                       onChange={this.handleChange}
                     />
-                    {errors.email && (
-                      <div className="invalid-feedback lead">
-                        {errors.email}
-                      </div>
+                    {errors.job && (
+                      <div className="invalid-feedback lead">{errors.job}</div>
                     )}
                   </FormGroup>
 
@@ -98,7 +162,6 @@ export default class Contact extends Component {
                       </div>
                     )}
                   </FormGroup>
-
                   {success && (
                     <div className="lead pb-3 text-success ">{success}</div>
                   )}
