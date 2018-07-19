@@ -67,7 +67,7 @@ a:hover {
   width: 100%;
   object-fit: contain;
   background-color: white;
-  box-shadow: 0px 5px 55px -15px black;
+  box-shadow: 0px 10px 45px -15px black;
 }
 /* BORDER-STYLES */
 .borderStyle {
@@ -92,7 +92,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .nav-scroll {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.5s ease-in-out;
   color: white !important;
   box-shadow: 0px -5px 12px black;
@@ -115,7 +115,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.9);
   transition: all 0.5s ease-in-out;
 }
 .nav-link {
@@ -318,7 +318,7 @@ blockquote p {
 /* FOOTER */
 footer {
   min-height: 380px;
-  background: linear-gradient(rgb(0, 0, 0), transparent 60%),
+  background: linear-gradient(rgb(0, 0, 0), transparent 90%),
     linear-gradient(0deg, black, transparent 60%),
     url('img/CityRoad2.jpeg') no-repeat center;
   background-size: cover;
@@ -410,6 +410,20 @@ form {
   max-width: 840px;
   text-align: center;
   margin: auto;
+}
+.contactButton {
+  width: 100%;
+  background-color: rgba(120, 120, 120, 0.7);
+  border: none;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+.contactButton:hover {
+  width: 100%;
+  background-color: rgba(120, 120, 120, 0.9);
+  border: none;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
 }
 
 /* MEDIA QUERIES: NAV */

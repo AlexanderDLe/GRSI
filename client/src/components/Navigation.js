@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoBlack from '../img/GRSI Logo.png';
-import logoWhite from '../img/GRSI Logo White2.png';
+import logoWhite from '../img/GRSI Logo White.png';
 
 import {
   Collapse,
