@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import trafficLight from '../img/TrafficLight.png';
+import CrackSealIcon from '../img/CrackSealIcon.png';
 
 export default () => {
   return (
@@ -64,7 +65,11 @@ export default () => {
             <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">
                 <div className="service-card borderStyle m-auto">
-                  <i className="service-icon py-5 m-auto fas fa-signature" />
+                  <img
+                    className="service-icon-traffic py-5 m-auto"
+                    src={CrackSealIcon}
+                    alt=""
+                  />
                   <h3 className="text-center pb-5 ">Crack Seal</h3>
                 </div>
               </Link>
