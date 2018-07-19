@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 /* GENERAL */
+
 a,
 button {
   text-decoration: none !important;
@@ -330,6 +331,9 @@ footer {
 .general-BG {
   height: 100vh;
 }
+.contact-BG {
+  height: 100vh;
+}
 
 .page-info {
   min-height: 100vh;
@@ -470,7 +474,21 @@ form {
     margin-top: 8rem;
   }
 }
+/* MEDIA QUERIES: CONTACT */
 
+@media (max-width: 330px) {
+  .contact-BG {
+    min-height: 120vh;
+  }
+  /* .contact-title {
+    margin-top: 50px;
+  } */
+}
+@media (max-height: 660px) {
+  .contact-BG {
+    min-height: 120vh;
+  }
+}
 /* MEDIA QUERIES: CONTAINER */
 @media (min-width: 1200px) {
   .container {

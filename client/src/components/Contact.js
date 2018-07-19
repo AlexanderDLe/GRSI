@@ -23,6 +23,12 @@ export default class Contact extends Component {
       errors: '',
       success: ''
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
@@ -32,10 +38,10 @@ export default class Contact extends Component {
 
     return (
       <div className="wrap">
-        <div className="general-BG Contact-wrap parallaxFX">
+        <div className="contact-BG Contact-wrap parallaxFX">
           <div className="dark-overlay2 flexCenter">
             <Container className="flexCenter flexDown">
-              <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
+              <h1 className="py-3 GRSI-Title text-center text-white contact-title font-weight-bold">
                 CONTACT
               </h1>
               <div className="container">
@@ -155,7 +161,7 @@ export default class Contact extends Component {
                       placeholder="Message"
                       value={this.state.message}
                       onChange={this.handleChange}
-                      rows="5"
+                      rows="4"
                     />
                     {errors.message && (
                       <div className="invalid-feedback lead">
