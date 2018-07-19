@@ -95,6 +95,7 @@ export default class Contact extends Component {
                       </FormGroup>
                     </Col>
                   </Row>
+
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
