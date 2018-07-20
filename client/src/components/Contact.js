@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import {
   Container,
   Form,
@@ -11,8 +12,8 @@ import {
 import classnames from 'classnames';
 
 export default class Contact extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       name: '',
@@ -20,15 +21,56 @@ export default class Contact extends Component {
       message: '',
       phone: '',
       job: '',
-      errors: '',
-      success: ''
+      errors: {},
+      success: '',
+      loading: false
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    const { name, email, message, phone, job } = this.state;
+
+    const emailData = {
+      name,
+      email,
+      message,
+      phone,
+      job
+    };
+
+    axios
+      .post('/contact', emailData)
+      .then(this.setState({ loading: true, success: '' }))
+      .then(res => {
+        if (res) {
+          this.setState({
+            name: '',
+            email: '',
+            message: '',
+            phone: '',
+            job: '',
+            errors: {},
+            success: 'Your message has been sent!',
+            loading: false
+          });
+        }
+      })
+      .catch(err => {
+        this.setState({
+          errors: err.response.data,
+          success: '',
+          loading: false
+        });
+      });
   }
 
   render() {
@@ -105,7 +147,7 @@ export default class Contact extends Component {
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <i class="fas fa-phone" />
+                        <i className="fas fa-phone" />
                       </span>
                     </div>
                     <Input
@@ -128,7 +170,7 @@ export default class Contact extends Component {
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <i class="fas fa-briefcase" />
+                        <i className="fas fa-briefcase" />
                       </span>
                     </div>
                     <Input
@@ -137,7 +179,7 @@ export default class Contact extends Component {
                       className={classnames('form-control', {
                         'is-invalid': errors.job
                       })}
-                      placeholder="Job Type"
+                      placeholder="Job Title"
                       value={this.state.job}
                       onChange={this.handleChange}
                     />

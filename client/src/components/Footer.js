@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
@@ -8,22 +9,46 @@ export default () => {
         <div className="text-center">{/* <h1 className="p-3"> </h1> */}</div>
         <Row className="text-left">
           <Col className=" p-5">
-            <div className="lead p-1">Home</div>
-            <div className="lead p-1">Mission</div>
-            <div className="lead p-1">Goals</div>
-            <div className="lead p-1">Vision</div>
-            <div className="lead p-1">History</div>
-            <div className="lead p-1">Testimonials</div>
+            <Link to="/" className="text-white">
+              <div className="lead p-1">Home</div>
+            </Link>
+            <Link to="/mission" className="text-white">
+              <div className="lead p-1">Mission</div>
+            </Link>
+            <Link to="/goals" className="text-white">
+              <div className="lead p-1">Goals</div>
+            </Link>
+            <Link to="/vision" className="text-white">
+              <div className="lead p-1">Vision</div>
+            </Link>
+            <Link to="/history" className="text-white">
+              <div className="lead p-1">History</div>
+            </Link>
+            <Link to="/testimonials" className="text-white">
+              <div className="lead p-1">Testimonials</div>
+            </Link>
           </Col>
           <Col className=" p-5">
-            <div className="lead p-1">Services</div>
-            <div className="lead p-1">Crack Seal</div>
-            <div className="lead p-1">Joint Seal</div>
-            <div className="lead p-1">Traffic Loops</div>
-            <div className="lead p-1">Traffic Lights</div>
+            <Link to="/services" className="text-white">
+              <div className="lead p-1">Services</div>
+            </Link>
+            <Link to="/crack-seal" className="text-white">
+              <div className="lead p-1">Crack Seal</div>
+            </Link>
+            <Link to="/joint-seal" className="text-white">
+              <div className="lead p-1">Joint Seal</div>
+            </Link>
+            <Link to="/traffic-loops" className="text-white">
+              <div className="lead p-1">Traffic Loops</div>
+            </Link>
+            <Link to="/traffic-lights" className="text-white">
+              <div className="lead p-1">Traffic Lights</div>
+            </Link>
           </Col>
           <Col className=" p-5">
-            <div className="lead p-1">Contact Us</div>
+            <Link to="/contact" className="text-white">
+              <div className="lead p-1">Contact Us</div>
+            </Link>
             <br />
             <div className="lead p-1">Address:</div>
             <div className="lead p-1">18204 Dorothy Rd.</div>
