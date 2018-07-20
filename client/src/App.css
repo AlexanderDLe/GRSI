@@ -430,7 +430,13 @@ form {
   font-size: 1.3rem;
   transition: all 0.5s ease-in-out;
 }
-
+.spinner {
+  height: auto;
+  width: 45px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+}
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {
   nav,

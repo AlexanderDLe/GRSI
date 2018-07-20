@@ -10,6 +10,7 @@ import {
   Col
 } from 'reactstrap';
 import classnames from 'classnames';
+import Spinner from './utility/Spinner';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -74,9 +75,7 @@ export default class Contact extends Component {
   }
 
   render() {
-    const errors = '';
-    const success = '';
-    const Spinner = '';
+    const { errors, success } = this.state;
 
     return (
       <div className="wrap">
@@ -117,7 +116,6 @@ export default class Contact extends Component {
                         )}
                       </FormGroup>
                     </Col>
-
                     <Col md="6">
                       <FormGroup className="input-group input-group-lg mb-3">
                         <div className="input-group-prepend">
