@@ -15,7 +15,7 @@
     "url": "git+https://github.com/AlexanderDLe/GRSI.git"
   },
   "author": "XAN",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AlexanderDLe/GRSI/issues"
   },
@@ -26,7 +26,7 @@
     "express": "^4.16.3",
     "hoek": "^5.0.3",
     "nodemailer": "^4.6.7",
-    "nodemon": "^1.18.2",
+    "nodemon": "^1.18.3",
     "validator": "^10.4.0"
   }
 }

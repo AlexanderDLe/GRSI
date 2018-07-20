@@ -20,15 +20,15 @@ app.post('/contact', (req, res) => {
 
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
-      <h3>Contact Details</h3>
-      <ul>
-        <li>Name: ${req.body.name}</li>
-        <li>Email: ${req.body.email}</li>
-        <li>Phone: ${req.body.phone}</li>
-        <li>Job Title: ${req.body.job}</li>
-      </ul>
-      <h3>Message</h3>
-      <p>${req.body.message}</p>
+    <h3>Contact Details</h3>
+    <ul>
+      <li>Name: ${req.body.name}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Phone: ${req.body.phone}</li>
+      <li>Job Title: ${req.body.job}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${req.body.message}</p>
     `;
 
     let transporter = nodemailer.createTransport({
