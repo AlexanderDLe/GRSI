@@ -408,6 +408,10 @@ footer {
     url('img/About.jpeg') no-repeat center;
   background-size: cover;
 }
+/* TESTIMONIALS */
+.testimonial-item {
+  max-width: 767px;
+}
 /* CRACK SEAL */
 
 /* CONTACT */
