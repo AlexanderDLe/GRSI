@@ -27,7 +27,7 @@ mongoose
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Use Routes
+// Use Routes API
 app.use('/testimonials', testimonials);
 app.use('/contact', contact);
 app.use('/user', user);
