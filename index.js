@@ -8,11 +8,11 @@ const key = require('./config/key');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Validation for checking email inputs
-const validateEmailInput = require('./validation/EmailValidation');
+// Validation for Contact Form
+const validateContactInput = require('./validation/ContactValidation');
 
 app.post('/contact', (req, res) => {
-  const { errors, isValid } = validateEmailInput(req.body);
+  const { errors, isValid } = validateContactInput(req.body);
 
   if (!isValid) {
     return res.status(400).json(errors);
