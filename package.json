@@ -29,13 +29,9 @@
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.4",
     "nodemailer": "^4.6.7",
-<<<<<<< HEAD
     "nodemon": "^1.18.3",
-=======
-    "nodemon": "^1.18.2",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
->>>>>>> c77cfdf79eb54ceae69914ca3d3d0817715d764c
     "validator": "^10.4.0"
   }
 }
