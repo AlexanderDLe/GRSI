@@ -1,4 +1,4 @@
 module.exports = {
   pw: process.env.gmailKey,
-  mongoURI: mongoURI
+  mongoURI: process.env.mongoURI
 };
