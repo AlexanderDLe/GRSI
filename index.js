@@ -1,9 +1,26 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
 const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const key = require('./config/key');
+
+// Routing API's
+const testimonials = require('./routes/api/testimonials');
+const contact = require('./routes/api/contact');
+
+// Database Configuration
+const db = require('./config/key').mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log(err));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -59,10 +76,14 @@ app.post('/contact', (req, res) => {
   });
 });
 
+// Use Routes
+app.use('/testimonials', testimonials);
+app.use('/contact', contact);
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
 
 // Serve static assets if in production!
