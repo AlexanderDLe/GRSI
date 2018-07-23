@@ -3,8 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const path = require('path');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-const key = require('./config/key');
+const passport = require('passport');
 
 // Routing API's
 const testimonials = require('./routes/api/testimonials');
@@ -26,6 +25,12 @@ mongoose
 // Apply body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// Passport Middleware
+app.use(passport.initialize());
+
+// Passport Configuration
+require('./config/passport')(passport);
 
 // Use Routes API
 app.use('/testimonials', testimonials);
