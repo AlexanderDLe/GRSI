@@ -46,14 +46,15 @@ router.post(
 // @route   POST /testimonials
 // @desc    Testimonials Page
 // @acess   Private
-// Is it necessary to have posts saved within a profile collection?
 router.delete(
   '/:id',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
-    Testimonials.findOne(req.params.id).then(testimonial => {
-      testimonial.remove().then(() => res.json({ success: true }));
-    });
+    Testimonials.findById(req.params.id)
+      .then(testimonial => {
+        testimonial.remove().then(() => res.json({ success: true }));
+      })
+      .catch(err => res.status(404).json({ noPostFound: 'No post found' }));
   }
 );
 module.exports = router;
