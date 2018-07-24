@@ -16,6 +16,7 @@ import JointSeal from './components/services/JointSeal';
 import TrafficLoops from './components/services/TrafficLoops';
 import TrafficLights from './components/services/TrafficLights';
 import Contact from './components/Contact';
+import Login from './components/Login';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
                 <Route exact path="/traffic-loops" component={TrafficLoops} />
                 <Route exact path="/traffic-lights" component={TrafficLights} />
                 <Route exact path="/contact" component={Contact} />
+                <Route exact path="/login" component={Login} />
               </div>
             </ScrollToTop>
             <Footer />

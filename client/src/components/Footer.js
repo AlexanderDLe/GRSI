@@ -44,6 +44,9 @@ export default () => {
             <Link to="/traffic-lights" className="text-white">
               <div className="lead p-1">Traffic Lights</div>
             </Link>
+            <Link to="/login" className="text-white">
+              <div className="lead p-1">Admin</div>
+            </Link>
           </Col>
           <Col className=" p-5">
             <Link to="/contact" className="text-white">
