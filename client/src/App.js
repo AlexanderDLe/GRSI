@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/utility/ScrollToTop';
-import './App.css';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -21,6 +20,8 @@ import TrafficLights from './components/services/TrafficLights';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Footer from './components/Footer';
+
+import './App.css';
 
 class App extends Component {
   render() {

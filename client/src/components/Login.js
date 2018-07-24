@@ -99,7 +99,7 @@ export default class Contact extends Component {
                       </span>
                     </div>
                     <Input
-                      type="text"
+                      type="password"
                       name="password"
                       className={classnames('form-control', {
                         'is-invalid': errors.password
