@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/utility/ScrollToTop';
+import './App.css';
+
+import { Provider } from 'react-redux';
+import store from './store';
 
 import Navigation from './components/Navigation';
 import Landing from './components/Landing';
@@ -23,29 +26,35 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <div>
-            <Navigation />
-            <ScrollToTop>
-              <div>
-                <Route exact path="/" component={Landing} />
-                <Route exact path="/travels" component={Travels} />
-                <Route exact path="/mission" component={Mission} />
-                <Route exact path="/vision" component={Vision} />
-                <Route exact path="/goals" component={Goals} />
-                <Route exact path="/history" component={History} />
-                <Route exact path="/testimonials" component={Testimonials} />
-                <Route exact path="/crack-seal" component={CrackSeal} />
-                <Route exact path="/joint-seal" component={JointSeal} />
-                <Route exact path="/traffic-loops" component={TrafficLoops} />
-                <Route exact path="/traffic-lights" component={TrafficLights} />
-                <Route exact path="/contact" component={Contact} />
-                <Route exact path="/login" component={Login} />
-              </div>
-            </ScrollToTop>
-            <Footer />
-          </div>
-        </Router>
+        <Provider store={store}>
+          <Router>
+            <div>
+              <Navigation />
+              <ScrollToTop>
+                <div>
+                  <Route exact path="/" component={Landing} />
+                  <Route exact path="/travels" component={Travels} />
+                  <Route exact path="/mission" component={Mission} />
+                  <Route exact path="/vision" component={Vision} />
+                  <Route exact path="/goals" component={Goals} />
+                  <Route exact path="/history" component={History} />
+                  <Route exact path="/testimonials" component={Testimonials} />
+                  <Route exact path="/crack-seal" component={CrackSeal} />
+                  <Route exact path="/joint-seal" component={JointSeal} />
+                  <Route exact path="/traffic-loops" component={TrafficLoops} />
+                  <Route
+                    exact
+                    path="/traffic-lights"
+                    component={TrafficLights}
+                  />
+                  <Route exact path="/contact" component={Contact} />
+                  <Route exact path="/login" component={Login} />
+                </div>
+              </ScrollToTop>
+              <Footer />
+            </div>
+          </Router>
+        </Provider>
       </div>
     );
   }
