@@ -441,6 +441,11 @@ form {
   display: block;
   margin-bottom: 15px;
 }
+/* ADMIN */
+.admin-btn {
+  font-size: 1.3rem;
+  width: 200px;
+}
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {
   nav,

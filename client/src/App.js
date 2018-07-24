@@ -18,7 +18,8 @@ import JointSeal from './components/services/JointSeal';
 import TrafficLoops from './components/services/TrafficLoops';
 import TrafficLights from './components/services/TrafficLights';
 import Contact from './components/Contact';
-import Login from './components/Login';
+import Login from './components/admin/Login';
+import Admin from './components/admin/Admin';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -50,6 +51,7 @@ class App extends Component {
                   />
                   <Route exact path="/contact" component={Contact} />
                   <Route exact path="/login" component={Login} />
+                  <Route exact path="/admin" component={Admin} />
                 </div>
               </ScrollToTop>
               <Footer />

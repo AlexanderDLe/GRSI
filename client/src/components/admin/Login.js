@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Container, Form, FormGroup, Input, Button } from 'reactstrap';
 import classnames from 'classnames';
-import Spinner from './utility/Spinner';
+import Spinner from '.././utility/Spinner';
 
 export default class Contact extends Component {
   constructor(props) {
