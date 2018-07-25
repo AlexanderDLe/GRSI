@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/utility/ScrollToTop';
+import setAuthToken from './utils/setAuthToken';
+import jwt_decode from 'jwt-decode';
+import { setUser, logoutUser } from './actions/authActions';
 
 import { Provider } from 'react-redux';
 import store from './store';
+
+import PrivateRoute from './components/admin/PrivateRoute';
 
 import Navigation from './components/Navigation';
 import Landing from './components/Landing';
@@ -23,6 +28,26 @@ import Admin from './components/admin/Admin';
 import Footer from './components/Footer';
 
 import './App.css';
+
+// Check for token
+if (localStorage.jwtToken) {
+  // Set auth token header
+  setAuthToken(localStorage.jwtToken);
+  // Decode token and get user info/expiration
+  const decoded = jwt_decode(localStorage.jwtToken);
+  // Set user and isAuthenticated
+  store.dispatch(setUser(decoded));
+
+  // Check for expired token
+  const currentTime = Date.now() / 1000;
+  if (decoded.exp < currentTime) {
+    // Logout User
+    store.dispatch(logoutUser());
+
+    // Redirect to login
+    window.location.href = '/login';
+  }
+}
 
 class App extends Component {
   render() {
@@ -51,7 +76,9 @@ class App extends Component {
                   />
                   <Route exact path="/contact" component={Contact} />
                   <Route exact path="/login" component={Login} />
-                  <Route exact path="/admin" component={Admin} />
+                  <Switch>
+                    <PrivateRoute exact path="/admin" component={Admin} />
+                  </Switch>
                 </div>
               </ScrollToTop>
               <Footer />
