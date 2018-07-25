@@ -99,7 +99,7 @@ export default () => {
                     alt=""
                   />
                   <h3 className="text-center pb-5 traffic-text">
-                    Traffic Lights
+                    Street Lighting
                   </h3>
                 </div>
               </Link>
