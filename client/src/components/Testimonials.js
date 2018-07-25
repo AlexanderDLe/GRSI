@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
+import { connect } from 'react-redux';
 
-export default class Testimonials extends Component {
+class Testimonials extends Component {
   constructor(props) {
     super(props);
 
@@ -9,6 +10,12 @@ export default class Testimonials extends Component {
   }
 
   render() {
+    const testimonialsBtn = (
+      <Button className="btn admin-btn lead py-3 btn-success my-2">
+        Add Testimonial
+      </Button>
+    );
+
     const renderTestimonial = (
       <Row className="p-5 testimonial-item m-auto">
         <Col>
@@ -39,10 +46,9 @@ export default class Testimonials extends Component {
               </h1>
               <p className="lead p-2 text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
-                totam, porro exercitationem quo quibusdam sapiente accusamus
-                officiis architecto, qui nesciunt ullam!
+                maxime!
               </p>
+              {this.props.auth.isAuthenticated ? testimonialsBtn : ''}
             </Container>
           </div>
         </div>
@@ -53,3 +59,9 @@ export default class Testimonials extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(mapStateToProps)(Testimonials);

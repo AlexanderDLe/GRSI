@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Button } from 'reactstrap';
 import { logoutUser } from '../../actions/authActions';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Admin extends Component {
   handleLogout(e) {
@@ -21,15 +22,21 @@ class Admin extends Component {
               <p className="lead p-2 text-white">
                 What actions would you like to take?
               </p>
-              <Button className="admin-btn lead py-3 px-5 btn-success my-2">
-                Add History
-              </Button>
-              <Button className="admin-btn lead py-3 px-4 btn-primary my-2">
+              <Link
+                to="/testimonials"
+                className="btn admin-btn lead py-3 btn-success my-2"
+              >
                 Add Testimonial
-              </Button>
+              </Link>
+              <Link
+                to="/history"
+                className="btn admin-btn lead py-3 btn-warning my-2"
+              >
+                Add History
+              </Link>
               <Button
                 onClick={this.handleLogout.bind(this)}
-                className="admin-btn lead py-3 px-5 btn-danger my-2"
+                className="admin-btn lead py-3  btn-danger my-2"
               >
                 Log Out
               </Button>
