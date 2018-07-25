@@ -470,16 +470,13 @@ form {
   margin: auto;
 }
 .contactButton {
+  background-color: rgb(35, 35, 35);
   width: 100% !important;
-  background-color: rgba(61, 61, 61, 0.9) !important;
-}
-.contactButton:hover {
-  width: 100%;
-  background-color: rgba(120, 120, 120, 0.9);
+  color: white;
+  outline: 2px white solid;
   border: none;
-  font-size: 1.3rem;
-  transition: all 0.5s ease-in-out;
 }
+
 .spinner {
   height: auto;
   width: 45px;
@@ -491,7 +488,7 @@ form {
 .admin-btn {
   font-size: 1.3rem;
   width: 250px;
-  outline: 3px white solid;
+  outline: 2px white solid;
   border: none;
   border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.3);
