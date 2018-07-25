@@ -142,7 +142,7 @@ export default class Contact extends Component {
 
                   {this.state.loading ? <Spinner /> : ''}
 
-                  <Button className="contactButton text-center m-auto py-3 lead">
+                  <Button className="admin-btn contactButton text-center m-auto py-3 lead">
                     SUBMIT
                   </Button>
                 </Form>

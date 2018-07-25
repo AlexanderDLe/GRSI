@@ -8,7 +8,7 @@ class History extends Component {
 
     const historyBtn = (
       <Button
-        className="btn admin-btn lead py-3 btn-warning my-2"
+        className="btn admin-btn lead py-3 my-2"
         data-toggle="modal"
         data-target="#historyModal"
       >
