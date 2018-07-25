@@ -277,7 +277,7 @@ nav {
 .service-card:hover {
   background: #f8faff;
   font-size: 5.2rem !important;
-  box-shadow: 0px 3px 25px 0px rgb(97, 184, 255);
+  box-shadow: 0px 3px 28px -8px black;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }

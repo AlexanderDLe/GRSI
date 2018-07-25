@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {
-  Container,
-  Form,
-  FormGroup,
-  Input,
-  Button,
-  Row,
-  Col
-} from 'reactstrap';
-import classnames from 'classnames';
+import { Container, Form, Button, Row, Col } from 'reactstrap';
 import Spinner from './utility/Spinner';
+import FormInput from './utility/FormInput';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -93,122 +85,57 @@ export default class Contact extends Component {
                 >
                   <Row>
                     <Col md="6">
-                      <FormGroup className="input-group input-group-lg mb-3">
-                        <div className="input-group-prepend">
-                          <span className="input-group-text">
-                            <i className="fas fa-user" />
-                          </span>
-                        </div>
-                        <Input
-                          type="text"
-                          name="name"
-                          className={classnames('form-control', {
-                            'is-invalid': errors.name
-                          })}
-                          placeholder="Name"
-                          value={this.state.name}
-                          onChange={this.handleChange}
-                        />
-                        {errors.name && (
-                          <div className="invalid-feedback lead">
-                            {errors.name}
-                          </div>
-                        )}
-                      </FormGroup>
+                      <FormInput
+                        error={errors.name}
+                        name={'name'}
+                        inputIcon={'fas fa-user'}
+                        type={'text'}
+                        placeholder={'Full Name'}
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                      />
                     </Col>
                     <Col md="6">
-                      <FormGroup className="input-group input-group-lg mb-3">
-                        <div className="input-group-prepend">
-                          <span className="input-group-text">
-                            <i className="far fa-envelope" />
-                          </span>
-                        </div>
-                        <Input
-                          type="text"
-                          name="email"
-                          className={classnames('form-control', {
-                            'is-invalid': errors.email
-                          })}
-                          placeholder="Email"
-                          value={this.state.email}
-                          onChange={this.handleChange}
-                        />
-                        {errors.email && (
-                          <div className="invalid-feedback lead">
-                            {errors.email}
-                          </div>
-                        )}
-                      </FormGroup>
+                      <FormInput
+                        error={errors.email}
+                        name={'email'}
+                        inputIcon={'fas fa-envelope'}
+                        type={'text'}
+                        placeholder={'Full Email'}
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                      />
                     </Col>
                   </Row>
+                  <FormInput
+                    error={errors.phone}
+                    name={'phone'}
+                    inputIcon={'fas fa-phone'}
+                    type={'text'}
+                    placeholder={'Full Phone'}
+                    value={this.state.phone}
+                    onChange={this.handleChange}
+                  />
+                  <FormInput
+                    error={errors.job}
+                    name={'job'}
+                    inputIcon={'fas fa-briefcase'}
+                    type={'text'}
+                    placeholder={'Job Title'}
+                    value={this.state.job}
+                    onChange={this.handleChange}
+                  />
+                  <FormInput
+                    error={errors.message}
+                    name={'message'}
+                    inputIcon={'fas fa-briefcase'}
+                    type={'textarea'}
+                    placeholder={'Message'}
+                    value={this.state.message}
+                    onChange={this.handleChange}
+                    rows={'4'}
+                  />
 
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-phone" />
-                      </span>
-                    </div>
-                    <Input
-                      type="text"
-                      name="phone"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.phone
-                      })}
-                      placeholder="Phone Number"
-                      value={this.state.phone}
-                      onChange={this.handleChange}
-                    />
-                    {errors.phone && (
-                      <div className="invalid-feedback lead">
-                        {errors.phone}
-                      </div>
-                    )}
-                  </FormGroup>
-
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-briefcase" />
-                      </span>
-                    </div>
-                    <Input
-                      type="text"
-                      name="job"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.job
-                      })}
-                      placeholder="Job Title"
-                      value={this.state.job}
-                      onChange={this.handleChange}
-                    />
-                    {errors.job && (
-                      <div className="invalid-feedback lead">{errors.job}</div>
-                    )}
-                  </FormGroup>
-
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-pencil-alt" />
-                      </span>
-                    </div>
-                    <Input
-                      type="textarea"
-                      name="message"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.message
-                      })}
-                      placeholder="Message"
-                      value={this.state.message}
-                      onChange={this.handleChange}
-                      rows="4"
-                    />
-                    {errors.message && (
-                      <div className="invalid-feedback lead">
-                        {errors.message}
-                      </div>
-                    )}
-                  </FormGroup>
                   {success && (
                     <div className="lead pb-3 text-success ">{success}</div>
                   )}
