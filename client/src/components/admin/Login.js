@@ -1,22 +1,39 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Container, Form, FormGroup, Input, Button } from 'reactstrap';
 import classnames from 'classnames';
-import Spinner from '.././utility/Spinner';
+import Spinner from '../utility/Spinner';
+import { loginUser } from '../../actions/authActions';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-export default class Contact extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       name: '',
       password: '',
-      errors: {},
-      loading: false
+      errors: {}
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push('/admin');
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push('/admin');
+    }
+
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
   }
 
   handleChange(e) {
@@ -33,25 +50,7 @@ export default class Contact extends Component {
       password
     };
 
-    axios
-      .post('/login', userData)
-      .then(this.setState({ loading: true, success: '' }))
-      .then(res => {
-        if (res) {
-          this.setState({
-            name: '',
-            password: '',
-            errors: {},
-            loading: false
-          });
-        }
-      })
-      .catch(err => {
-        this.setState({
-          errors: err.response.data,
-          loading: false
-        });
-      });
+    this.props.loginUser(userData);
   }
 
   render() {
@@ -95,7 +94,7 @@ export default class Contact extends Component {
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <i class="fas fa-lock" />
+                        <i className="fas fa-lock" />
                       </span>
                     </div>
                     <Input
@@ -129,3 +128,19 @@ export default class Contact extends Component {
     );
   }
 }
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+
+export default connect(
+  mapStateToProps,
+  { loginUser }
+)(Login);

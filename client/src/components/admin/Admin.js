@@ -11,7 +11,7 @@ export default () => {
               ADMINISTRATION
             </h1>
             <p className="lead p-2 text-white">
-              What actions what you like to take?
+              What actions would you like to take?
             </p>
             <Button className="admin-btn lead py-3 px-5 btn-success my-2">
               Add History

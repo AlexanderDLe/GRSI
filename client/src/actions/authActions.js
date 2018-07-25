@@ -7,7 +7,7 @@ import { LOGIN_USER, GET_ERRORS } from './types';
 // Login User - Get user token
 export const loginUser = userData => dispatch => {
   axios
-    .post('/login', userData)
+    .post('/user/login', userData)
     .then(res => {
       // Save to local storage
       const { token } = res.data;
