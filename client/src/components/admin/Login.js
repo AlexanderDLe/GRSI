@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Form, FormGroup, Input, Button } from 'reactstrap';
-import classnames from 'classnames';
+import { Container, Form, Button } from 'reactstrap';
 import Spinner from '../utility/Spinner';
 import { loginUser } from '../../actions/authActions';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import FormInput from '../utility/FormInput';
 
 class Login extends Component {
   constructor(props) {
@@ -70,49 +70,25 @@ class Login extends Component {
                   onSubmit={this.handleSubmit}
                   className="justify-content-center"
                 >
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-user" />
-                      </span>
-                    </div>
-                    <Input
-                      type="text"
-                      name="name"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.name
-                      })}
-                      placeholder="Name"
-                      value={this.state.name}
-                      onChange={this.handleChange}
-                    />
-                    {errors.name && (
-                      <div className="invalid-feedback lead">{errors.name}</div>
-                    )}
-                  </FormGroup>
+                  <FormInput
+                    error={errors.name}
+                    name={'name'}
+                    inputIcon={'fas fa-user'}
+                    type={'text'}
+                    placeholder={'Name'}
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                  />
 
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-lock" />
-                      </span>
-                    </div>
-                    <Input
-                      type="password"
-                      name="password"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.password
-                      })}
-                      placeholder="Password"
-                      value={this.state.password}
-                      onChange={this.handleChange}
-                    />
-                    {errors.password && (
-                      <div className="invalid-feedback lead">
-                        {errors.password}
-                      </div>
-                    )}
-                  </FormGroup>
+                  <FormInput
+                    error={errors.password}
+                    name={'password'}
+                    inputIcon={'fas fa-lock'}
+                    type={'password'}
+                    placeholder={'Password'}
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                  />
 
                   {this.state.loading ? <Spinner /> : ''}
 
