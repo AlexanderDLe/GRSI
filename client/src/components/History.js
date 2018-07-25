@@ -7,7 +7,11 @@ class History extends Component {
     const { isAuthenticated } = this.props.auth;
 
     const historyBtn = (
-      <Button className="btn admin-btn lead py-3 btn-warning my-2">
+      <Button
+        className="btn admin-btn lead py-3 btn-warning my-2"
+        data-toggle="modal"
+        data-target="#historyModal"
+      >
         Add History
       </Button>
     );

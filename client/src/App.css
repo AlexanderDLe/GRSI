@@ -74,6 +74,23 @@ a:hover {
   background-color: white;
   box-shadow: 0px 10px 45px -15px black;
 }
+/* MODALS */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-btn {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.close,
+.close:hover,
+.close:focus {
+  background-color: white;
+}
+
 /* BORDER-STYLES */
 .borderStyle {
   border-width: 0 0 5px 5px;
