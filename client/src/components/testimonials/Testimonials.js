@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import { Container, Button, Form, FormGroup, Input } from 'reactstrap';
+import { Container, Button, Form } from 'reactstrap';
 import { connect } from 'react-redux';
 import {
   addTestimonial,
   getTestimonials
 } from '../../actions/testimonialsActions';
 import TestFeed from './TestFeed';
+import FormInput from '../utility/FormInput';
 
 class Testimonials extends Component {
   constructor(props) {
@@ -119,73 +119,35 @@ class Testimonials extends Component {
 
               <div className="modal-body">
                 <Form onSubmit={this.handleSubmit}>
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-user" />
-                      </span>
-                    </div>
-                    <Input
-                      type="text"
-                      name="name"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.name
-                      })}
-                      placeholder="Full Name"
-                      value={this.state.name}
-                      onChange={this.handleChange}
-                    />
-                    {errors.name && (
-                      <div className="invalid-feedback lead">{errors.name}</div>
-                    )}
-                  </FormGroup>
+                  <FormInput
+                    error={errors.name}
+                    name={'name'}
+                    inputIcon={'fas fa-user'}
+                    type={'text'}
+                    placeholder={'Full Name'}
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                  />
+                  <FormInput
+                    error={errors.company}
+                    name={'company'}
+                    inputIcon={'fas fa-briefcase'}
+                    type={'text'}
+                    placeholder={'Company Name'}
+                    value={this.state.company}
+                    onChange={this.handleChange}
+                  />
+                  <FormInput
+                    error={errors.quote}
+                    name={'quote'}
+                    inputIcon={'fas fa-briefcase'}
+                    type={'textarea'}
+                    placeholder={'Quote'}
+                    value={this.state.quote}
+                    onChange={this.handleChange}
+                    rows={'4'}
+                  />
 
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-briefcase" />
-                      </span>
-                    </div>
-                    <Input
-                      type="text"
-                      name="company"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.company
-                      })}
-                      placeholder="Company Name"
-                      value={this.state.company}
-                      onChange={this.handleChange}
-                    />
-                    {errors.company && (
-                      <div className="invalid-feedback lead">
-                        {errors.company}
-                      </div>
-                    )}
-                  </FormGroup>
-
-                  <FormGroup className="input-group input-group-lg mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fas fa-pencil-alt" />
-                      </span>
-                    </div>
-                    <Input
-                      type="textarea"
-                      name="quote"
-                      className={classnames('form-control', {
-                        'is-invalid': errors.quote
-                      })}
-                      placeholder="Quote"
-                      value={this.state.quote}
-                      onChange={this.handleChange}
-                      rows="4"
-                    />
-                    {errors.quote && (
-                      <div className="invalid-feedback lead">
-                        {errors.quote}
-                      </div>
-                    )}
-                  </FormGroup>
                   {success && (
                     <div className="lead pb-3 text-success ">{success}</div>
                   )}
