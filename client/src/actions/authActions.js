@@ -2,7 +2,7 @@ import axios from 'axios';
 import setAuthToken from '../utils/setAuthToken';
 import jwt_decode from 'jwt-decode';
 
-import { LOGIN_USER, GET_ERRORS } from './types';
+import { LOGIN_USER, GET_ERRORS, CLEAR_ERRORS } from './types';
 
 // Login User - Get user token
 export const loginUser = userData => dispatch => {
@@ -19,6 +19,9 @@ export const loginUser = userData => dispatch => {
       const decoded = jwt_decode(token);
       // Set user
       dispatch(setUser(decoded));
+      dispatch({
+        type: CLEAR_ERRORS
+      });
     })
     .catch(err => {
       dispatch({
