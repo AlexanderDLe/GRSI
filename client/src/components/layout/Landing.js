@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import trafficLight from '../img/TrafficLight.png';
-import CrackSealIcon from '../img/CrackSealIcon.png';
+import trafficLight from '../../img/TrafficLight.png';
+import CrackSealIcon from '../../img/CrackSealIcon.png';
 
 export default () => {
   return (

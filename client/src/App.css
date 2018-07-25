@@ -493,7 +493,18 @@ form {
 /* ADMIN */
 .admin-btn {
   font-size: 1.3rem;
-  width: 200px;
+  width: 250px;
+  outline: 3px white solid;
+  border: none;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+.admin-btn:hover {
+  outline: 3px rgba(0, 0, 0, 0) solid;
+  outline-offset: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
 }
 /* MEDIA QUERIES: NAV */
 @media (max-width: 991px) {

@@ -30,13 +30,14 @@ class Admin extends Component {
               </Link>
               <Link
                 to="/history"
-                className="btn admin-btn lead py-3 btn-warning my-2"
+                className="btn admin-btn lead py-3 btn-success my-2"
               >
                 Add History
               </Link>
+
               <Button
                 onClick={this.handleLogout.bind(this)}
-                className="admin-btn lead py-3  btn-danger my-2"
+                className="admin-btn lead py-3  my-2"
               >
                 Log Out
               </Button>

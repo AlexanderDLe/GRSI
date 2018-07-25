@@ -10,13 +10,13 @@ import store from './store';
 
 import PrivateRoute from './components/admin/PrivateRoute';
 
-import Navigation from './components/Navigation';
-import Landing from './components/Landing';
+import Navigation from './components/layout/Navigation';
+import Landing from './components/layout/Landing';
 import Travels from './components/about/Travels';
 import Mission from './components/about/Mission';
 import Vision from './components/about/Vision';
 import Goals from './components/about/Goals';
-import History from './components/History';
+import History from './components/history/History';
 import Testimonials from './components/testimonials/Testimonials';
 import CrackSeal from './components/services/CrackSeal';
 import JointSeal from './components/services/JointSeal';
@@ -25,7 +25,7 @@ import TrafficLights from './components/services/TrafficLights';
 import Contact from './components/Contact';
 import Login from './components/admin/Login';
 import Admin from './components/admin/Admin';
-import Footer from './components/Footer';
+import Footer from './components/layout/Footer';
 
 import './App.css';
 

@@ -76,7 +76,7 @@ class Testimonials extends Component {
 
     const testimonialsBtn = (
       <Button
-        className="btn admin-btn lead py-3 btn-success my-2"
+        className="btn admin-btn lead py-3 my-2"
         data-toggle="modal"
         data-target="#testimonialModal"
       >
