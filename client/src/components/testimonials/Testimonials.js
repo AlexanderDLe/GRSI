@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Input
-} from 'reactstrap';
+import { Container, Button, Form, FormGroup, Input } from 'reactstrap';
 import { connect } from 'react-redux';
+import {
+  addTestimonial,
+  getTestimonials
+} from '../../actions/testimonialsActions';
+import TestFeed from './TestFeed';
 
 class Testimonials extends Component {
   constructor(props) {
@@ -19,11 +16,41 @@ class Testimonials extends Component {
     this.state = {
       name: '',
       company: '',
-      quote: ''
+      quote: '',
+      success: false,
+      errors: {}
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.getTestimonials();
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.errors) {
+      this.setState({
+        errors: newProps.errors,
+        success: false
+      });
+    }
+
+    if (newProps.testimonials.success) {
+      this.setState({
+        name: '',
+        company: '',
+        quote: '',
+        errors: {},
+        success: 'Success!'
+      });
+    }
+    if (!newProps.testimonials.success) {
+      this.setState({
+        success: false
+      });
+    }
   }
 
   handleChange(e) {
@@ -32,11 +59,20 @@ class Testimonials extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+
+    const newTestimonial = {
+      name: this.state.name,
+      company: this.state.company,
+      quote: this.state.quote
+    };
+
+    this.props.addTestimonial(newTestimonial);
   }
 
   render() {
     const { isAuthenticated } = this.props.auth;
-    const { errors } = this.props;
+    const { errors, success } = this.state;
+    const { testimonials } = this.props.testimonials;
 
     const testimonialsBtn = (
       <Button
@@ -46,23 +82,6 @@ class Testimonials extends Component {
       >
         Add Testimonial
       </Button>
-    );
-
-    const renderTestimonial = (
-      <Row className="p-5 testimonial-item m-auto">
-        <Col>
-          <blockquote className="blockquote">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis,
-            aspernatur.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </blockquote>
-          <div className="blockquote-footer">
-            John Doe From <cite title="Company 1">Company 1</cite>
-          </div>
-        </Col>
-      </Row>
     );
 
     return (
@@ -82,11 +101,13 @@ class Testimonials extends Component {
           </div>
         </div>
         <div className="page-info">
-          <Container className="p-5">{renderTestimonial}</Container>
+          <Container className="p-5">
+            <TestFeed testimonials={testimonials} />
+          </Container>
         </div>
 
         {/* MODAL */}
-        <div className="modal" id="testimonialModal">
+        <div className="modal fade" id="testimonialModal">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
@@ -97,7 +118,7 @@ class Testimonials extends Component {
               </div>
 
               <div className="modal-body">
-                <Form onClick={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit}>
                   <FormGroup className="input-group input-group-lg mb-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
@@ -165,6 +186,9 @@ class Testimonials extends Component {
                       </div>
                     )}
                   </FormGroup>
+                  {success && (
+                    <div className="lead pb-3 text-success ">{success}</div>
+                  )}
                   <Button className="btn modal-btn text-center m-auto lead btn-success">
                     SUBMIT
                   </Button>
@@ -180,12 +204,19 @@ class Testimonials extends Component {
 
 Testimonials.propTypes = {
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
+  testimonials: PropTypes.object.isRequired,
+  addTestimonial: PropTypes.func.isRequired,
+  getTestimonials: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
+  testimonials: state.testimonials
 });
 
-export default connect(mapStateToProps)(Testimonials);
+export default connect(
+  mapStateToProps,
+  { addTestimonial, getTestimonials }
+)(Testimonials);

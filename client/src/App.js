@@ -17,7 +17,7 @@ import Mission from './components/about/Mission';
 import Vision from './components/about/Vision';
 import Goals from './components/about/Goals';
 import History from './components/History';
-import Testimonials from './components/Testimonials';
+import Testimonials from './components/testimonials/Testimonials';
 import CrackSeal from './components/services/CrackSeal';
 import JointSeal from './components/services/JointSeal';
 import TrafficLoops from './components/services/TrafficLoops';

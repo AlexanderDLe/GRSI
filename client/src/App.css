@@ -81,6 +81,15 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.modal-open .modal {
+  height: 70%;
+}
+.modal-dialog {
+  width: 100%;
+}
+.modal-content {
+  height: 100%;
+}
 .modal-btn {
   width: 100%;
   font-size: 1.5rem;
@@ -90,7 +99,16 @@ a:hover {
 .close:focus {
   background-color: white;
 }
-
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 600px;
+  }
+}
+@media (max-width: 576px) {
+  .modal-open .modal {
+    width: 90%;
+  }
+}
 /* BORDER-STYLES */
 .borderStyle {
   border-width: 0 0 5px 5px;
@@ -432,6 +450,16 @@ footer {
 /* TESTIMONIALS */
 .testimonial-item {
   max-width: 767px;
+  position: relative;
+}
+.testimonial-delete {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 45px;
+  right: 0;
+  border-radius: 50%;
+  box-shadow: 0px 3px 25px -3px black;
 }
 /* CRACK SEAL */
 
@@ -561,5 +589,18 @@ form {
   .container {
     width: 95%;
     max-width: 677px;
+  }
+}
+
+/* ANIMATION */
+.fade {
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

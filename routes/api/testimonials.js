@@ -43,7 +43,7 @@ router.post(
   }
 );
 
-// @route   POST /testimonials
+// @route   DELETE  /testimonials
 // @desc    Testimonials Page
 // @acess   Private
 router.delete(
