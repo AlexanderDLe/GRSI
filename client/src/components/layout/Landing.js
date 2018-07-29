@@ -15,18 +15,18 @@ export default () => {
           <div className="landing-box borderStyle">
             <Container>
               <Row>
-                <Col className="text-center p-4 landing-item">
+                <Col className="text-center p-3 landing-item">
                   <i className="landing-icon fas fa-phone" />
                   <br />
                   Call us Toll-Free: <br /> (714)123-4567
                 </Col>
-                <Col className="text-center p-4 landing-item">
+                <Col className="text-center p-3 landing-item">
                   <i className="landing-icon fas fa-clock" />
                   <br />
                   Operating Hours: <br />
                   Mon-Fri 7AM-5PM(PST)
                 </Col>
-                <Col className="text-center p-4 landing-item">
+                <Col className="text-center p-3 landing-item">
                   <Link to="/contact">
                     <i className="landing-icon fas fa-envelope" />
                   </Link>

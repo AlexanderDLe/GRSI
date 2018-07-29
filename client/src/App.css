@@ -216,7 +216,7 @@ nav {
 
 .landing-box {
   background-color: rgba(255, 255, 255, 0.95);
-  width: 88%;
+  width: 83%;
   max-width: 992px;
   font-family: Open Sans;
   box-shadow: 0px 0px 25px -8px black;
@@ -227,11 +227,11 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .landing-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 5px;
 }
 .landing-item {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* LANDING: SERVICES */
@@ -470,11 +470,9 @@ form {
   margin: auto;
 }
 .contactButton {
-  background-color: rgb(35, 35, 35);
   width: 100% !important;
   color: white;
-  outline: 2px white solid;
-  border: none;
+  font-size: 1.5rem;
 }
 
 .spinner {
