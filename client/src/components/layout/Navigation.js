@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoWhite from '../../img/GRSI Logo 1.png';
-import logoBlack from '../../img/GRSI Logo 1.png';
+import logo from '../../img/GRSI Logo 2.png';
 
 import {
   Collapse,
@@ -39,7 +38,6 @@ export default class Navigation extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      logo: logoWhite,
       textColor: ''
     };
     this.handleScroll = debounce(this.handleScroll.bind(this), 10);
@@ -55,9 +53,9 @@ export default class Navigation extends React.Component {
 
   resizeWidth() {
     if (window.innerWidth <= 991 || window.scrollY > 0) {
-      this.setState({ logo: logoBlack, textColor: 'text-to-black' });
+      this.setState({ textColor: 'text-to-black' });
     } else if (window.innerWidth > 991) {
-      this.setState({ logo: logoWhite, textColor: '' });
+      this.setState({ textColor: '' });
     }
   }
 
@@ -65,14 +63,14 @@ export default class Navigation extends React.Component {
     if (window.scrollY === 0 && window.innerWidth > 991) {
       setTimeout(
         function() {
-          this.setState({ logo: logoWhite, textColor: '' });
+          this.setState({ textColor: '' });
         }.bind(this),
         100
       );
     } else if (window.scrollY > 0) {
       setTimeout(
         function() {
-          this.setState({ logo: logoBlack, textColor: 'text-to-black' });
+          this.setState({ textColor: 'text-to-black' });
         }.bind(this),
         100
       );
@@ -89,7 +87,7 @@ export default class Navigation extends React.Component {
         <Navbar id="nav" light expand="lg" className="fixed-top">
           <div className="container">
             <NavbarBrand tag={Link} to="/">
-              <img id="logoNav" src={this.state.logo} alt="" />
+              <img id="logoNav" src={logo} alt="" />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
