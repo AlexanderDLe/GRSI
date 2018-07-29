@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 export default () => {
+  const year = new Date();
+
   return (
     <footer>
       <Container>
@@ -74,7 +76,7 @@ export default () => {
           </Col>
         </Row>
         <div className="py-3 text-center">
-          &copy; Global Road Sealing Inc. 2018
+          &copy; Global Road Sealing Inc. {year.getFullYear()}
         </div>
       </Container>
     </footer>
