@@ -11,10 +11,7 @@ export default () => {
               TRAFFIC LOOPS
             </h1>
             <p className="lead p-2 text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
-              totam, porro exercitationem quo quibusdam sapiente accusamus
-              officiis architecto, qui nesciunt ullam!
+              To ensure the safety and flow of transportation.
             </p>
           </Container>
         </div>

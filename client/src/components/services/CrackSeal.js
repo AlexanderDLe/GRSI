@@ -11,13 +11,10 @@ export default () => {
         <div className="dark-overlay2 flexCenter">
           <Container className="flexCenter flexDown">
             <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
-              CRACK SEAL
+              CRACK SEALING
             </h1>
-            <p className="lead p-2 text-white">
-              Crack treatments consist of placing specialized materials into
-              prepared cracks to prevent water and incompressible intrusion into
-              the cracks and underlying pavement layers, and to reinforce the
-              adjacent pavement.
+            <p className="lead p-2 text-white text-center">
+              Crack treatments repairs and treats road damages.
             </p>
           </Container>
         </div>

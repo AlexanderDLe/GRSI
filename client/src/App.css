@@ -67,6 +67,7 @@ a:hover {
 
 .imgContent {
   width: 100%;
+  max-width: 600px;
   object-fit: contain;
   background-color: white;
   box-shadow: 0px 10px 45px -15px black;
@@ -198,8 +199,7 @@ nav {
 .landingBG {
   width: 100%;
   height: 100vh;
-  background: url('./img/Landing2.jpeg') no-repeat center;
-  /* background: url('./img/Road2.jpeg') no-repeat center; */
+  background: url('./img/Landing2.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 
@@ -297,6 +297,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 .landing-philosophy-box::before {
   content: '';
@@ -348,8 +349,8 @@ blockquote p {
 /* FOOTER */
 footer {
   min-height: 380px;
-  background: linear-gradient(rgb(0, 0, 0), transparent 90%),
-    linear-gradient(0deg, black, transparent 60%),
+  background: linear-gradient(rgb(0, 0, 0), transparent 95%),
+    linear-gradient(0deg, black, transparent 95%),
     url('img/CityRoad2.jpeg') no-repeat center;
   background-size: cover;
   color: white;
@@ -383,57 +384,57 @@ footer {
 }
 .CrackSeal-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/CrackSeal.jpg') no-repeat center;
+    url('img/CrackSeal.jpg') no-repeat 50% 0px;
   background-size: cover;
 }
 .JointSeal-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/JointSeal.jpg') no-repeat center;
+    url('img/JointSeal.jpg') no-repeat 50% 0px;
   background-size: cover;
 }
 .TrafficLoops-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/TrafficLoops.jpg') no-repeat center;
+    url('img/TrafficLoops.jpg') no-repeat 50% 0px;
   background-size: cover;
 }
 .TrafficLights-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/TrafficLights.jpg') no-repeat center;
+    url('img/TrafficLights.jpg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Testimonials-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/Testimonials.jpeg') no-repeat center;
+    url('img/Testimonials.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .History-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/Testimonials.jpeg') no-repeat center;
+    url('img/Testimonials.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Contact-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/Contact.jpeg') no-repeat center;
+    url('img/Contact.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Travels-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/About.jpeg') no-repeat center;
+    url('img/About.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Mission-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/About.jpeg') no-repeat center;
+    url('img/About.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Vision-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/About.jpeg') no-repeat center;
+    url('img/About.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 .Goals-wrap {
   background: linear-gradient(black, transparent 25%),
-    url('img/About.jpeg') no-repeat center;
+    url('img/About.jpeg') no-repeat 50% 0px;
   background-size: cover;
 }
 /* TESTIMONIALS */

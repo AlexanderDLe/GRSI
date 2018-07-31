@@ -10,11 +10,8 @@ export default () => {
             <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
               JOINT SEAL
             </h1>
-            <p className="lead p-2 text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
-              totam, porro exercitationem quo quibusdam sapiente accusamus
-              officiis architecto, qui nesciunt ullam!
+            <p className="lead p-2 text-white text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </Container>
         </div>

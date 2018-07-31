@@ -38,7 +38,9 @@ export default class Navigation extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      textColor: ''
+      textColor: '',
+      logoSize: '',
+      navBG: ''
     };
     this.handleScroll = debounce(this.handleScroll.bind(this), 10);
     this.resizeWidth = debounce(this.resizeWidth.bind(this), 10);
@@ -53,9 +55,13 @@ export default class Navigation extends React.Component {
 
   resizeWidth() {
     if (window.innerWidth <= 991 || window.scrollY > 0) {
-      this.setState({ textColor: 'text-to-black' });
+      this.setState({
+        textColor: 'text-to-black',
+        navBG: 'nav-scroll',
+        logoSize: 'logoNav-scroll'
+      });
     } else if (window.innerWidth > 991) {
-      this.setState({ textColor: '' });
+      this.setState({ textColor: '', navBG: '', logoSize: 'logoNav-scroll' });
     }
   }
 
@@ -63,16 +69,20 @@ export default class Navigation extends React.Component {
     if (window.scrollY === 0 && window.innerWidth > 991) {
       setTimeout(
         function() {
-          this.setState({ textColor: '' });
+          this.setState({ textColor: '', navBG: '', logoSize: '' });
         }.bind(this),
-        100
+        10
       );
     } else if (window.scrollY > 0) {
       setTimeout(
         function() {
-          this.setState({ textColor: 'text-to-black' });
+          this.setState({
+            textColor: 'text-to-black',
+            navBG: 'nav-scroll',
+            logoSize: 'logoNav-scroll'
+          });
         }.bind(this),
-        100
+        10
       );
     }
   }
@@ -84,10 +94,20 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <Navbar id="nav" light expand="lg" className="fixed-top">
+        <Navbar
+          id="nav"
+          light
+          expand="lg"
+          className={`fixed-top ${this.state.navBG}`}
+        >
           <div className="container">
             <NavbarBrand tag={Link} to="/">
-              <img id="logoNav" src={logo} alt="" />
+              <img
+                id="logoNav"
+                src={logo}
+                alt=""
+                className={this.state.logoSize}
+              />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -160,14 +180,14 @@ export default class Navigation extends React.Component {
                       to="/crack-seal"
                       className={this.state.textColor}
                     >
-                      Crack Seal
+                      Crack Sealing
                     </DropdownItem>
                     <DropdownItem
                       tag={Link}
                       to="/joint-seal"
                       className={this.state.textColor}
                     >
-                      Joint Seal
+                      Joint Sealing
                     </DropdownItem>
                     <DropdownItem
                       tag={Link}
@@ -181,7 +201,7 @@ export default class Navigation extends React.Component {
                       to="/traffic-lights"
                       className={this.state.textColor}
                     >
-                      Traffic Lights
+                      Traffic/Street Lighting
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
