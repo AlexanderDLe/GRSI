@@ -33,11 +33,8 @@ a:hover {
   box-shadow: 0px 3px 20px -7px black;
 }
 .request-button:hover {
-  padding: 12px 50px;
   box-shadow: 0px 3px 28px -8px black;
-  background: #f8faff;
-  color: black;
-  /* transform: scale(1.05); */
+  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
 .add-button {
@@ -189,14 +186,6 @@ nav {
   position: absolute;
   width: 5px;
   height: 0%;
-  transition: all 0.5s ease-in-out;
-}
-.dropdown-item:hover::before {
-  height: 109%;
-  transition: all 0.5s ease-in-out;
-}
-.nav-link:hover::before {
-  height: 70%;
   transition: all 0.5s ease-in-out;
 }
 .dropdown-menu,

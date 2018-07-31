@@ -41,20 +41,20 @@ export default () => {
       </div>
       <div className="landing-services">
         <Container className="py-5">
-          <h1 className="py-5 GRSI-Title text-center font-weight-bold">
+          {/* <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             WELCOME
-          </h1>
-          <p className="lead  p-2">
-            Global Road Sealing Inc. specializes in road maintainence and
-            construction. Founded in 1989, GRSI has been trusted by numerous
-            organizations across the state of California to provide high quality
-            solutions in managing road conditions. We deploy highly-trained
-            teams and use state-of-the-art equipment to ensure excellent
-            results.
+          </h1> */}
+          <p className="lead  text-center">P(714)893-0845 F(714)893-0945</p>
+          <p className="lead  text-center">
+            Contractor License #757584 A C-10 C-32
           </p>
+          <p className="lead  text-center">
+            UDBE & MBE CT #031176 SBE # 2001305
+          </p>
+          <p className="lead  text-center">DIR # 1000007714</p>
           <div className="text-center pt-5 pb-5">
             <Link to="/contact" className="borderStyle mb-5 request-button">
-              REQUEST QUOTE
+              CONTACT
             </Link>
           </div>
           <hr className="my-5" />
