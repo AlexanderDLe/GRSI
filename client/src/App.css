@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 /* GENERAL */
-
+p {
+  font-family: 'Open Sans';
+}
 a,
 button {
   text-decoration: none !important;
@@ -18,15 +20,19 @@ a:hover {
   font-size: 5rem;
   transform: scaleY(1.4);
 }
+.Page-Title {
+  font-size: 3rem;
+  transform: scaleY(1.4);
+}
 .lead {
   font-family: Open Sans;
 }
 .request-button {
   border-radius: 0;
   background: #ffffff;
-  color: black;
+  color: rgb(8, 8, 8);
   font-family: Open Sans;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 50px;
   transition: all 0.5s ease-in-out;
@@ -42,8 +48,8 @@ a:hover {
 }
 
 .wrap {
-  min-height: calc(100vh - 380px);
-  margin-bottom: 380px;
+  min-height: calc(100vh - 350px);
+  margin-bottom: 350px;
 }
 .flexCenter {
   display: flex;
@@ -69,7 +75,7 @@ a:hover {
   width: 100%;
   max-width: 600px;
   object-fit: contain;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   box-shadow: 0px 10px 45px -15px black;
 }
 /* MODALS */
@@ -109,12 +115,12 @@ a:hover {
 }
 /* BORDER-STYLES */
 .borderStyle {
-  border-width: 0 0 5px 5px;
+  border-width: 0 0 3px 3px;
   border-style: solid;
   border-color: #cfcfcf;
 }
 .dropdown-borderStyle {
-  border-bottom: 5px solid #c3c3c3 !important ;
+  border-bottom: 3px solid #c3c3c3 !important ;
 }
 .dropdown-item::before,
 .nav-link::before {
@@ -125,6 +131,9 @@ blockquote {
 }
 
 /* NAVIGATION */
+.navbar {
+  padding: 5px;
+}
 nav {
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.5s ease-in-out;
@@ -137,11 +146,11 @@ nav {
 }
 #logoNav {
   height: auto;
-  width: 150px;
+  width: 145px;
   transition: all 0.5s ease-in-out;
 }
 .logoNav-scroll {
-  width: 100px !important;
+  width: 95px !important;
   transition: all 0.5s ease-in-out;
 }
 .nav-item,
@@ -162,9 +171,10 @@ nav {
 .nav-link,
 .dropdown-item {
   font-family: Open Sans !important;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
   position: relative;
-  padding-left: 10px !important;
+  padding-left: 8px !important;
   /* text-transform: uppercase; */
 }
 .navbar-light .navbar-nav .nav-link:focus,
@@ -225,7 +235,7 @@ nav {
 
 /* LANDING: SERVICES */
 .landing-services {
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
 }
 .landing-services::before {
@@ -260,6 +270,7 @@ nav {
   background: #fff;
   box-shadow: 0px 3px 20px -8px black;
   width: 95%;
+  max-width: 350px;
   height: 95%;
   transition: all 0.5s ease-in-out;
 }
@@ -273,7 +284,7 @@ nav {
 
 /* LANDING: PHILOSOPHY */
 .landing-philosophy {
-  min-height: 130vh;
+  min-height: 50vh;
   background-color: #eee;
   position: relative;
 }
@@ -291,7 +302,7 @@ nav {
 }
 .landing-philosophy-box {
   position: relative;
-  min-height: 85vh;
+  min-height: 60vh;
   background: url('img/CityRoad.jpeg') no-repeat center;
   background-size: cover;
   display: flex;
@@ -348,13 +359,13 @@ blockquote p {
 }
 /* FOOTER */
 footer {
-  min-height: 380px;
+  min-height: 350px;
   background: linear-gradient(rgb(0, 0, 0), transparent 95%),
     linear-gradient(0deg, black, transparent 95%),
     url('img/CityRoad2.jpeg') no-repeat center;
   background-size: cover;
   color: white;
-  margin-top: -380px;
+  margin-top: -350px;
 }
 
 /* GENERAL BACKGROUND */

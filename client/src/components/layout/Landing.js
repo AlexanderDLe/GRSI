@@ -44,29 +44,22 @@ export default () => {
           {/* <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             WELCOME
           </h1> */}
-          <p className="lead text-center py-1">
-            Global Road Sealing Inc. specializes in road maintainence and
-            construction. Founded in 1989, GRSI has been trusted by numerous
-            organizations across the state of California to provide high quality
-            solutions in managing road conditions.
-          </p>
-          <p className="lead  text-center">P(714)893-0845 F(714)893-0945</p>
-          <p className="lead  text-center">
-            Contractor License #757584 A C-10 C-32
-          </p>
-          <p className="lead  text-center">
-            UDBE & MBE CT #031176 SBE # 2001305
-          </p>
-          <p className="lead  text-center">DIR # 1000007714</p>
-          <div className="text-center pt-5 pb-5">
-            <Link to="/contact" className="borderStyle mb-5 request-button">
-              CONTACT
-            </Link>
-          </div>
-          <hr className="my-5" />
           <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             SERVICES
           </h1>
+          <p className="lead text-center py-1">
+            Founded in 1989, GRSI has been trusted by numerous organizations
+            across the state of California to provide high quality solutions in
+            managing road conditions.
+          </p>
+          <p className="lead text-center">
+            P(714)893-0845 F(714)893-0945
+            <br />
+            Contractor License #757584 A C-10 C-32
+            <br />
+            UDBE & MBE CT #031176 SBE # 2001305
+            <br /> DIR # 1000007714
+          </p>
           <Row className="pt-5">
             <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">
@@ -76,7 +69,7 @@ export default () => {
                     src={CrackSealIcon}
                     alt=""
                   />
-                  <h3 className="text-center pb-5 ">Crack Seal</h3>
+                  <h4 className="text-center pb-5 ">Crack Seal</h4>
                 </div>
               </Link>
             </Col>
@@ -84,7 +77,7 @@ export default () => {
               <Link to="/joint-seal">
                 <div className="service-card borderStyle m-auto">
                   <i className="service-icon py-5 m-auto fas fa-plus " />
-                  <h3 className="text-center pb-5 ">Joint Seal</h3>
+                  <h4 className="text-center pb-5 ">Joint Seal</h4>
                 </div>
               </Link>
             </Col>
@@ -92,7 +85,7 @@ export default () => {
               <Link to="/traffic-loops">
                 <div className="service-card borderStyle m-auto">
                   <i className="service-icon py-5 m-auto far fa-circle " />
-                  <h3 className="text-center pb-5 ">Traffic Loops</h3>
+                  <h4 className="text-center pb-5 ">Traffic Loops</h4>
                 </div>
               </Link>
             </Col>
@@ -104,9 +97,9 @@ export default () => {
                     src={trafficLight}
                     alt=""
                   />
-                  <h3 className="text-center pb-5 traffic-text">
+                  <h4 className="text-center pb-5 traffic-text">
                     Traffic/Street Lighting
-                  </h3>
+                  </h4>
                 </div>
               </Link>
             </Col>
@@ -143,7 +136,7 @@ export default () => {
           </Container>
         </div>
         <Container className="landing-testimonials py-5 mt-5 text-center">
-          <h1 className="GRSI-Title font-weight-bold pt-3 pb-5">
+          <h1 className="GRSI-Title font-weight-bold pt-2 pb-4">
             TESTIMONIALS
           </h1>
           <Row className="pt-3">

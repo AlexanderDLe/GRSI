@@ -101,7 +101,7 @@ export default class Contact extends Component {
                         name={'email'}
                         inputIcon={'fas fa-envelope'}
                         type={'text'}
-                        placeholder={'Full Email'}
+                        placeholder={'Email'}
                         value={this.state.email}
                         onChange={this.handleChange}
                       />
@@ -112,7 +112,7 @@ export default class Contact extends Component {
                     name={'phone'}
                     inputIcon={'fas fa-phone'}
                     type={'text'}
-                    placeholder={'Full Phone'}
+                    placeholder={'Phone'}
                     value={this.state.phone}
                     onChange={this.handleChange}
                   />
