@@ -44,7 +44,7 @@ export default () => {
           {/* <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             WELCOME
           </h1> */}
-          <h1 className="py-5 GRSI-Title text-center font-weight-bold">
+          <h1 className="pt-5 pb-3 Page-Title text-center font-weight-bold">
             SERVICES
           </h1>
           <p className="lead text-center py-1">
@@ -106,14 +106,14 @@ export default () => {
           </Row>
         </Container>
       </div>
-      <div id="parallaxFX2-parent" className="landing-philosophy py-5">
+      <div id="parallaxFX2-parent" className="landing-philosophy py-1">
         <Container>
           <hr className="pb-5" />
           <br className="pb-5" />
         </Container>
         <div className="landing-philosophy-box parallaxFX2">
-          <Container className="py-5 landing-philosophy-text">
-            <h1 className="pb-5 GRSI-Title text-center font-weight-bold">
+          <Container className="py-4 landing-philosophy-text">
+            <h1 className="pt-5 pb-3 GRSI-Title text-center font-weight-bold">
               PHILOSOPHY
             </h1>
 
@@ -135,8 +135,8 @@ export default () => {
             </p>
           </Container>
         </div>
-        <Container className="landing-testimonials py-5 mt-5 text-center">
-          <h1 className="GRSI-Title font-weight-bold pt-2 pb-4">
+        <Container className="landing-testimonials pt-3 pb-5 text-center">
+          <h1 className="GRSI-Title font-weight-bold pt-5 pb-3">
             TESTIMONIALS
           </h1>
           <Row className="pt-3">
@@ -175,7 +175,7 @@ export default () => {
           </Row>
           <br />
           <br />
-          <Link to="/testimonials" className="my-5 request-button borderStyle">
+          <Link to="/testimonials" className="mb-5 request-button borderStyle">
             READ MORE
           </Link>
         </Container>

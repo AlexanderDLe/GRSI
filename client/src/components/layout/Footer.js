@@ -10,7 +10,7 @@ export default () => {
       <Container>
         <div className="text-center">{/* <h1 className="p-3"> </h1> */}</div>
         <Row className="text-left">
-          <Col className=" p-5">
+          <Col sm="6" lg="3" className=" p-5">
             <Link to="/" className="text-white">
               <div className="p-1">Home</div>
             </Link>
@@ -30,7 +30,7 @@ export default () => {
               <div className="p-1">Testimonials</div>
             </Link>
           </Col>
-          <Col className=" p-5">
+          <Col sm="6" lg="3" className=" p-5">
             <Link to="/services" className="text-white">
               <div className="p-1">Services</div>
             </Link>
@@ -50,7 +50,7 @@ export default () => {
               <div className="p-1">Admin</div>
             </Link>
           </Col>
-          <Col className=" p-5">
+          <Col sm="6" lg="3" className=" p-5">
             <Link to="/contact" className="text-white">
               <div className="p-1">Contact Us</div>
             </Link>
@@ -59,7 +59,7 @@ export default () => {
             <div className="p-1">18204 Dorothy Rd.</div>
             <div className="p-1">Garden Grove, CA 92843</div>
           </Col>
-          <Col className=" p-5">
+          <Col sm="6" lg="3" className=" p-5">
             <div className="p-1 text-center">
               <i className="pb-3 fas fa-phone m-auto" />
               <br />(714)123-4567
