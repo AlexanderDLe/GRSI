@@ -15,7 +15,7 @@ a:hover {
   color: black;
 }
 .GRSI-Title {
-  font-size: 5.6rem;
+  font-size: 5rem;
   transform: scaleY(1.4);
 }
 .lead {
@@ -28,7 +28,7 @@ a:hover {
   font-family: Open Sans;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 10px 50px;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 3px 20px -7px black;
 }
@@ -137,11 +137,11 @@ nav {
 }
 #logoNav {
   height: auto;
-  width: 165px;
+  width: 150px;
   transition: all 0.5s ease-in-out;
 }
 .logoNav-scroll {
-  width: 105px !important;
+  width: 100px !important;
   transition: all 0.5s ease-in-out;
 }
 .nav-item,
@@ -162,7 +162,7 @@ nav {
 .nav-link,
 .dropdown-item {
   font-family: Open Sans !important;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: relative;
   padding-left: 10px !important;
   /* text-transform: uppercase; */
@@ -206,7 +206,7 @@ nav {
 .landing-box {
   background-color: rgba(255, 255, 255, 0.95);
   width: 83%;
-  max-width: 992px;
+  max-width: 845px;
   font-family: Open Sans;
   box-shadow: 0px 0px 25px -8px black;
   transition: all 0.5s ease-in-out;
@@ -216,7 +216,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .landing-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-bottom: 5px;
 }
 .landing-item {
@@ -509,17 +509,17 @@ form {
 /* MEDIA QUERIES: GRSI TITLE */
 @media (max-width: 1440px) {
   .GRSI-Title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 @media (max-width: 1180px) {
   .GRSI-Title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 995px) {
   .GRSI-Title {
-    font-size: 3.25rem;
+    font-size: 2.7rem;
   }
 }
 @media (max-width: 769px) {

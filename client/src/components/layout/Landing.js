@@ -44,6 +44,12 @@ export default () => {
           {/* <h1 className="py-5 GRSI-Title text-center font-weight-bold">
             WELCOME
           </h1> */}
+          <p className="lead text-center py-1">
+            Global Road Sealing Inc. specializes in road maintainence and
+            construction. Founded in 1989, GRSI has been trusted by numerous
+            organizations across the state of California to provide high quality
+            solutions in managing road conditions.
+          </p>
           <p className="lead  text-center">P(714)893-0845 F(714)893-0945</p>
           <p className="lead  text-center">
             Contractor License #757584 A C-10 C-32
@@ -99,7 +105,7 @@ export default () => {
                     alt=""
                   />
                   <h3 className="text-center pb-5 traffic-text">
-                    Street Lighting
+                    Traffic/Street Lighting
                   </h3>
                 </div>
               </Link>
