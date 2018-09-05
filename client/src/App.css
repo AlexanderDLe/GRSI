@@ -393,6 +393,13 @@ blockquote:after {
 blockquote p {
   display: inline;
 }
+/* ABOUT */
+.bg-about-white {
+  background-color: rgb(255, 255, 255);
+}
+.bg-about {
+  background-color: rgb(241, 241, 241);
+}
 /* FOOTER */
 footer {
   min-height: 350px;

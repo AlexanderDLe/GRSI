@@ -20,7 +20,7 @@ export default () => {
         </div>
       </div>
       <div className="page-info">
-        <Container className="conditional-padding py-5 page-info">
+        <Container className="conditional-padding py-5">
           <h1 className="py-3 GRSI-Title text-center text-black font-weight-bold">
             COMPANY DETAILS
           </h1>{' '}
@@ -32,7 +32,7 @@ export default () => {
           </p>
           <div className="divider TLC-DarkBG my-5" />
           <div className="conditional-padding about-table m-auto lead">
-            <Row className="">
+            <Row className="bg-about-white">
               <Col className="about-item-1 border py-1">Company:</Col>
               <Col className="border py-1">Global Road Sealing Inc.</Col>
             </Row>
@@ -42,7 +42,7 @@ export default () => {
                 123 Dorothy Road Garden Grove, CA 92844
               </Col>
             </Row>
-            <Row className="">
+            <Row className="bg-about-white">
               <Col className="about-item-1 border py-1">Phone:</Col>
               <Col className="border py-1">(714)893-0845</Col>
             </Row>
@@ -50,7 +50,7 @@ export default () => {
               <Col className="about-item-1 border py-1">License:</Col>
               <Col className="border py-1">No. 757584</Col>
             </Row>
-            <Row className="">
+            <Row className="bg-about-white">
               <Col className="about-item-1 border py-1">Class:</Col>
               <Col className="border py-1">C-10 & C-32</Col>
             </Row>
@@ -58,7 +58,7 @@ export default () => {
               <Col className="about-item-1 border py-1">SBE:</Col>
               <Col className="border py-1">No. 2001305</Col>
             </Row>
-            <Row className="">
+            <Row className="bg-about-white">
               <Col className="about-item-1 border py-1">DBE & UDBE:</Col>
               <Col className="border py-1">No. 031176</Col>
             </Row>
@@ -67,7 +67,7 @@ export default () => {
               <Col className="border py-1">No. 1000007714</Col>
             </Row>
 
-            <Row className="bg-about">
+            <Row className="bg-about-white">
               <Col className="about-item-1 border py-1">Email:</Col>
               <Col className="border py-1">company@globalroadsealing.com</Col>
             </Row>
