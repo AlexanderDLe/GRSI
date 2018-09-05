@@ -12,10 +12,7 @@ import PrivateRoute from './components/admin/PrivateRoute';
 
 import Navigation from './components/layout/Navigation';
 import Landing from './components/layout/Landing';
-import Travels from './components/about/Travels';
-import Mission from './components/about/Mission';
-import Vision from './components/about/Vision';
-import Goals from './components/about/Goals';
+import About from './components/about/About';
 import History from './components/history/History';
 import Testimonials from './components/testimonials/Testimonials';
 import CrackSeal from './components/services/CrackSeal';
@@ -60,10 +57,7 @@ class App extends Component {
               <ScrollToTop>
                 <div>
                   <Route exact path="/" component={Landing} />
-                  <Route exact path="/travels" component={Travels} />
-                  <Route exact path="/mission" component={Mission} />
-                  <Route exact path="/vision" component={Vision} />
-                  <Route exact path="/goals" component={Goals} />
+                  <Route exact path="/about" component={About} />
                   <Route exact path="/history" component={History} />
                   <Route exact path="/testimonials" component={Testimonials} />
                   <Route exact path="/crack-seal" component={CrackSeal} />

@@ -117,41 +117,16 @@ export default class Navigation extends React.Component {
                     Home
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret className={this.state.textColor}>
+                <NavItem>
+                  <NavLink
+                    tag={Link}
+                    to="/about"
+                    className={this.state.textColor}
+                  >
                     About
-                  </DropdownToggle>
-                  <DropdownMenu className="bg-light dropdown-borderStyle" right>
-                    <DropdownItem
-                      tag={Link}
-                      to="/travels"
-                      className={this.state.textColor}
-                    >
-                      Travels
-                    </DropdownItem>
-                    <DropdownItem
-                      tag={Link}
-                      to="/mission"
-                      className={this.state.textColor}
-                    >
-                      Mission
-                    </DropdownItem>
-                    <DropdownItem
-                      tag={Link}
-                      to="/vision"
-                      className={this.state.textColor}
-                    >
-                      Vision
-                    </DropdownItem>
-                    <DropdownItem
-                      tag={Link}
-                      to="/goals"
-                      className={this.state.textColor}
-                    >
-                      Goals
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                  </NavLink>
+                </NavItem>
+
                 <NavItem>
                   <NavLink
                     tag={Link}
