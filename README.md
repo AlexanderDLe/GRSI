@@ -8,6 +8,7 @@
 - Bootstrap 4: Preferred CSS framework of choice.
 - React + Redux
 - Reactstrap (Library for bootstrap integration within React)
+- axios: used in action files within redux to make requests to API.
 
 
 ### Back End:
@@ -23,8 +24,7 @@
 ### Features:
 - Fully responsive interface
 - Fast due to being a React SPA
-- Dark stylish design catered to artist tastes.
-- Full musical catalogue
-- A stream/hub page containing all available platforms for streaming/downloads
-- Detailed about section written by artist
-- Services pages outlining available offerings
+- Login System: The site features a login page that allows the Admin to log in and update the testimonials page.
+- Testimonial modifications require field validation and allow admin to create new posts, remove old posts, and fetch.
+- Validation is used extensively in three areas of website: Login, adding testimonials, and contact form.  Each have required fields that must contain content, etc.
+- Contact Form: 
