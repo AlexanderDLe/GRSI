@@ -1,47 +1,30 @@
-import React, { Component } from 'react';
-import { Container, Button } from 'reactstrap';
-import { connect } from 'react-redux';
+import React from 'react';
+import { Container } from 'reactstrap';
+import LogoGallery from './LogoGallery';
 
-class History extends Component {
-  render() {
-    const { isAuthenticated } = this.props.auth;
-
-    const historyBtn = (
-      <Button
-        className="btn admin-btn lead py-3 my-2"
-        data-toggle="modal"
-        data-target="#historyModal"
-      >
-        Add History
-      </Button>
-    );
-
-    return (
-      <div className="wrap">
-        <div className="general-BG History-wrap parallaxFX">
-          <div className="dark-overlay2 flexCenter">
-            <Container className="flexCenter flexDown">
-              <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
-                HISTORY
-              </h1>
-              <p className="lead p-2 text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                maxime!
-              </p>
-              {isAuthenticated ? historyBtn : ''}
-            </Container>
-          </div>
-        </div>
-        <div className="page-info">
-          <h1> </h1>
+export default () => {
+  return (
+    <div className="wrap">
+      <div className="general-BG History-wrap parallaxFX">
+        <div className="dark-overlay2 flexCenter">
+          <Container className="flexCenter flexDown">
+            <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
+              CLIENTS
+            </h1>
+            <p className="lead p-2 text-white centered-text">
+              Traffic Loops Crackfilling Inc. has had the honor of working with
+              many public and private agencies in California as a trusted
+              electrical contractor. Below is a gallery of clients we've had the
+              pleasure of working with.
+            </p>
+          </Container>
         </div>
       </div>
-    );
-  }
-}
-
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(mapStateToProps)(History);
+      <div className="page-padding">
+        <Container>
+          <LogoGallery />
+        </Container>
+      </div>
+    </div>
+  );
+};

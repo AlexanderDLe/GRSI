@@ -133,7 +133,7 @@ export default class Navigation extends React.Component {
                     to="/history"
                     className={this.state.textColor}
                   >
-                    History
+                    Clients
                   </NavLink>
                 </NavItem>
                 <NavItem>

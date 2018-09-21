@@ -24,6 +24,14 @@ a:hover {
   font-size: 4rem;
   transform: scaleY(1.4);
 }
+.page-padding {
+  padding: 100px 0;
+}
+.centered-text {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
 /* MEDIA QUERIES: GRSI TITLE */
 @media (max-width: 1440px) {
   .GRSI-Title {
@@ -61,6 +69,7 @@ a:hover {
 }
 .lead {
   font-family: Open Sans;
+  font-size: 1.2rem;
 }
 .request-button {
   border-radius: 0;
@@ -311,9 +320,8 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .service-card:hover {
-  background: #f8faff;
   font-size: 5.2rem !important;
-  box-shadow: 0px 3px 28px -8px black;
+  box-shadow: 0px 5px 35px -7px rgb(19, 19, 19);
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
@@ -400,6 +408,9 @@ blockquote p {
 .bg-about {
   background-color: rgb(241, 241, 241);
 }
+.about-table {
+  max-width: 1200px;
+}
 /* FOOTER */
 footer {
   min-height: 350px;
@@ -420,7 +431,7 @@ footer {
 }
 
 .page-info {
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
 }
 .page-info::before {
@@ -490,6 +501,39 @@ footer {
   background: linear-gradient(black, transparent 25%),
     url('img/About.jpeg') no-repeat 50% 0px;
   background-size: cover;
+}
+/* HISTORY */
+.TLC-Shadow {
+  box-shadow: 0px 5px 25px -10px black;
+}
+.history-clientBox {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history-clientContent {
+  border-radius: none;
+  height: 93%;
+  width: 99%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.history-clientContent:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+.history-logo {
+  width: 65%;
+  height: auto;
+}
+.history-logo2 {
+  width: 87%;
+  height: auto;
 }
 /* TESTIMONIALS */
 .testimonial-item {

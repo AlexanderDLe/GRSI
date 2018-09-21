@@ -39,26 +39,15 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="landing-services">
+      <div className="landing-services page-padding">
         <Container className="py-5">
-          {/* <h1 className="py-5 GRSI-Title text-center font-weight-bold">
-            WELCOME
-          </h1> */}
-          <h1 className="pt-5 pb-3 Page-Title text-center font-weight-bold">
+          <h1 className="pb-3 Page-Title text-center font-weight-bold">
             SERVICES
           </h1>
-          <p className="lead text-center py-1">
-            Founded in 1989, GRSI has been trusted by numerous organizations
-            across the state of California to provide high quality solutions in
-            managing road conditions.
-          </p>
-          <p className="lead text-center">
-            P(714)893-0845 F(714)893-0945
-            <br />
-            Contractor License #757584 A C-10 C-32
-            <br />
-            UDBE & MBE CT #031176 SBE # 2001305
-            <br /> DIR # 1000007714
+          <p className="lead  p-2 centered-text">
+            We design, build and install product on projects of all sizes, both
+            public and private. Our state-of-the-art equipment and practices
+            deliver the safest and highest quality results.
           </p>
           <Row className="pt-5">
             <Col lg="3" md="6" className="p-1">
@@ -107,17 +96,13 @@ export default () => {
         </Container>
       </div>
       <div id="parallaxFX2-parent" className="landing-philosophy py-1">
-        <Container>
-          <hr className="pb-5" />
-          <br className="pb-5" />
-        </Container>
-        <div className="landing-philosophy-box parallaxFX2">
-          <Container className="py-4 landing-philosophy-text">
-            <h1 className="pt-5 pb-3 GRSI-Title text-center font-weight-bold">
+        <div className="landing-philosophy-box parallaxFX2  page-padding">
+          <Container className="py-5 landing-philosophy-text">
+            <h1 className="pb-3 GRSI-Title text-center font-weight-bold">
               PHILOSOPHY
             </h1>
 
-            <p className="lead  p-2">
+            <p className="lead p-2 centered-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
               totam, porro exercitationem quo quibusdam sapiente accusamus
@@ -125,7 +110,7 @@ export default () => {
               nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
               explicabo eaque recusandae itaque est maiores quam qui iste!
             </p>
-            <p className="lead  p-2">
+            <p className="lead  centered-text p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
               totam, porro exercitationem quo quibusdam sapiente accusamus
@@ -136,48 +121,51 @@ export default () => {
           </Container>
         </div>
         <Container className="landing-testimonials pt-3 pb-5 text-center">
-          <h1 className="GRSI-Title font-weight-bold pt-5 pb-3">
-            TESTIMONIALS
-          </h1>
-          <Row className="pt-3">
-            <Col lg="6">
-              <blockquote className="blockquote">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Corporis, aspernatur.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                placeat quod odit ipsa? Quae corrupti accusantium dolorem
-                ratione ab facere delectus atque unde, eum earum architecto
-                perspiciatis labore modi mollitia cupiditate vel, sunt nisi.
-                Dolorem.
-              </blockquote>
-              <div className="blockquote-footer">
-                John Doe From <cite title="Company 1">Company 1</cite>
-              </div>
-            </Col>
-            <Col lg="6">
-              <blockquote className="blockquote">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Corporis, aspernatur.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                placeat quod odit ipsa? Quae corrupti accusantium dolorem
-                ratione ab facere delectus atque unde, eum earum architecto
-                perspiciatis labore modi mollitia cupiditate vel, sunt nisi.
-                Dolorem.
-              </blockquote>
-              <div className="blockquote-footer">
-                Homer Simpson From <cite title="Company 1">Company 2</cite>
-              </div>
-            </Col>
-          </Row>
-          <br />
-          <br />
-          <Link to="/testimonials" className="mb-5 request-button borderStyle">
-            READ MORE
-          </Link>
+          <div className="page-padding">
+            <h1 className="GRSI-Title font-weight-bold pb-3">TESTIMONIALS</h1>
+            <Row className="pt-5">
+              <Col lg="6">
+                <blockquote className="blockquote">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis, aspernatur.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque placeat quod odit ipsa? Quae corrupti accusantium
+                  dolorem ratione ab facere delectus atque unde, eum earum
+                  architecto perspiciatis labore modi mollitia cupiditate vel,
+                  sunt nisi. Dolorem.
+                </blockquote>
+                <div className="blockquote-footer">
+                  John Doe From <cite title="Company 1">Company 1</cite>
+                </div>
+              </Col>
+              <Col lg="6">
+                <blockquote className="blockquote">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis, aspernatur.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque placeat quod odit ipsa? Quae corrupti accusantium
+                  dolorem ratione ab facere delectus atque unde, eum earum
+                  architecto perspiciatis labore modi mollitia cupiditate vel,
+                  sunt nisi. Dolorem.
+                </blockquote>
+                <div className="blockquote-footer">
+                  Homer Simpson From <cite title="Company 1">Company 2</cite>
+                </div>
+              </Col>
+            </Row>
+            <br />
+            <br />
+            <Link
+              to="/testimonials"
+              className="mb-5 request-button borderStyle"
+            >
+              READ MORE
+            </Link>
+          </div>
         </Container>
       </div>
     </div>

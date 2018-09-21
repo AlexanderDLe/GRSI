@@ -100,8 +100,8 @@ class Testimonials extends Component {
             </Container>
           </div>
         </div>
-        <div className="page-info">
-          <Container className="p-5">
+        <div className="page-info page-padding">
+          <Container className="">
             <TestFeed testimonials={testimonials} />
           </Container>
         </div>
