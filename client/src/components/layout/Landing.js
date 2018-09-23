@@ -12,7 +12,22 @@ export default () => {
           <h1 className="py-5 GRSI-Title text-center font-weight-bold text-white">
             GLOBAL ROAD SEALING INC.
           </h1>
-          <div className="landing-box borderStyle">
+        </div>
+      </div>
+      <div className="landing-services page-padding">
+        <Container className="py-5">
+          <h1 className="pb-3 Page-Title text-center font-weight-bold">
+            SERVICES
+          </h1>
+          <p className="lead  p-2 centered-text">
+            We design, build and install product on projects of all sizes, both
+            public and private. Our state-of-the-art equipment and practices
+            deliver the{' '}
+            <strong className="font-weight-bold">
+              safest and highest quality results.
+            </strong>
+          </p>
+          <div className="landing-box borderStyle mx-auto page-margin">
             <Container>
               <Row>
                 <Col className="text-center p-3 landing-item">
@@ -37,18 +52,6 @@ export default () => {
               </Row>
             </Container>
           </div>
-        </div>
-      </div>
-      <div className="landing-services page-padding">
-        <Container className="py-5">
-          <h1 className="pb-3 Page-Title text-center font-weight-bold">
-            SERVICES
-          </h1>
-          <p className="lead  p-2 centered-text">
-            We design, build and install product on projects of all sizes, both
-            public and private. Our state-of-the-art equipment and practices
-            deliver the safest and highest quality results.
-          </p>
           <Row className="pt-5">
             <Col lg="3" md="6" className="p-1">
               <Link to="/crack-seal">

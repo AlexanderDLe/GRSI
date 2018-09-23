@@ -13,7 +13,7 @@ export default () => {
             <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
               CRACK SEALING
             </h1>
-            <p className="lead p-2 text-white text-center">
+            <p className="lead p-2 text-white text-center centered-text">
               Crack treatments repairs and treats road damages.
             </p>
           </Container>
