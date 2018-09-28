@@ -26,14 +26,14 @@ class Admin extends Component {
                 to="/testimonials"
                 className="btn admin-btn lead py-3 btn-success my-2"
               >
-                Add Testimonial
+                Edit Testimonials
               </Link>
-              <Link
+              {/* <Link
                 to="/history"
                 className="btn admin-btn lead py-3 btn-success my-2"
               >
                 Add History
-              </Link>
+              </Link> */}
 
               <Button
                 onClick={this.handleLogout.bind(this)}

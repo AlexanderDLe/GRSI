@@ -40,12 +40,19 @@ The site features a login page that allows the Admin to log in and update the te
 
 ![grsi login code](https://user-images.githubusercontent.com/37781362/46186539-0d5dce80-c294-11e8-8c08-d247da963281.PNG)
 
-Above is the API code for login. I use mongoose to search the MongoDB database for the user, compare the incoming password with bcrypt, then, if everything succeeds, respond to the request with a JwT Bearer Token.
+Above is the API code for login. I use mongoose to search the MongoDB database for the user, compare the incoming password with bcrypt, then, if everything succeeds, respond to the request with a JwT Bearer Token. Once the client receives the token from the API, a redux action will save it to the local storage, decode, and set the current user.
 
-![grsi login actions code](https://user-images.githubusercontent.com/37781362/46186811-667a3200-c295-11e8-9297-52b4a83d1e4e.PNG)
+## Testimonial Modifications
 
-Once the token is received from the API, this redux action function will save it to the local storage, decode, and set the current user.
+![grsi admin page](https://user-images.githubusercontent.com/37781362/46187069-a7267b00-c296-11e8-8816-ca7e25ce82fd.PNG)
 
-- Testimonial modifications require field validation and allow admin to create new posts, remove old posts, and fetch.
+Once logged in, the admin will have access to the Admin page where he/she will have the option to either edit the testimonials page or log out.
+
+![grsi edit testimonial](https://user-images.githubusercontent.com/37781362/46187282-beb23380-c297-11e8-8195-524af7c1a9fd.png)
+
+Above, you'll see the ability to perform actions to affect the testimonials page. A red circle containing an "X" will also now appear next to each testimonial, allowing the admin to delete a post. Also, the "Add Testimonial" form has validation and error checking.
+
+Require field validation and allow admin to create new posts, remove old posts, and fetch.
+
 - Validation is used extensively in three areas of website: Login, adding testimonials, and contact form. Each have required fields that must contain content, etc.
 - Contact Form:
