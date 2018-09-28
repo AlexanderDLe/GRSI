@@ -19,7 +19,7 @@ Current Build: http://globalroadsealinginc.ga/
 
 ## Back End
 
-- Node: The server is built via node.
+- Node: The server is built via Node.
 - Express: Node framework that allows for ease of building applications quickly and reliably.
 - jsonwebtoken/passport: Authentication method that utilizes bearer tokens to recognize authentication.
 - bcrypt: Encryption library that returns a hash/salted version of user password for secure use.
@@ -28,7 +28,7 @@ Current Build: http://globalroadsealinginc.ga/
 
 ## Database
 
-- MongoDB/mongoose: The database utilized is NoSQL MongoDB. Mongoose allows smooth development via Schemas, models, etc.
+- MongoDB: The database utilized is MongoDB, a NoSQL database.
 
 # Features:
 
@@ -36,7 +36,7 @@ Current Build: http://globalroadsealinginc.ga/
 
 ![grsi login page](https://user-images.githubusercontent.com/37781362/46186321-cae7c200-c292-11e8-98ec-d83047802456.PNG)
 
-The site features a login page that allows the Admin to log in and update the testimonials page. There is a validation system that checks for the appropriate fields and returns an error if there field is incorrect when submitted.
+The site features a login page that allows the Admin to log in and update the testimonials page. There is a validation system that checks for the appropriate fields and returns an error if a field is incorrect when submitted.
 
 ![grsi login code](https://user-images.githubusercontent.com/37781362/46186539-0d5dce80-c294-11e8-8c08-d247da963281.PNG)
 
@@ -76,5 +76,10 @@ If the admin is logged and authenticated, Redux's application state will pass th
 
 Require field validation and allow admin to create new posts, remove old posts, and fetch.
 
+## Contact Form
+
+![grsi contact form](https://user-images.githubusercontent.com/37781362/46192223-2c1d8e80-c2af-11e8-9873-22f2d1ba8e93.PNG)
+
+A contact form is available with validation and error checking.
+
 - Validation is used extensively in three areas of website: Login, adding testimonials, and contact form. Each have required fields that must contain content, etc.
-- Contact Form:
