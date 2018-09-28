@@ -68,13 +68,13 @@ On the left is my implementation of the "Form Input" components. Although I'm re
 
 ![grsi pre and post testimonials](https://user-images.githubusercontent.com/37781362/46190069-d3e28e80-c2a6-11e8-98b3-ad08c3997f65.png)
 
-If an admin logs in, a red circle containing an "X" will appear next to each existing testimonial, allowing the admin to delete a post.
+If the admin logs in, a red circle containing an "X" will appear next to each existing testimonial, allowing the admin to delete a post.
 
 React Code for "Delete Testimonials" Button:
 
 ![grsi delete testimonials react code](https://user-images.githubusercontent.com/37781362/46190742-9e8b7000-c2a9-11e8-97c0-34ed70d19aed.PNG)
 
-If the admin is logged and authenticated, Redux's application state will update then pass the state to the "Testimonial Item" components as props. The react components will then be able to detect that the user is authenticated, thus triggering the delete button to appear via a conditional (ternary) operator.
+If the admin is logs and is authenticated, Redux's application state will update then pass the state to the "Testimonial Item" components as props. The react components will then be able to detect that the user is authenticated, thus triggering the delete button to appear via a conditional (ternary) operator.
 
 Require field validation and allow admin to create new posts, remove old posts, and fetch.
 
