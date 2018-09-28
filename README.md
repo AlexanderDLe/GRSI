@@ -48,9 +48,20 @@ Above is the API code for login. I use mongoose to search the MongoDB database f
 
 Once logged in, the admin will have access to the Admin page where he/she will have the option to either edit the testimonials page or log out.
 
-![grsi edit testimonial](https://user-images.githubusercontent.com/37781362/46187282-beb23380-c297-11e8-8195-524af7c1a9fd.png)
+![grsi add testimonial](https://user-images.githubusercontent.com/37781362/46189384-389bea00-c2a3-11e8-9dd6-9e5b508c0a57.PNG)
 
-Above, you'll see the ability to perform actions to affect the testimonials page. A red circle containing an "X" will also now appear next to each testimonial, allowing the admin to delete a post. Also, the "Add Testimonial" form has validation and error checking.
+Above, there is an "Add Testimonial" form with form validation and error checking.
+
+React Code for Add Testimonials Form:
+
+![grsi add testimonial react code](https://user-images.githubusercontent.com/37781362/46189402-51a49b00-c2a3-11e8-8997-142b5a41ab11.png)
+
+On the right is a reusable "Form Input" I created for the form.  
+An amazing feature I love about React is its ability to pass props from one component to another. This composition style leads to very clean and maintainable code and is such a joy to develop.
+
+On the left is my implementation of the "Form Input" components.
+
+Also, a red circle containing an "X" will also now appear next to each existing testimonial, allowing the admin to delete a post.
 
 Require field validation and allow admin to create new posts, remove old posts, and fetch.
 
