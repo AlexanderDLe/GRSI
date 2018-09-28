@@ -74,7 +74,7 @@ React Code for "Delete Testimonials" Button:
 
 ![grsi delete testimonials react code](https://user-images.githubusercontent.com/37781362/46190742-9e8b7000-c2a9-11e8-97c0-34ed70d19aed.PNG)
 
-If the admin is logs and is authenticated, Redux's application state will update then pass the state to the "Testimonial Item" components as props. The react components will then be able to detect that the user is authenticated, thus triggering the delete button to appear via a conditional (ternary) operator.
+If the admin logs in and is authenticated, Redux's application state will update then pass the state to the "Testimonial Item" components as props. The react components will then be able to detect that the user is authenticated, thus triggering the delete button to appear via a conditional (ternary) operator.
 
 Require field validation and allow admin to create new posts, remove old posts, and fetch.
 
