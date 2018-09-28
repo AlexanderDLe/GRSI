@@ -42,7 +42,7 @@ The site features a login page that allows the Admin to log in and update the te
 
 Above is the API code for login. I use mongoose to search the MongoDB database for the user, compare the incoming password with bcrypt, then, if everything succeeds, respond to the request with a JwT Bearer Token. Once the client receives the token from the API, a redux action will save it to the local storage, decode, and set the current user.
 
-## Testimonial Modifications
+## Testimonial Modifications - Add Testimonial
 
 ![grsi admin page](https://user-images.githubusercontent.com/37781362/46187069-a7267b00-c296-11e8-8816-ca7e25ce82fd.PNG)
 
@@ -52,16 +52,27 @@ Once logged in, the admin will have access to the Admin page where he/she will h
 
 Above, there is an "Add Testimonial" form with form validation and error checking.
 
-React Code for Add Testimonials Form:
+React Code for "Add Testimonials" Form:
 
 ![grsi add testimonial react code](https://user-images.githubusercontent.com/37781362/46189402-51a49b00-c2a3-11e8-8997-142b5a41ab11.png)
 
-On the right is a reusable "Form Input" I created for the form.  
-An amazing feature I love about React is its ability to pass props from one component to another. This composition style leads to very clean and maintainable code and is such a joy to develop.
+On the right is a reusable "Form Input" component I created for the form. It receives a number of props that will enable it to render different inputs.
 
-On the left is my implementation of the "Form Input" components.
+(An amazing feature I love about React is its ability to pass props from one component to another. This composition style leads to very clean and maintainable code and is such a joy to develop.)
 
-Also, a red circle containing an "X" will also now appear next to each existing testimonial, allowing the admin to delete a post.
+On the left is my implementation of the "Form Input" components. Although I'm reusing the same component, I'm able to render completely different inputs due to the ability to pass props.
+
+## Testimonial Modifications - Delete Testimonial
+
+![grsi pre and post testimonials](https://user-images.githubusercontent.com/37781362/46190069-d3e28e80-c2a6-11e8-98b3-ad08c3997f65.png)
+
+After admin login, a red circle containing an "X" will appear next to each existing testimonial, allowing the admin to delete a post.
+
+React Code for "Delete Testimonials" Button:
+
+![grsi delete testimonials react code](https://user-images.githubusercontent.com/37781362/46190742-9e8b7000-c2a9-11e8-97c0-34ed70d19aed.PNG)
+
+If the admin is logged and authenticated, Redux's application state will pass the state to "Testimonial Item" components as props. The react component will then be able to detect that the user is authenticated, thus triggering the delete button to appear via a conditional (ternary) operator.
 
 Require field validation and allow admin to create new posts, remove old posts, and fetch.
 
