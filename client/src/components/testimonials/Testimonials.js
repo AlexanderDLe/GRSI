@@ -100,11 +100,11 @@ class Testimonials extends Component {
             </Container>
           </div>
         </div>
-        <div className="page-info page-padding">
-          <Container className="">
+        <Container className="container-shadow">
+          <div className="page-info page-padding">
             <TestFeed testimonials={testimonials} />
-          </Container>
-        </div>
+          </div>
+        </Container>
 
         {/* MODAL */}
         <div className="modal fade" id="testimonialModal">

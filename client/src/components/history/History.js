@@ -20,11 +20,11 @@ export default () => {
           </Container>
         </div>
       </div>
-      <div className="page-padding">
-        <Container>
+      <Container className="container-shadow">
+        <div className="page-padding px-5">
           <LogoGallery />
-        </Container>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 };

@@ -19,10 +19,10 @@ export default () => {
           </Container>
         </div>
       </div>
-      <div className="page-info">
-        <Container className="my-5">
+      <Container className="container-shadow">
+        <div className="page-info page-padding conditional-padding px-3">
           <Row classname="py-5">
-            <Col lg="6" className="flexCenter flexDown">
+            <Col lg="6" className="flexCenter flexDown conditional-padding">
               <h1 className="mr-auto py-3">Objectives</h1>
 
               <p className="lead">
@@ -72,13 +72,13 @@ export default () => {
               </p>
             </Col>
           </Row>
-        </Container>
-        <div className="text-center pt-5 pb-5">
-          <Link to="/contact" className="borderStyle mb-5 request-button">
-            REQUEST QUOTE
-          </Link>
+          <div className="text-center mt-5 pt-5 pb-5">
+            <Link to="/contact" className="borderStyle my-5 request-button">
+              REQUEST QUOTE
+            </Link>
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

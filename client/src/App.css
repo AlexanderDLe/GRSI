@@ -5,8 +5,9 @@
 }
 /* GENERAL */
 :root {
-  --box-shadow-2: 0px 6px 20px -8px rgb(0, 0, 0);
   --box-shadow-1: 0px 7px 45px -15px rgba(0, 0, 0, 0.7);
+  --box-shadow-2: 0px 6px 20px -8px rgb(0, 0, 0);
+  --box-shadow-3: 0px 6px 50px -10px rgba(0, 0, 0, 0.5);
 }
 p {
   font-family: 'Open Sans';
@@ -39,6 +40,10 @@ a:hover {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+}
+.container-shadow {
+  box-shadow: var(--box-shadow-3);
+  background-color: white;
 }
 /* MEDIA QUERIES: GRSI TITLE */
 @media (max-width: 1440px) {
@@ -267,11 +272,9 @@ nav {
 }
 
 .landing-box {
-  background-color: rgba(255, 255, 255, 0.95);
   width: 83%;
   max-width: 900px;
   font-family: Open Sans;
-  box-shadow: var(--box-shadow-1);
 }
 
 .landing-icon {
@@ -287,7 +290,7 @@ nav {
   min-height: 50vh;
   position: relative;
 }
-.landing-services::before {
+/* .landing-services::before {
   position: absolute;
   content: '';
   height: 100%;
@@ -299,7 +302,7 @@ nav {
   background-color: #eeeeee;
   z-index: -1;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
-}
+} */
 .service-icon {
   font-size: 5rem;
   display: inline-block;
@@ -333,10 +336,9 @@ nav {
 /* LANDING: PHILOSOPHY */
 .landing-philosophy {
   min-height: 50vh;
-  background-color: #eee;
   position: relative;
 }
-.landing-philosophy::before {
+/* .landing-philosophy::before {
   position: absolute;
   content: '';
   height: 100%;
@@ -347,7 +349,7 @@ nav {
   bottom: 0;
   background-color: #fff;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
-}
+} */
 .landing-philosophy-box {
   position: relative;
   min-height: 60vh;
@@ -413,7 +415,8 @@ blockquote p {
   background-color: rgb(241, 241, 241);
 }
 .about-table {
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1000px;
   box-shadow: var(--box-shadow-1);
 }
 /* FOOTER */
@@ -439,19 +442,7 @@ footer {
   min-height: 50vh;
   position: relative;
 }
-.page-info::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #eeeeee;
-  z-index: -1;
-  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
-}
+
 .CrackSeal-wrap {
   background: linear-gradient(black, transparent 25%),
     url('img/CrackSeal.jpg') no-repeat 50% 0px;
@@ -687,7 +678,15 @@ form {
     max-width: 677px;
   }
 }
-
+.container {
+  padding: 0;
+}
+@media (min-width: 911px) {
+  .conditional-padding {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
 /* ANIMATION */
 .fade {
   animation: fade 0.5s ease-in-out;

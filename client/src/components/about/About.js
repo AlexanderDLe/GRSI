@@ -19,61 +19,65 @@ export default () => {
           </Container>
         </div>
       </div>
-      <div className="page-info page-padding">
-        <Container className="conditional-padding py-5">
-          <h1 className="pb-3 GRSI-Title text-center text-black font-weight-bold">
-            COMPANY DETAILS
-          </h1>{' '}
-          <p className="text-black lead centered-text">
-            Global Road Sealing Inc. is a licensed Engineering Contractor in the
-            state of California. GRSI has the framework, resources, and network
-            to deliver high quality projects on time. Relevant company details
-            below.
-          </p>
-          <div className="divider TLC-DarkBG my-5" />
-          <div className="conditional-padding about-table m-auto ">
-            <Row className="bg-about-white">
-              <Col className="about-item-1 border py-1">Company:</Col>
-              <Col className="border py-1">Global Road Sealing Inc.</Col>
-            </Row>
-            <Row className="bg-about">
-              <Col className="about-item-1 border py-1">Address:</Col>
-              <Col className="border py-1">
-                123 Dorothy Road Garden Grove, CA 92844
-              </Col>
-            </Row>
-            <Row className="bg-about-white">
-              <Col className="about-item-1 border py-1">Phone:</Col>
-              <Col className="border py-1">(714)893-0845</Col>
-            </Row>
-            <Row className="bg-about">
-              <Col className="about-item-1 border py-1">License:</Col>
-              <Col className="border py-1">No. 757584</Col>
-            </Row>
-            <Row className="bg-about-white">
-              <Col className="about-item-1 border py-1">Class:</Col>
-              <Col className="border py-1">C-10 & C-32</Col>
-            </Row>
-            <Row className="bg-about">
-              <Col className="about-item-1 border py-1">SBE:</Col>
-              <Col className="border py-1">No. 2001305</Col>
-            </Row>
-            <Row className="bg-about-white">
-              <Col className="about-item-1 border py-1">DBE & UDBE:</Col>
-              <Col className="border py-1">No. 031176</Col>
-            </Row>
-            <Row className="bg-about">
-              <Col className="about-item-1 border py-1">DIR Registration:</Col>
-              <Col className="border py-1">No. 1000007714</Col>
-            </Row>
+      <Container className="container-shadow">
+        <div className="page-info page-padding">
+          <div className="conditional-padding py-5">
+            <h1 className="pb-3 GRSI-Title text-center text-black font-weight-bold">
+              COMPANY DETAILS
+            </h1>{' '}
+            <p className="text-black lead centered-text">
+              Global Road Sealing Inc. is a licensed Engineering Contractor in
+              the state of California. GRSI has the framework, resources, and
+              network to deliver high quality projects on time. Relevant company
+              details below.
+            </p>
+            <div className="divider TLC-DarkBG my-5" />
+            <div className="about-table m-auto ">
+              <Row className="bg-about-white">
+                <Col className="about-item-1 border py-1">Company:</Col>
+                <Col className="border py-1">Global Road Sealing Inc.</Col>
+              </Row>
+              <Row className="bg-about">
+                <Col className="about-item-1 border py-1">Address:</Col>
+                <Col className="border py-1">
+                  123 Dorothy Road Garden Grove, CA 92844
+                </Col>
+              </Row>
+              <Row className="bg-about-white">
+                <Col className="about-item-1 border py-1">Phone:</Col>
+                <Col className="border py-1">(714)893-0845</Col>
+              </Row>
+              <Row className="bg-about">
+                <Col className="about-item-1 border py-1">License:</Col>
+                <Col className="border py-1">No. 757584</Col>
+              </Row>
+              <Row className="bg-about-white">
+                <Col className="about-item-1 border py-1">Class:</Col>
+                <Col className="border py-1">C-10 & C-32</Col>
+              </Row>
+              <Row className="bg-about">
+                <Col className="about-item-1 border py-1">SBE:</Col>
+                <Col className="border py-1">No. 2001305</Col>
+              </Row>
+              <Row className="bg-about-white">
+                <Col className="about-item-1 border py-1">DBE & UDBE:</Col>
+                <Col className="border py-1">No. 031176</Col>
+              </Row>
+              <Row className="bg-about">
+                <Col className="about-item-1 border py-1">
+                  DIR Registration:
+                </Col>
+                <Col className="border py-1">No. 1000007714</Col>
+              </Row>
 
-            <Row className="bg-about-white">
-              <Col className="about-item-1 border py-1">Email:</Col>
-              <Col className="border py-1">company@globalroadsealing.com</Col>
-            </Row>
+              <Row className="bg-about-white">
+                <Col className="about-item-1 border py-1">Email:</Col>
+                <Col className="border py-1">company@globalroadsealing.com</Col>
+              </Row>
+            </div>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 };
