@@ -86,4 +86,4 @@ Require field validation and allow admin to create new posts, remove old posts, 
 
 A contact form is available with validation and error checking.
 
-- Validation is used extensively in three areas of website: Login, adding testimonials, and contact form. Each have required fields that must contain content, etc.
+Validation is used extensively in three areas of website: Login, adding testimonials, and contact form. Each have required fields that must contain content, etc.
