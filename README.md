@@ -82,6 +82,8 @@ Require field validation and allow admin to create new posts, remove old posts, 
 
 ![grsi contact form](https://user-images.githubusercontent.com/37781362/46192223-2c1d8e80-c2af-11e8-9873-22f2d1ba8e93.PNG)
 
+![grsi error checking](https://user-images.githubusercontent.com/37781362/46241389-b1677880-c36d-11e8-89de-3f8e06345ebe.PNG)
+
 A contact form is available with validation and error checking.
 
 - Validation is used extensively in three areas of website: Login, adding testimonials, and contact form. Each have required fields that must contain content, etc.
