@@ -20,7 +20,7 @@ export default () => {
             <h1 className="pb-3 Page-Title text-center font-weight-bold">
               SERVICES
             </h1>
-            <p className="lead pt-2 centered-text">
+            <p className="lead p-3 mb-5 centered-text">
               We design, build and install product on projects of all sizes,
               both public and private. Our state-of-the-art equipment and
               practices deliver the{' '}
