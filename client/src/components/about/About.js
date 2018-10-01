@@ -25,7 +25,7 @@ export default () => {
             <h1 className="pb-3 GRSI-Title text-center text-black font-weight-bold">
               COMPANY DETAILS
             </h1>{' '}
-            <p className="text-black lead centered-text">
+            <p className="text-black lead centered-text p-3">
               Global Road Sealing Inc. is a licensed Engineering Contractor in
               the state of California. GRSI has the framework, resources, and
               network to deliver high quality projects on time. Relevant company

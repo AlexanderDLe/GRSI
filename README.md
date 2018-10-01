@@ -1,6 +1,6 @@
 # Global Road Sealing Inc. Site Github Repository.
 
-![grsi site](https://user-images.githubusercontent.com/37781362/46183388-8c97d600-c285-11e8-8018-89a3b90f986b.png)
+![grsi site](https://user-images.githubusercontent.com/37781362/46266122-a3d2ff80-c4e1-11e8-8a77-c987fe074dd5.png)
 
 Current Build: http://globalroadsealinginc.ga/
 
