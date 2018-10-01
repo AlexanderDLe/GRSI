@@ -81,7 +81,7 @@ export default class Contact extends Component {
                 <Form
                   noValidate
                   onSubmit={this.handleSubmit}
-                  className="justify-content-center"
+                  className="justify-content-center p-3"
                 >
                   <Row>
                     <Col md="6">
