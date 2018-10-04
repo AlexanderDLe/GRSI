@@ -29,7 +29,7 @@ export default () => {
               </strong>
             </p>
             <div className="landing-box mx-auto page-margin">
-              <div>
+              {/* <div>
                 <Row className="">
                   <Col className="text-center landing-item">
                     <i className="landing-icon fas fa-phone" />
@@ -51,9 +51,9 @@ export default () => {
                     via our Contact Form.
                   </Col>
                 </Row>
-              </div>
+              </div> */}
             </div>
-            <Row className="conditional-padding mt-5">
+            <Row className="conditional-padding mt-4">
               <Col lg="3" md="6" className="p-1">
                 <Link to="/crack-seal">
                   <div className="service-card m-auto">
@@ -126,7 +126,7 @@ export default () => {
               <h1 className="GRSI-Title font-weight-bold ">TESTIMONIALS</h1>
               <Row className="py-3 conditional-padding">
                 <Col lg="6">
-                  <blockquote className="blockquote">
+                  <blockquote className="blockquote blockquote-landing">
                     The best company I've worked with, hands down.
                     <br />
                     <br />
