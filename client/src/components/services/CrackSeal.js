@@ -73,7 +73,7 @@ export default () => {
             </Col>
           </Row>
           <div className="text-center mt-5 pt-5 pb-5">
-            <Link to="/contact" className="borderStyle my-5 request-button">
+            <Link to="/contact" className="my-5 request-button">
               REQUEST QUOTE
             </Link>
           </div>

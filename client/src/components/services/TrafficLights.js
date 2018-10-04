@@ -21,21 +21,21 @@ export default () => {
       </div>
       <Container className="container-shadow">
         <div className="page-info page-padding conditional-padding px-3">
-          <Row classname="py-5">
-            <Col lg="6" className="flexCenter flexDown conditional-padding">
-              <h1 className="mr-auto py-3">Objectives</h1>
+          <Row className="flexColReverse">
+            <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
+              <h1 className="py-3 service-title">Objectives</h1>
 
-              <p className="lead">
+              <p className="">
                 Ipsum dolor sit amet consectetur adipisicing elit. Dolores
                 ducimus officiis, voluptatibus in quia architecto ea officia
                 aliquid dolore recusandae.
               </p>
-              <p className="lead">
+              <p className="">
                 Dolor sit amet consectetur adipisicing elit. Dolores ducimus
                 officiis, voluptatibus in quia architecto ea officia aliquid
                 dolore recusandae.
               </p>
-              <p className="lead">
+              <p className="">
                 Lorem sit amet consectetur adipisicing elit. Dolores ducimus
                 officiis, voluptatibus in quia architecto ea officia aliquid
                 dolore recusandae.
@@ -48,24 +48,24 @@ export default () => {
 
           <br className="" />
           <hr className="my-5" />
-          <Row classname="py-5">
+          <Row className="py-5">
             <Col lg="6" className="imgBox flexCenter">
               <img className="imgContent" src={CrackSealN} alt="" />
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
-              <h1 className="mr-auto py-3">Applications</h1>
+              <h1 className="py-3 service-title">Applications</h1>
 
-              <p className="lead">
+              <p className="">
                 Ipsum dolor sit amet consectetur adipisicing elit. Dolores
                 ducimus officiis, voluptatibus in quia architecto ea officia
                 aliquid dolore recusandae.
               </p>
-              <p className="lead">
+              <p className="">
                 Dolor sit amet consectetur adipisicing elit. Dolores ducimus
                 officiis, voluptatibus in quia architecto ea officia aliquid
                 dolore recusandae.
               </p>
-              <p className="lead">
+              <p className="">
                 Lorem sit amet consectetur adipisicing elit. Dolores ducimus
                 officiis, voluptatibus in quia architecto ea officia aliquid
                 dolore recusandae.
@@ -73,7 +73,7 @@ export default () => {
             </Col>
           </Row>
           <div className="text-center mt-5 pt-5 pb-5">
-            <Link to="/contact" className="borderStyle my-5 request-button">
+            <Link to="/contact" className="my-5 request-button">
               REQUEST QUOTE
             </Link>
           </div>

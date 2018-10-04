@@ -69,7 +69,7 @@ export default () => {
               <Col lg="3" md="6" className="p-1">
                 <Link to="/joint-seal">
                   <div className="service-card m-auto">
-                    <i className="service-icon py-5 m-auto fas fa-plus " />
+                    <i className="service-icon py-5 m-auto fab fa-deviantart " />
                     <h4 className="text-center pb-5 ">Joint Seal</h4>
                   </div>
                 </Link>
