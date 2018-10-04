@@ -145,12 +145,14 @@ export default () => {
                     of the work your crews continue to provide.
                     <br />
                     <br />
-                    The roads are much safer due to the diligence of the crews
-                    from Global Road Sealing. They've been working hard and we
-                    fully commend the quality of their work. Thank you!
+                    Loved working with Global Road Sealing Inc. They did very
+                    exceptional work and were very reliable. They were able to
+                    meet all requirements - and even before schedule! Thanks
+                    GRSI, I will always depend on your high quality work.
                   </blockquote>
                   <div className="blockquote-footer">
-                    Homer Simpson From <cite title="Company 1">Company 2</cite>
+                    Dennis Nguyen From{' '}
+                    <cite title="Company 1">OC Contractors</cite>
                   </div>
                 </Col>
               </Row>
