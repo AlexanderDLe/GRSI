@@ -116,6 +116,12 @@ a:hover {
 .flexDown {
   flex-direction: column;
 }
+@media (max-width: 991px) {
+  .flexColReverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .dark-overlay {
   height: 100%;
   width: 100%;
@@ -196,7 +202,7 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .nav-scroll {
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: rgba(255, 255, 255, 1);
   transition: all 0.5s ease-in-out;
   color: white !important;
   box-shadow: 0px -5px 12px black;
@@ -547,7 +553,10 @@ footer {
   border-radius: 50%;
   box-shadow: 0px 3px 25px -3px black;
 }
-/* CRACK SEAL */
+/* SERVICES */
+.service-title {
+  margin-top: 25px;
+}
 
 /* CONTACT */
 form {

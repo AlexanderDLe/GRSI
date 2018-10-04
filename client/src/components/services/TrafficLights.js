@@ -46,8 +46,8 @@ export default () => {
             </Col>
           </Row>
 
-          <br className="my-5" />
-          <hr className="py-5 my-5" />
+          <br className="" />
+          <hr className="my-5" />
           <Row classname="py-5">
             <Col lg="6" className="imgBox flexCenter">
               <img className="imgContent" src={CrackSealN} alt="" />

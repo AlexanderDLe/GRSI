@@ -35,13 +35,13 @@ export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
       textColor: '',
       logoSize: '',
       navBG: ''
     };
+    this.toggle = this.toggle.bind(this);
     this.handleScroll = debounce(this.handleScroll.bind(this), 10);
     this.resizeWidth = debounce(this.resizeWidth.bind(this), 10);
   }
@@ -87,9 +87,11 @@ export default class Navigation extends React.Component {
     }
   }
   toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    if (window.innerWidth < 992) {
+      this.setState({
+        isOpen: !this.state.isOpen
+      });
+    }
   }
   render() {
     return (
@@ -122,6 +124,7 @@ export default class Navigation extends React.Component {
                     tag={Link}
                     to="/about"
                     className={this.state.textColor}
+                    onClick={this.toggle}
                   >
                     About
                   </NavLink>
@@ -132,6 +135,7 @@ export default class Navigation extends React.Component {
                     tag={Link}
                     to="/history"
                     className={this.state.textColor}
+                    onClick={this.toggle}
                   >
                     Clients
                   </NavLink>
@@ -141,6 +145,7 @@ export default class Navigation extends React.Component {
                     tag={Link}
                     to="/testimonials"
                     className={this.state.textColor}
+                    onClick={this.toggle}
                   >
                     Testimonials
                   </NavLink>
@@ -149,11 +154,12 @@ export default class Navigation extends React.Component {
                   <DropdownToggle nav caret className={this.state.textColor}>
                     Services
                   </DropdownToggle>
-                  <DropdownMenu className="bg-light dropdown-borderStyle" right>
+                  <DropdownMenu className="" right>
                     <DropdownItem
                       tag={Link}
                       to="/crack-seal"
                       className={this.state.textColor}
+                      onClick={this.toggle}
                     >
                       Crack Sealing
                     </DropdownItem>
@@ -161,6 +167,7 @@ export default class Navigation extends React.Component {
                       tag={Link}
                       to="/joint-seal"
                       className={this.state.textColor}
+                      onClick={this.toggle}
                     >
                       Joint Sealing
                     </DropdownItem>
@@ -168,6 +175,7 @@ export default class Navigation extends React.Component {
                       tag={Link}
                       to="/traffic-loops"
                       className={this.state.textColor}
+                      onClick={this.toggle}
                     >
                       Traffic Loops
                     </DropdownItem>
@@ -175,6 +183,7 @@ export default class Navigation extends React.Component {
                       tag={Link}
                       to="/traffic-lights"
                       className={this.state.textColor}
+                      onClick={this.toggle}
                     >
                       Traffic/Street Lighting
                     </DropdownItem>
@@ -185,6 +194,7 @@ export default class Navigation extends React.Component {
                     tag={Link}
                     to="/contact"
                     className={this.state.textColor}
+                    onClick={this.toggle}
                   >
                     Contact
                   </NavLink>

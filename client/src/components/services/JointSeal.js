@@ -21,9 +21,9 @@ export default () => {
       </div>
       <Container className="container-shadow">
         <div className="page-info page-padding conditional-padding px-3">
-          <Row classname="py-5">
+          <Row classname="py-5 flexColReverse">
             <Col lg="6" className="flexCenter flexDown conditional-padding">
-              <h1 className="mr-auto py-3">Objectives</h1>
+              <h1 className="mr-auto py-3 service-title">Objectives</h1>
 
               <p className="lead">
                 Ipsum dolor sit amet consectetur adipisicing elit. Dolores
@@ -46,14 +46,14 @@ export default () => {
             </Col>
           </Row>
 
-          <br className="my-5" />
-          <hr className="py-5 my-5" />
+          <br className="" />
+          <hr className="my-5" />
           <Row classname="py-5">
             <Col lg="6" className="imgBox flexCenter">
               <img className="imgContent" src={CrackSealN} alt="" />
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
-              <h1 className="mr-auto py-3">Applications</h1>
+              <h1 className="mr-auto py-3 service-title">Applications</h1>
 
               <p className="lead">
                 Ipsum dolor sit amet consectetur adipisicing elit. Dolores
