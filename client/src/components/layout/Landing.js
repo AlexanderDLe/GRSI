@@ -56,7 +56,7 @@ export default () => {
             <Row className="conditional-padding mt-5">
               <Col lg="3" md="6" className="p-1">
                 <Link to="/crack-seal">
-                  <div className="service-card borderStyle m-auto">
+                  <div className="service-card m-auto">
                     <img
                       className="service-icon-traffic py-5 m-auto"
                       src={CrackSealIcon}
@@ -68,7 +68,7 @@ export default () => {
               </Col>
               <Col lg="3" md="6" className="p-1">
                 <Link to="/joint-seal">
-                  <div className="service-card borderStyle m-auto">
+                  <div className="service-card m-auto">
                     <i className="service-icon py-5 m-auto fas fa-plus " />
                     <h4 className="text-center pb-5 ">Joint Seal</h4>
                   </div>
@@ -76,7 +76,7 @@ export default () => {
               </Col>
               <Col lg="3" md="6" className="p-1">
                 <Link to="/traffic-loops">
-                  <div className="service-card borderStyle m-auto">
+                  <div className="service-card m-auto">
                     <i className="service-icon py-5 m-auto far fa-circle " />
                     <h4 className="text-center pb-5 ">Traffic Loops</h4>
                   </div>
@@ -84,7 +84,7 @@ export default () => {
               </Col>
               <Col lg="3" md="6" className="p-1">
                 <Link to="/traffic-loops">
-                  <div className="service-card borderStyle m-auto">
+                  <div className="service-card m-auto">
                     <img
                       className="service-icon-traffic py-5 m-auto"
                       src={trafficLight}
@@ -107,20 +107,17 @@ export default () => {
               </h1>
 
               <p className="lead p-2 centered-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
-                totam, porro exercitationem quo quibusdam sapiente accusamus
-                officiis architecto, qui nesciunt ullam! Deserunt incidunt quae
-                nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
-                explicabo eaque recusandae itaque est maiores quam qui iste!
+                Here at Global Road Sealing Inc, we hold many core values and
+                beliefs. We trust in family, our employees, our work ethic, and
+                standards. We strongly believe in teamwork, positivity, firm
+                moral foundations, and a passion for doing what is right.
               </p>
               <p className="lead  centered-text p-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                maxime! Necessitatibus sequi quia alias dignissimos! Repudiandae
-                totam, porro exercitationem quo quibusdam sapiente accusamus
-                officiis architecto, qui nesciunt ullam! Deserunt incidunt quae
-                nulla obcaecati vitae, enim odio aut magni nam cupiditate, quis
-                explicabo eaque recusandae itaque est maiores quam qui iste!
+                We hold ourselves responsible for delivering high quality
+                results no matter the job. With a positive and professional
+                approach, we'll go the extra mile to provide outstanding
+                customer satisfaction with full regard to safety and regulatory
+                protocol.
               </p>
             </div>
           </div>
@@ -130,15 +127,13 @@ export default () => {
               <Row className="py-3 conditional-padding">
                 <Col lg="6">
                   <blockquote className="blockquote">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Corporis, aspernatur.
+                    The best company I've worked with, hands down.
                     <br />
                     <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque placeat quod odit ipsa? Quae corrupti accusantium
-                    dolorem ratione ab facere delectus atque unde, eum earum
-                    architecto perspiciatis labore modi mollitia cupiditate vel,
-                    sunt nisi. Dolorem.
+                    Global Road Sealing has been outstanding in their service
+                    for my county. They have been consistently delivering high
+                    quality work day in and day out. They have been a pleasure
+                    to work with and I would absolutely recommend them!
                   </blockquote>
                   <div className="blockquote-footer">
                     John Doe From <cite title="Company 1">Company 1</cite>
@@ -146,15 +141,13 @@ export default () => {
                 </Col>
                 <Col lg="6">
                   <blockquote className="blockquote">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Corporis, aspernatur.
+                    I appreciate the workmanship, safety record and timeliness
+                    of the work your crews continue to provide.
                     <br />
                     <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque placeat quod odit ipsa? Quae corrupti accusantium
-                    dolorem ratione ab facere delectus atque unde, eum earum
-                    architecto perspiciatis labore modi mollitia cupiditate vel,
-                    sunt nisi. Dolorem.
+                    The roads are much safer due to the diligence of the crews
+                    from Global Road Sealing. They've been working hard and we
+                    fully commend the quality of their work. Thank you!
                   </blockquote>
                   <div className="blockquote-footer">
                     Homer Simpson From <cite title="Company 1">Company 2</cite>

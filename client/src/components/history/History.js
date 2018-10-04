@@ -12,10 +12,10 @@ export default () => {
               CLIENTS
             </h1>
             <p className="lead p-2 text-white centered-text">
-              Traffic Loops Crackfilling Inc. has had the honor of working with
-              many public and private agencies in California as a trusted
-              electrical contractor. Below is a gallery of clients we've had the
-              pleasure of working with.
+              Global Road Sealing Inc. has had the honor of working with many
+              public and private agencies in California as a trusted electrical
+              contractor. Below is a gallery of clients we've had the pleasure
+              of working with.
             </p>
           </Container>
         </div>
