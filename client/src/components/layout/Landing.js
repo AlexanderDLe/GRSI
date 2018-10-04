@@ -20,7 +20,7 @@ export default () => {
             <h1 className="pb-3 Page-Title text-center font-weight-bold">
               SERVICES
             </h1>
-            <p className="lead p-3 mb-5 centered-text">
+            <p className="lead p-3 centered-text">
               We design, build and install product on projects of all sizes,
               both public and private. Our state-of-the-art equipment and
               practices deliver the{' '}
@@ -30,7 +30,7 @@ export default () => {
             </p>
             <div className="landing-box mx-auto page-margin">
               <div>
-                <Row className="py-2">
+                <Row className="">
                   <Col className="text-center landing-item">
                     <i className="landing-icon fas fa-phone" />
                     <br />
@@ -53,7 +53,7 @@ export default () => {
                 </Row>
               </div>
             </div>
-            <Row className="conditional-padding">
+            <Row className="conditional-padding mt-5">
               <Col lg="3" md="6" className="p-1">
                 <Link to="/crack-seal">
                   <div className="service-card borderStyle m-auto">
