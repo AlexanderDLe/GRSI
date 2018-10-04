@@ -12,10 +12,9 @@ export default () => {
               CLIENTS
             </h1>
             <p className="lead p-2 text-white centered-text">
-              Global Road Sealing Inc. has had the honor of working with many
-              public and private agencies in California as a trusted electrical
-              contractor. Below is a gallery of clients we've had the pleasure
-              of working with.
+              Since 1989, Global Road Sealing Inc. has been a dependable
+              contractor for and around the state of California. As a trusted
+              and reliable company, they deliver and exceed expectations.
             </p>
           </Container>
         </div>

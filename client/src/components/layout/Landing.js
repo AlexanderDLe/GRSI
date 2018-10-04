@@ -53,7 +53,7 @@ export default () => {
                 </Row>
               </div> */}
             </div>
-            <Row className="conditional-padding mt-4">
+            <Row className="conditional-padding">
               <Col lg="3" md="6" className="p-1">
                 <Link to="/crack-seal">
                   <div className="service-card m-auto">
@@ -136,7 +136,7 @@ export default () => {
                     to work with and I would absolutely recommend them!
                   </blockquote>
                   <div className="blockquote-footer">
-                    John Doe From <cite title="Company 1">Company 1</cite>
+                    John Doe From <cite title="Company 1">Slurry Joint</cite>
                   </div>
                 </Col>
                 <Col lg="6">
