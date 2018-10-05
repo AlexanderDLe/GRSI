@@ -58,23 +58,16 @@ export default () => {
               <h1 className="py-3 service-title">Applications</h1>
               <hr className="title-divider" />
               <p className="">
-                An inductive loop is a metal detector installed in the surface
-                of the roadway. Permanent Inductive Loops are considered the
-                most reliable traffic detection method available. An inductive
-                loop consists of wire "coiled" to form a loop that usually is a
-                square, circle or rectangle that is installed into or under the
-                surface of the roadway.
+                Installation techniques require several steps for proper
+                application. These include cutting the slot, cleaning and drying
+                aforementioned slot, laying in the inductive-loop detector wire,
+                connecting the cable to the terminal strip, and ensuring the
+                harness connects the terminal strip to the electronics unit.
               </p>
               <p className="">
-                Inductive loops are used in signal detection and work like a
-                metal detector. Once a vehicle drives over a loop sensor the
-                loop field changes which allows the detection device to detect
-                the presence of an object (mainly a vehicle).
-              </p>
-              <p className="">
-                Often Inductive loops are referred to as presence detectors, and
-                in traffic detection are often used in combination with axle
-                sensors to collect classification data.
+                Installation techniques differ in the treatment of the corners
+                where two saw cuts intersect, splicing techniques, sealant
+                types, and sealant application.
               </p>
             </Col>
           </Row>

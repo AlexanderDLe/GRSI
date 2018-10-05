@@ -87,18 +87,20 @@ a:hover {
 }
 .request-button {
   border-radius: 0;
-  background: #ffffff;
-  color: rgb(8, 8, 8);
+  background: #2695df;
+  color: white;
   font-family: Open Sans;
   font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px 50px;
+  padding: 15px 50px;
   transition: all 0.5s ease-in-out;
   box-shadow: var(--box-shadow-1);
+  position: relative;
+  overflow: hidden;
 }
+
 .request-button:hover {
+  color: white;
   box-shadow: var(--box-shadow-2);
-  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
 .add-button {
