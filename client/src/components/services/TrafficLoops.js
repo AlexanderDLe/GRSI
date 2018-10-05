@@ -24,7 +24,7 @@ export default () => {
           <Row className="flexColReverse">
             <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
               <h1 className="py-3 service-title">Objectives</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 A traffic loop detector is a sensor found at intersection,
                 parking lots, driveways or car gate systems, in which a circular
@@ -56,7 +56,7 @@ export default () => {
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
               <h1 className="py-3 service-title">Applications</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 An inductive loop is a metal detector installed in the surface
                 of the roadway. Permanent Inductive Loops are considered the

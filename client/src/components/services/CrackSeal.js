@@ -13,7 +13,7 @@ export default () => {
             <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
               CRACK SEALING
             </h1>
-            <p className=" p-2 text-white text-center centered-text">
+            <p className="lead p-2 text-white text-center centered-text">
               Crack treatments repairs and treats road damages.
             </p>
           </Container>
@@ -23,7 +23,8 @@ export default () => {
         <div className="page-info page-padding conditional-padding px-3">
           <Row className="flexColReverse">
             <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
-              <h1 className="py-3 service-title">Objectives</h1>
+              <h1 className="service-title">Objectives</h1>
+              <hr className="title-divider" />
               <p className="">
                 Restriction of water entry into underlying pavement base and
                 sub-grade layers serves to maintain pavement strength and
@@ -55,7 +56,7 @@ export default () => {
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
               <h1 className="py-3 service-title">Applications</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 Crack treatment materials can be installed in a range of
                 configurations and with varying preparation methods.

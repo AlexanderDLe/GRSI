@@ -24,7 +24,7 @@ export default () => {
           <Row className="flexColReverse">
             <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
               <h1 className="py-3 service-title">Objectives</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 Joint treatments consist of placing specialized materials into
                 prepared joints to prevent water and incompressible intrusion
@@ -54,7 +54,7 @@ export default () => {
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
               <h1 className="py-3 service-title">Applications</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 Joint treatment materials can be installed in a range of
                 configurations and with varying preparation methods.

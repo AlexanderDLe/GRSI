@@ -24,7 +24,7 @@ export default () => {
           <Row className="flexColReverse">
             <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
               <h1 className="py-3 service-title">Objectives</h1>
-
+              <hr className="title-divider" />
               <p className="">
                 The normal function of traffic lights requires more than slight
                 control and coordination to ensure that traffic and pedestrians
@@ -48,16 +48,7 @@ export default () => {
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
               <h1 className="py-3 service-title">Applications</h1>
-
-              <p className="">
-                Traffic Signal Installation is a specialised task which is
-                undertaken by a number of companies throughout the Country.
-                Equipment is first procured from the supplier then installed on
-                street. This includes all poles, heads, push button facilities,
-                detection and cabling. The duct network for the cables is
-                usually installed by a Civil Engineering contractor prior to the
-                signal company starting on site.
-              </p>
+              <hr className="title-divider" />
               <p className="">
                 Installation usually requires a form of temporary traffic
                 management and is often restricted to off peak working to

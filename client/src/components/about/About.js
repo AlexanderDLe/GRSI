@@ -7,7 +7,7 @@ export default () => {
       <div className="general-BG Goals-wrap parallaxFX">
         <div className="dark-overlay2 flexCenter">
           <Container className="flexCenter flexDown">
-            <h1 className="py-3 GRSI-Title text-center text-white font-weight-bold">
+            <h1 className="mt-3 py-3 GRSI-Title text-center text-white font-weight-bold">
               ABOUT
             </h1>
             <p className="lead p-2 text-white centered-text">
@@ -21,7 +21,7 @@ export default () => {
       </div>
       <Container className="container-shadow">
         <div className="page-info page-padding">
-          <div className="conditional-padding py-5">
+          <div className="conditional-padding">
             <h1 className="pb-3 GRSI-Title text-center text-black font-weight-bold">
               COMPANY DETAILS
             </h1>{' '}

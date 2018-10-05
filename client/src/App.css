@@ -21,10 +21,7 @@ a:hover {
   text-decoration: none !important;
   color: black;
 }
-.GRSI-Title {
-  font-size: 5rem;
-  transform: scaleY(1.4);
-}
+
 .Page-Title {
   font-size: 4rem;
   transform: scaleY(1.4);
@@ -46,6 +43,10 @@ a:hover {
   background-color: white;
 }
 /* MEDIA QUERIES: GRSI TITLE */
+.GRSI-Title {
+  font-size: 5rem;
+  transform: scaleY(1.4);
+}
 @media (max-width: 1440px) {
   .GRSI-Title {
     font-size: 4.5rem;
@@ -296,19 +297,6 @@ nav {
   min-height: 50vh;
   position: relative;
 }
-/* .landing-services::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #eeeeee;
-  z-index: -1;
-  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
-} */
 .service-icon {
   font-size: 5rem;
   display: inline-block;
@@ -337,7 +325,24 @@ nav {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
-
+@media (max-width: 991px) {
+  .service-icon {
+    font-size: 4rem;
+  }
+  .service-icon-traffic {
+    display: block;
+    text-align: center;
+    height: auto;
+    width: 80px;
+  }
+  .service-card {
+    background: #fff;
+    width: 95%;
+    max-width: 300px;
+    height: 95%;
+    transition: all 0.5s ease-in-out;
+  }
+}
 /* LANDING: PHILOSOPHY */
 .landing-philosophy {
   min-height: 50vh;
@@ -556,8 +561,26 @@ footer {
 /* SERVICES */
 .service-title {
   margin-top: 25px;
+  /* width: 100%; */
+  font-family: Open Sans;
+  font-weight: bold;
+  transform: scaleY(1.1);
+  font-size: 3rem;
 }
-
+.title-divider {
+  margin: 25px;
+  height: 1px;
+  width: 100px;
+  color: rgb(124, 124, 124);
+  background-color: currentColor;
+  position: relative;
+}
+.title-divider::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 1px;
+}
 /* CONTACT */
 form {
   max-width: 840px;
@@ -694,8 +717,8 @@ form {
 }
 @media (min-width: 911px) {
   .conditional-padding {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
   }
 }
 /* ANIMATION */

@@ -54,7 +54,7 @@ export default () => {
               </div> */}
             </div>
             <Row className="conditional-padding">
-              <Col lg="3" md="6" className="p-1">
+              <Col lg="3" md="6" sm="6" className="p-1">
                 <Link to="/crack-seal">
                   <div className="service-card m-auto">
                     <img
@@ -66,7 +66,7 @@ export default () => {
                   </div>
                 </Link>
               </Col>
-              <Col lg="3" md="6" className="p-1">
+              <Col lg="3" md="6" sm="6" className="p-1">
                 <Link to="/joint-seal">
                   <div className="service-card m-auto">
                     <i className="service-icon py-5 m-auto fab fa-deviantart " />
@@ -74,7 +74,7 @@ export default () => {
                   </div>
                 </Link>
               </Col>
-              <Col lg="3" md="6" className="p-1">
+              <Col lg="3" md="6" sm="6" className="p-1">
                 <Link to="/traffic-loops">
                   <div className="service-card m-auto">
                     <i className="service-icon py-5 m-auto far fa-circle " />
@@ -82,7 +82,7 @@ export default () => {
                   </div>
                 </Link>
               </Col>
-              <Col lg="3" md="6" className="p-1">
+              <Col lg="3" md="6" sm="6" className="p-1">
                 <Link to="/traffic-loops">
                   <div className="service-card m-auto">
                     <img
@@ -158,10 +158,7 @@ export default () => {
               </Row>
               <br />
               <br />
-              <Link
-                to="/testimonials"
-                className="mb-5 request-button borderStyle"
-              >
+              <Link to="/testimonials" className="mb-5 request-button">
                 READ MORE
               </Link>
             </div>
