@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import CrackSealCU from '../../img/CrackSeal-Study.png';
-import CrackSealN from '../../img/CrackSeal-Neighborhood.jpg';
+import JointSealIMG from '../../img/Joint Seal.jpg';
+import JointSealCutter from '../../img/Joint Seal Cutter.jpg';
 
 export default () => {
   return (
@@ -26,23 +26,23 @@ export default () => {
               <h1 className="py-3 service-title">Objectives</h1>
 
               <p className="">
-                Ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                ducimus officiis, voluptatibus in quia architecto ea officia
-                aliquid dolore recusandae.
+                Joint treatments consist of placing specialized materials into
+                prepared joints to prevent water and incompressible intrusion
+                into the joints and underlying pavement layers, and to reinforce
+                the adjacent pavement.
               </p>
               <p className="">
-                Dolor sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
-              </p>
-              <p className="">
-                Lorem sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
+                Restriction of water entry into underlying pavement base and
+                sub-grade layers serves to maintain pavement strength and
+                prolong pavement life. The various joint types experience
+                different movement ranges depending mostly on joint spacing and
+                temperature variations. Different types of joint treatment
+                materials and installation geometries are required for the
+                different conditions.
               </p>
             </Col>
             <Col lg="6" className="imgBox flexCenter">
-              <img className="imgContent" src={CrackSealCU} alt="" />
+              <img className="imgContent" src={JointSealIMG} alt="" />
             </Col>
           </Row>
 
@@ -50,25 +50,32 @@ export default () => {
           <hr className="my-5" />
           <Row className="py-5">
             <Col lg="6" className="imgBox flexCenter">
-              <img className="imgContent" src={CrackSealN} alt="" />
+              <img className="imgContent" src={JointSealCutter} alt="" />
             </Col>
             <Col lg="6" className="flexCenter flexDown p-3">
               <h1 className="py-3 service-title">Applications</h1>
 
               <p className="">
-                Ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                ducimus officiis, voluptatibus in quia architecto ea officia
-                aliquid dolore recusandae.
+                Joint treatment materials can be installed in a range of
+                configurations and with varying preparation methods.
+                Configurations range from filling unprepared joints and capping
+                with a narrow overband, to specifically designed reservoirs that
+                widen the joint to provide the correct geometry for the expected
+                movements.
               </p>
               <p className="">
-                Dolor sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
-              </p>
-              <p className="">
-                Lorem sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
+                Application consists of 3 basic steps– cleaning the joints,
+                cutting the reservoir if needed, and installing the material.
+                Cleaning is generally accomplished using compressed air.
+                Reservoir cutting is performed using a joint saw or router that
+                can cut varying widths and depths as required. Hot applied
+                products heated to the appropriate temperature in a melter unit
+                equipped with agitation and a temperature monitoring device. The
+                heated material is then pumped into the joint or placed using
+                pour pots or wheeled applicators. Cold applied materials can be
+                installed using pour pots, or other containers. For all
+                installations, joints must be clean and dry for the best
+                performance.
               </p>
             </Col>
           </Row>

@@ -24,21 +24,22 @@ export default () => {
           <Row className="flexColReverse">
             <Col lg="6" className="p-3 flexCenter flexDown conditional-padding">
               <h1 className="py-3 service-title">Objectives</h1>
-
               <p className="">
-                Ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                ducimus officiis, voluptatibus in quia architecto ea officia
-                aliquid dolore recusandae.
+                Restriction of water entry into underlying pavement base and
+                sub-grade layers serves to maintain pavement strength and
+                prolong pavement life. Pavements in different climate zones,
+                with different construction types, and with different traffic
+                loadings experience different types of cracking. The various
+                crack types experience different movement ranges depending
+                mostly on crack spacing and temperature variations. Different
+                types of crack treatment materials and installation geometries
+                are required for the different conditions.
               </p>
               <p className="">
-                Dolor sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
-              </p>
-              <p className="">
-                Lorem sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
+                Crack treatments consist of placing specialized materials into
+                prepared cracks to prevent water and incompressible intrusion
+                into the cracks and underlying pavement layers, and to reinforce
+                the adjacent pavement.
               </p>
             </Col>
             <Col lg="6" className="imgBox flexCenter">
@@ -56,19 +57,26 @@ export default () => {
               <h1 className="py-3 service-title">Applications</h1>
 
               <p className="">
-                Ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                ducimus officiis, voluptatibus in quia architecto ea officia
-                aliquid dolore recusandae.
+                Crack treatment materials can be installed in a range of
+                configurations and with varying preparation methods.
+                Configurations range from filling unprepared cracks and capping
+                with a narrow overband, to specifically designed reservoirs that
+                widen the crack to provide the correct geometry for the expected
+                movements.
               </p>
               <p className="">
-                Dolor sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
-              </p>
-              <p className="">
-                Lorem sit amet consectetur adipisicing elit. Dolores ducimus
-                officiis, voluptatibus in quia architecto ea officia aliquid
-                dolore recusandae.
+                Application consists of 3 basic steps– cleaning the cracks,
+                cutting the reservoir if needed, and installing the material.
+                Cleaning is generally accomplished using compressed air.
+                Reservoir cutting is performed using a crack saw or router that
+                can cut varying widths and depths as required. Hot applied
+                products heated to the appropriate temperature in a melter unit
+                equipped with agitation and a temperature monitoring device. The
+                heated material is then pumped into the crack or placed using
+                pour pots or wheeled applicators. Cold applied materials can be
+                installed using pour pots, or other containers. For all
+                installations, cracks must be clean and dry for the best
+                performance.
               </p>
             </Col>
           </Row>
