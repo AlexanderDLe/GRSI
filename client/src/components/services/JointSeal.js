@@ -14,7 +14,7 @@ export default () => {
               JOINT SEAL
             </h1>
             <p className="lead p-2 text-white text-center">
-              Stabilize and maintain concrete sections.
+              To stabilize and maintain concrete sections.
             </p>
           </Container>
         </div>
