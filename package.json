@@ -4,8 +4,8 @@
   "description": "Website for GRSI",
   "main": "index.js",
   "engines": {
-    "node": "10.5.0",
-    "npm": "6.1.0"
+    "node": "9.11.1",
+    "npm": "5.6.0"
   },
   "scripts": {
     "start": "node index.js",
